@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/first_menu_group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttom_tab_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_bt_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_shouye_menu_tab"
+            android:gravity="center"
+            android:tag="10000"
+            android:text="微讯"
+            android:textColor="@drawable/selector_text_color"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/main_bt_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_kefu_menu_tab"
+            android:gravity="center"
+            android:tag="10001"
+            android:text="通讯录"
+            android:textColor="@drawable/selector_text_color"
+            android:textSize="11sp" />
+
+
+        <RadioButton
+            android:id="@+id/main_bt_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_yongdian_menu_tab"
+            android:gravity="center"
+            android:tag="10002"
+            android:text="发现"
+            android:textColor="@drawable/selector_text_color"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/main_bt_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_wode_menu_tab"
+            android:gravity="center"
+            android:tag="10003"
+            android:text="我的"
+            android:textColor="@drawable/selector_text_color"
+            android:textSize="11sp" />
+    </RadioGroup>
+
+</RelativeLayout>

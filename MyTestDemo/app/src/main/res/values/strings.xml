@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">开发集合</string>
+    <string name="app_name_01">网上国网</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_world">我的主页!</string>
+
+    <string name="btn_scroll_view">ScrollView demo</string>
+    <string name="btn_list_view">ListView下拉刷新，上拉加载</string>
+
+    <string name="header_hint_refresh_normal">Pull to 刷新</string>
+    <string name="header_hint_refresh_ready">Release to 刷新</string>
+    <string name="header_hint_refresh_loading">Refreshing&#8230;</string>
+    <string name="header_hint_refresh_time">Time：</string>
+    <string name="footer_hint_load_normal">Load more</string>
+    <string name="footer_hint_load_ready">Release to load more</string>
+    <string name="phone_num">手机号码</string>
+    <string name="lottery_serial_code">奖券序列码</string>
+    <string name="when_lottery">抽奖时间</string>
+    <string name="my_lottery_log">我的抽奖记录</string>
+    <string name="lottery_log">抽奖记录</string>
+
+    <!--TimeLineActivity-->
+    <string name="TimeLineActivity_tip">&#160;&#160;使用RecyclerView实现了时间轴</string>
+    <!--二维码-->
+    <string name="btn_scan_local_pic">从相册选取二维码</string>
+    <string name="btn_open_flashlight_text">打开手电筒</string>
+    <string name="btn_close_flashlight_text">关闭手电筒</string>
+    <string name="scan_fail">扫描失败!</string>
+
+</resources>
