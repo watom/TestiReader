@@ -13,8 +13,7 @@ import com.watom20171116.www.mytestdemo.R;
 import com.watom20171116.www.mytestdemo.second.logic.LogicTest.CountDownTimerActivity;
 import com.watom20171116.www.mytestdemo.second.logic.LogicTest.DateTestActivity;
 import com.watom20171116.www.mytestdemo.second.logic.LogicTest.GsonApplyActivity;
-import com.watom20171116.www.mytestdemo.second.nettys.okhttp.OkHttpTestActivity;
-import com.watom20171116.www.mytestdemo.second.logic.LogicTest.RecyclerViewTestActivity;
+import com.watom20171116.www.mytestdemo.second.logic.LogicTest.PhotoAlbumActivity;
 import com.watom20171116.www.mytestdemo.second.logic.LogicTest.TimerTestActivity;
 import com.watom20171116.www.mytestdemo.second.logic.kernel_module.barcode.activity.BarCodeMainActivity;
 import com.watom20171116.www.mytestdemo.second.logic.kernel_module.config.LocalPropertiesActivity;
@@ -36,7 +35,7 @@ public class ModuleTestActivity extends AppCompatActivity implements AdapterView
     }
 
     private void initData(ListView view) {
-        content = new String[]{"时间段内测试","定时","倒计时","二维码","地图","RecyclerView","Local","Gson"};
+        content = new String[]{"时间段内测试","定时","倒计时","二维码","地图","Local","Gson","相册"};
         ArrayAdapter stringArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,content);
         view.setAdapter(stringArrayAdapter);
         view.setOnItemClickListener(this);
@@ -58,9 +57,6 @@ public class ModuleTestActivity extends AppCompatActivity implements AdapterView
             case "二维码":
                 startActivity(new Intent(this, BarCodeMainActivity.class));
                 break;
-            case "RecyclerView":
-                startActivity(new Intent(this, RecyclerViewTestActivity.class));
-                break;
             case "地图":
                 startActivity(new Intent(this, MapTestActivity.class));
                 break;
@@ -69,6 +65,9 @@ public class ModuleTestActivity extends AppCompatActivity implements AdapterView
                 break;
             case "Gson":
                 startActivity(new Intent(this, GsonApplyActivity.class));
+                break;
+            case "相册":
+                startActivity(new Intent(this, PhotoAlbumActivity.class));
                 break;
         }
     }

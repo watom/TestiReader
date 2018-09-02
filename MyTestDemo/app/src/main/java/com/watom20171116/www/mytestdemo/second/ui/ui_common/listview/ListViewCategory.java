@@ -10,10 +10,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.watom20171116.www.mytestdemo.R;
+import com.watom20171116.www.mytestdemo.second.ui.ui_common.listview.recyclerview.RecyclerViewTestActivity;
 import com.watom20171116.www.mytestdemo.second.ui.ui_common.listview.XListView.ListViewActivity;
-import com.watom20171116.www.mytestdemo.second.ui.ui_common.listview.expandablelistView.MyExpandableListAdapter;
 import com.watom20171116.www.mytestdemo.second.ui.ui_common.listview.expandablelistView.MyExpandableListView;
-import com.watom20171116.www.mytestdemo.second.ui.ui_common.listview.listview.CommonListViewActivity;
 
 /**
  * Created by Administrator on 2017/11/29 0029.
@@ -31,7 +30,7 @@ public class ListViewCategory extends AppCompatActivity implements AdapterView.O
     }
 
     private void initData(ListView view) {
-        content = new String[]{"XListView","ExpandableListView"};
+        content = new String[]{"ListView","XListView","ExpandableListView","RecyclerView"};
         ArrayAdapter stringArrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, content);
         view.setAdapter(stringArrayAdapter);
         view.setOnItemClickListener(this);
@@ -41,14 +40,17 @@ public class ListViewCategory extends AppCompatActivity implements AdapterView.O
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         String s = content[position];
         switch (s) {
+            case "ListView":
+//                startActivity(new Intent(this, CommonListViewActivity.class));
+                break;
             case "XListView":
                 startActivity(new Intent(this, ListViewActivity.class));
                 break;
-            case "ListView":
-                startActivity(new Intent(this, CommonListViewActivity.class));
-                break;
             case "ExpandableListView":
                 startActivity(new Intent(this, MyExpandableListView.class));
+                break;
+            case "RecyclerView":
+                startActivity(new Intent(this, RecyclerViewTestActivity.class));
                 break;
         }
     }

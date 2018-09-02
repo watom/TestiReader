@@ -544,7 +544,7 @@ public class AlertDialogDemo extends AppCompatActivity implements View.OnClickLi
     }
 
     private void showDialogTool() {
-        DialogUtils.getInstance().call(this, "标题", "我封装的Dialog", new DialogUtils.OnClickRightButtonListen() {
+        DialogUtils.getInstance().call(this, "我封装的Dialog", "标题", new DialogUtils.OnClickRightButtonListen() {
                     @Override
                     public void onClick(Dialog dialog) {
                         MyToast.showToast(AlertDialogDemo.this, "您点击了确认");

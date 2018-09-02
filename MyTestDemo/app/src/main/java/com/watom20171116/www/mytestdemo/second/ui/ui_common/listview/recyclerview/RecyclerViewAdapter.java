@@ -1,4 +1,4 @@
-package com.watom20171116.www.mytestdemo.second.logic.LogicTest.moduleAdapter;
+package com.watom20171116.www.mytestdemo.second.ui.ui_common.listview.recyclerview;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.watom20171116.www.mytestdemo.R;
-import com.watom20171116.www.mytestdemo.second.logic.LogicTest.RecyclerViewTestActivity;
 
 import java.util.ArrayList;
 

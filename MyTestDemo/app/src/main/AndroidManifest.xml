@@ -72,7 +72,7 @@
         <activity android:name=".second.ui.ui_common.component.timepicker.TimePickerActivity" />
         <activity android:name=".second.logic.kernel_module.barcode.BarCodeTestActivity" />
         <activity android:name=".second.nettys.okhttp.OkHttpTestActivity" />
-        <activity android:name=".second.logic.LogicTest.RecyclerViewTestActivity">
+        <activity android:name=".second.ui.ui_common.listview.recyclerview.RecyclerViewTestActivity">
 
         </activity>
         <activity android:name=".second.logic.LogicTest.CountDownTimerActivity" />
