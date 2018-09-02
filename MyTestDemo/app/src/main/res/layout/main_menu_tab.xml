@@ -4,7 +4,7 @@
     android:layout_height="wrap_content">
 
     <RadioGroup
-        android:id="@+id/first_menu_group"
+        android:id="@+id/radiogroup_bottom_menu"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
@@ -13,7 +13,7 @@
         android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/main_bt_6"
+            android:id="@+id/radiobutton_01"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -28,7 +28,7 @@
             android:textSize="11sp" />
 
         <RadioButton
-            android:id="@+id/main_bt_1"
+            android:id="@+id/radiobutton_02"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -37,13 +37,26 @@
             android:drawableTop="@drawable/selector_kefu_menu_tab"
             android:gravity="center"
             android:tag="10001"
-            android:text="通讯录"
+            android:text="视频"
             android:textColor="@drawable/selector_text_color"
             android:textSize="11sp" />
 
 
         <RadioButton
-            android:id="@+id/main_bt_2"
+            android:id="@+id/radiobutton_03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_yongdian_menu_tab"
+            android:gravity="center"
+            android:tag="10002"
+            android:text="聊天"
+            android:textColor="@drawable/selector_text_color"
+            android:textSize="11sp" />
+        <RadioButton
+            android:id="@+id/radiobutton_04"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -57,7 +70,7 @@
             android:textSize="11sp" />
 
         <RadioButton
-            android:id="@+id/main_bt_3"
+            android:id="@+id/radiobutton_05"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

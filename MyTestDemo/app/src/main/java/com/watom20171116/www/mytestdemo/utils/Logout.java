@@ -13,42 +13,42 @@ public class Logout {
 
     /**
      * log  debug
-     * @param tag
-     * @param msg
+     * @param key 输入参数名
+     * @param valueOrMsg 输出结果
      */
-    public static void d(String tag,String msg) {
+    public static void d(String key,String valueOrMsg) {
         if (Config.isPrintLog && Config.isDebug)
-            Log.d(mTag, tag+" ☚☚ ㊥ ☛☛ message:[" + msg+"]");
+            Log.d(mTag, key+" ☚☚ ㊥ ☛☛ message:[" + valueOrMsg+"]");
     }
 
     /**
      * log  info
-     * @param tag
-     * @param msg
+     * @param key 输入参数名
+     * @param valueOrMsg 输出结果
      */
-    public static void i(String tag,String msg) {
+    public static void i(String key,String valueOrMsg) {
         if (Config.isPrintLog && Config.isDebug)
-            Log.i(mTag, tag+" ☚☚ ☯ ☛☛ message:[" + msg+"]");
+            Log.i(mTag, key+" ☚☚ ☯ ☛☛ message:[" + valueOrMsg+"]");
     }
 
 
     /**
      * log  error
-     * @param tag
-     * @param msg
+     * @param key 输入参数名
+     * @param valueOrMsg 输出结果
      */
-    public static void e(String tag,String msg) {
+    public static void e(String key,String valueOrMsg) {
         if (Config.isPrintLog && Config.isDebug)
-            Log.e(mTag, tag+" ☚☚ ☹ ☛☛ message:[" + msg+"]");
+            Log.e(mTag, key+" ☚☚ ☹ ☛☛ message:[" + valueOrMsg+"]");
     }
 
     /**
      * log  v
-     * @param tag
-     * @param msg
+     * @param key 输入参数名
+     * @param valueOrMsg 输出结果
      */
-    public static void v(String tag,String msg) {
+    public static void v(String key,String valueOrMsg) {
         if (Config.isPrintLog && Config.isDebug)
-            Log.v(mTag, tag+" ☚☚ ♬ ☛☛ message:[" + msg+"]");
+            Log.v(mTag, key+" ☚☚ ♬ ☛☛ message:[" + valueOrMsg+"]");
     }
 }
