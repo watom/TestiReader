@@ -17,15 +17,10 @@ public class MyToast extends Toast {
 
     /**
      * 显示操作失败的提示
-     *
      * @param mContext 上下文
      * @param result   结果
      */
     public static void showFailToast(Context mContext, int result) {
-//		if (toast==null) {
-//
-//		}
-
         toast = Toast.makeText(mContext, "", Toast.LENGTH_LONG);
         toast.setGravity(Gravity.CENTER, 0, 0);
         if (result == -3) {
@@ -33,15 +28,14 @@ public class MyToast extends Toast {
         } else if (result == -2) {
             toast.setText("访问超时");
         } else {
-            //	toast.setText(R.string.common_operatefail);
+            toast.setText("系统临时维护，请稍候尝试!\\n给您带来的不便敬请谅解!");
         }
         toast.show();
     }
 
     /**
-     * 显示提示信息——通过id
-     *
-     * @param mContext
+     * 显示提示信息--通过id
+     * @param mContext 上下文
      * @param id       字符串id
      */
     public static void showToast(Context mContext, int id) {
@@ -52,14 +46,12 @@ public class MyToast extends Toast {
     }
 
     /**
-     * 显示提示信息——通过字符串
-     *
-     * @param mContext
+     * 显示提示信息--通过字符串
+     * @param mContext 上下文
      * @param content  字符串
      */
     public static void showToast(Context mContext, String content) {
-        /**-----------------解决返回为空----------**/
-        if (null != content && !"".equals(content)) {
+        if (!Util.isEmpty(content)) {
             toast = Toast.makeText(mContext, content, Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER, 0, 0);
             toast.setText(content);

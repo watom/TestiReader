@@ -45,12 +45,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SampleActivity" />
         <activity android:name=".second.ui.ui_common.listview.XListView.ListViewActivity" />
         <activity android:name=".second.ui.ui_common.listview.XListView.XListViewActivity" />
         <activity android:name=".second.ui.ui_common.listview.XListView.XScrollViewActivity" />
         <activity android:name=".second.ui.ui_common.ModuleTest.UIModuleTestActivity" />
         <activity android:name=".second.ui.ui_common.listview.ListViewCategory" />
-        <activity android:name=".SampleActivity" />
         <activity android:name=".second.ui.ui_common.UIActivity" />
         <activity android:name=".second.logic.ModuleTestActivity" />
         <activity android:name=".second.logic.LogicTest.DateTestActivity" />
@@ -72,9 +72,7 @@
         <activity android:name=".second.ui.ui_common.component.timepicker.TimePickerActivity" />
         <activity android:name=".second.logic.kernel_module.barcode.BarCodeTestActivity" />
         <activity android:name=".second.nettys.okhttp.OkHttpTestActivity" />
-        <activity android:name=".second.ui.ui_common.listview.recyclerview.RecyclerViewTestActivity">
-
-        </activity>
+        <activity android:name=".second.ui.ui_common.listview.recyclerview.RecyclerViewTestActivity"/>
         <activity android:name=".second.logic.LogicTest.CountDownTimerActivity" />
         <activity android:name=".second.logic.kernel_module.barcode.activity.BarCodeMainActivity" />
         <activity android:name=".second.logic.kernel_module.barcode.activity.CaptureActivity" />
@@ -88,6 +86,7 @@
         <activity android:name=".second.ui.ui_common.bitmap.BitmapActivity" />
         <activity android:name=".second.nettys.NettysActivity" />
         <activity android:name=".second.nettys.comnettys.HttpURLConnectionActivity" />
+        <activity android:name=".second.function.FunctionImpActivity" />
         <activity android:name=".h5.H5HomeActivity" />
         <activity android:name=".h5.h5_dome.H5Demo01" />
         <activity android:name=".second.ui.ui_common.animation.ADPageActivity">

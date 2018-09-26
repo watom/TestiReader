@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.watom20171116.www.mytestdemo.h5.H5HomeActivity;
+import com.watom20171116.www.mytestdemo.second.function.FunctionImpActivity;
 import com.watom20171116.www.mytestdemo.second.logic.ModuleTestActivity;
 import com.watom20171116.www.mytestdemo.second.nettys.NettysActivity;
 import com.watom20171116.www.mytestdemo.second.ui.ui_common.UIActivity;
@@ -37,7 +38,7 @@ public class SampleActivity extends AppCompatActivity implements AdapterView.OnI
     }
 
     private void initData(ListView view) {
-        content = new String[]{"UI设计", "Data处理", "网络请求", "设计模式", "架构设计", "Jar/逻辑测试模块","H5"};
+        content = new String[]{"UI设计", "Data处理", "网络请求", "设计模式", "架构设计", "逻辑单元","功能模块","H5"};
         ArrayAdapter stringArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, content);
         view.setAdapter(stringArrayAdapter);
         view.setOnItemClickListener(this);
@@ -60,8 +61,11 @@ public class SampleActivity extends AppCompatActivity implements AdapterView.OnI
                 break;
             case "架构设计":
                 break;
-            case "Jar/逻辑测试模块":
+            case "逻辑单元":
                 startActivity(new Intent(this, ModuleTestActivity.class));
+                break;
+            case "功能模块":
+                startActivity(new Intent(this, FunctionImpActivity.class));
                 break;
             case "H5":
                 startActivity(new Intent(this, H5HomeActivity.class));
