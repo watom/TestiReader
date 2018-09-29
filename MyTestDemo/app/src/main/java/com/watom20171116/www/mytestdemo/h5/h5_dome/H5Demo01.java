@@ -1,17 +1,13 @@
 package com.watom20171116.www.mytestdemo.h5.h5_dome;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
+import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.Toast;
 
 import com.watom20171116.www.mytestdemo.R;
@@ -30,7 +26,9 @@ public class H5Demo01 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.h5_layout_webview);
         webView01 = (WebView) findViewById(R.id.where_webview);
-        initWebView("file:///android_asset/js01.html");//注意路径不同
+//        initWebView("file:///android_asset/js01.html");//注意路径不同
+        initWebView("file:///android_asset/html/test01.html");//注意路径不同
+//        initWebView("file:///android_asset/html/activityList.html");//注意路径不同
     }
 
     /**
@@ -48,7 +46,6 @@ public class H5Demo01 extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         //加载网络上的HTML文件
         webView01.loadUrl(url);
-
         webView01.addJavascriptInterface(new AndroidAndJSInterface(), "Android");
 
         webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
@@ -71,12 +68,12 @@ public class H5Demo01 extends AppCompatActivity {
          *  2、LayoutAlgorithm.SINGLE_COLUMN:适应屏幕，内容将自动缩放
          */
         webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
-
     }
 
     class AndroidAndJSInterface {
+        @JavascriptInterface
         public void showToast() {
-            Toast.makeText(H5Demo01.this, "", Toast.LENGTH_LONG).show();
+            Toast.makeText(H5Demo01.this, "JS代码调用原生代码", Toast.LENGTH_LONG).show();
         }
     }
 
