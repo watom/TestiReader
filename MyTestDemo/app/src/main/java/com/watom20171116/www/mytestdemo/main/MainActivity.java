@@ -17,11 +17,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 import com.watom20171116.www.mytestdemo.R;
 import com.watom20171116.www.mytestdemo.SampleActivity;
+import com.watom20171116.www.mytestdemo.h5.h5_dome.WebViewPlatform;
 import com.watom20171116.www.mytestdemo.main.main_fragement.DiscoveryFragment;
 import com.watom20171116.www.mytestdemo.main.main_fragement.LookFragment;
 import com.watom20171116.www.mytestdemo.main.main_fragement.NewsFragment;
@@ -29,6 +32,7 @@ import com.watom20171116.www.mytestdemo.main.main_fragement.TalkFragment;
 import com.watom20171116.www.mytestdemo.main.main_fragement.WodeFragment;
 import com.watom20171116.www.mytestdemo.second.function.kernel_module.share.ShareTestActivity;
 import com.watom20171116.www.mytestdemo.utils.Logout;
+import com.watom20171116.www.mytestdemo.utils.WebViewTool;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, RadioGroup.OnCheckedChangeListener {
@@ -84,6 +88,14 @@ public class MainActivity extends AppCompatActivity
         });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        ImageView geekPortrait = (ImageView)findViewById(R.id.Geek_Portrait);
+        TextView geekName = (TextView)findViewById(R.id.Geek_Name);
+        TextView geekMotto = (TextView)findViewById(R.id.Geek_Motto);
+
+//        geekPortrait.setImageResource(R.drawable.lunbotu_01);
+//        geekName.setText("王海涛");
+//        geekMotto.setText("灵感会稍纵即逝，机会也会相伴而来，请抓住它！");
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
@@ -131,17 +143,27 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_studio) {
             startActivity(new Intent(MainActivity.this, SampleActivity.class));
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_source) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_stream) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_voyage) {
+
+        } else if (id == R.id.nav_earth) {
+
+        } else if (id == R.id.nav_interest) {
+            startActivity(new Intent(MainActivity.this, WebViewPlatform.class));
+        } else if (id == R.id.nav_favorite) {
 
         } else if (id == R.id.nav_share) {
             new ShareTestActivity(this).showShare();
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_secure) {
+
+        } else if (id == R.id.nav_tools) {
+
+        } else if (id == R.id.nav_settings) {
 
         }
 

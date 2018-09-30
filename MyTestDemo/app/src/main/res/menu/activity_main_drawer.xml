@@ -3,19 +3,19 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_studio"
             android:icon="@drawable/ic_menu_book"
             android:title="studio" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_source"
             android:icon="@drawable/ic_menu_sourcecode"
             android:title="source" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_stream"
             android:icon="@drawable/ic_menu_video"
             android:title="stream" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_voyage"
             android:icon="@drawable/ic_menu_steamship"
             android:title="voyage" />
         <item
@@ -39,7 +39,7 @@
                 android:icon="@drawable/ic_menu_share"
                 android:title="Share" />
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/nav_secure"
                 android:icon="@drawable/ic_menu_security"
                 android:title="安全中心" />
             <item

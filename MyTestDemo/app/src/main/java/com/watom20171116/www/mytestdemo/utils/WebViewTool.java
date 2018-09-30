@@ -23,18 +23,11 @@ public class WebViewTool {
     private Context context;
     private PackageManager packageManager;
 
-    private WebViewTool() {
-    }
-
-    private static final WebViewTool WEB_VIEW = new WebViewTool();
-
-    public static WebViewTool getInstance() {
-        return WEB_VIEW;
-    }
-
-
-    public void init(Context context, WebView webViewLayout, String url) {
+    public WebViewTool(Context context) {
         this.context=context;
+    }
+
+    public void init(WebView webViewLayout, String url) {
         // 加载网页 H5,html,自定义浏览器，或者网页播放器
         // webView = new WebViewTool(this);
         // 设置WebSettings支持javascript

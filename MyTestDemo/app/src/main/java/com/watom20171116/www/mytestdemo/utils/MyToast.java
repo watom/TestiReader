@@ -61,6 +61,4 @@ public class MyToast extends Toast {
 
         }
     }
-
-
 }
