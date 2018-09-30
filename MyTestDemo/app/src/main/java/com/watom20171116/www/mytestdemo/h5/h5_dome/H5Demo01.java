@@ -37,7 +37,7 @@ public class H5Demo01 extends AppCompatActivity {
     @SuppressLint("JavascriptInterface")
     private void initWebView(String url) {
         // 加载网页 H5,html,自定义浏览器，或者网页播放器
-        // webView01 = new WebView(this);
+        // webView01 = new WebViewTool(this);
         // 设置WebSettings支持javascript
         webSettings = webView01.getSettings();
         //在本地浏览器的页面里面还有别的页面时，也会调用webview，而不会再次调用浏览器

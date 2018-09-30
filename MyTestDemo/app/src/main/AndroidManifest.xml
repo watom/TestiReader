@@ -70,14 +70,14 @@
         <activity android:name=".second.ui.ui_common.tabActivity.tabActivityTabHost.TabActivityTabHost" />
         <activity android:name=".second.ui.ui_common.tabActivity.tabFragmentActivity.TabFragmentActivity" />
         <activity android:name=".second.ui.ui_common.component.timepicker.TimePickerActivity" />
-        <activity android:name=".second.logic.kernel_module.barcode.BarCodeTestActivity" />
+        <activity android:name=".second.function.kernel_module.barcode.BarCodeTestActivity" />
         <activity android:name=".second.nettys.okhttp.OkHttpTestActivity" />
         <activity android:name=".second.ui.ui_common.listview.recyclerview.RecyclerViewTestActivity"/>
         <activity android:name=".second.logic.LogicTest.CountDownTimerActivity" />
-        <activity android:name=".second.logic.kernel_module.barcode.activity.BarCodeMainActivity" />
-        <activity android:name=".second.logic.kernel_module.barcode.activity.CaptureActivity" />
-        <activity android:name=".second.logic.kernel_module.map.MapTestActivity" />
-        <activity android:name=".second.logic.kernel_module.config.LocalPropertiesActivity" />
+        <activity android:name=".second.function.kernel_module.barcode.activity.BarCodeMainActivity" />
+        <activity android:name=".second.function.kernel_module.barcode.activity.CaptureActivity" />
+        <activity android:name=".second.function.kernel_module.map.MapTestActivity" />
+        <activity android:name=".second.logic.config.LocalPropertiesActivity" />
         <activity android:name=".second.ui.ui_common.tabActivity.viewpage.MyViewPagerActivity" />
         <activity android:name=".second.ui.ui_common.viewpager.ViewPagerActivity" />
         <activity android:name=".second.ui.ui_common.viewpager.baseviewpager.BaseViewPagerActivity" />
@@ -146,14 +146,14 @@
             android:value="11bf0f3a364e10f1be29bc8bcf21dc91" />
         <!--没有此activity在微信分享后回调会检查是否有此activity,没有将会报错。-->
         <activity
-            android:name=".second.logic.kernel_module.share.wxapi.WXEntryActivity"
+            android:name=".second.function.kernel_module.share.wxapi.WXEntryActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <!--这两个类的路径是需要根据本地项目的包名来确定，如果路径错误，您将收不到微信和易信客户端的操作回调，因此ShareSDK也无法给予您操作回调。-->
         <activity
-            android:name=".second.logic.kernel_module.share.yxapi.YXEntryActivity"
+            android:name=".second.function.kernel_module.share.yxapi.YXEntryActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:screenOrientation="portrait"

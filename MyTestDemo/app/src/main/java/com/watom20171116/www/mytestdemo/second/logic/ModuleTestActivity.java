@@ -13,11 +13,8 @@ import com.watom20171116.www.mytestdemo.R;
 import com.watom20171116.www.mytestdemo.second.logic.LogicTest.CountDownTimerActivity;
 import com.watom20171116.www.mytestdemo.second.logic.LogicTest.DateTestActivity;
 import com.watom20171116.www.mytestdemo.second.logic.LogicTest.GsonApplyActivity;
-import com.watom20171116.www.mytestdemo.second.logic.LogicTest.PhotoAlbumActivity;
 import com.watom20171116.www.mytestdemo.second.logic.LogicTest.TimerTestActivity;
-import com.watom20171116.www.mytestdemo.second.logic.kernel_module.barcode.activity.BarCodeMainActivity;
-import com.watom20171116.www.mytestdemo.second.logic.kernel_module.config.LocalPropertiesActivity;
-import com.watom20171116.www.mytestdemo.second.logic.kernel_module.map.MapTestActivity;
+import com.watom20171116.www.mytestdemo.second.logic.config.LocalPropertiesActivity;
 
 /**
  * Created by Administrator on 2017/11/27 0027.

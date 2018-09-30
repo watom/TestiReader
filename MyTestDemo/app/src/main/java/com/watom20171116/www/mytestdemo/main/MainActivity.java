@@ -27,7 +27,7 @@ import com.watom20171116.www.mytestdemo.main.main_fragement.LookFragment;
 import com.watom20171116.www.mytestdemo.main.main_fragement.NewsFragment;
 import com.watom20171116.www.mytestdemo.main.main_fragement.TalkFragment;
 import com.watom20171116.www.mytestdemo.main.main_fragement.WodeFragment;
-import com.watom20171116.www.mytestdemo.second.logic.kernel_module.share.ShareTestActivity;
+import com.watom20171116.www.mytestdemo.second.function.kernel_module.share.ShareTestActivity;
 import com.watom20171116.www.mytestdemo.utils.Logout;
 
 public class MainActivity extends AppCompatActivity

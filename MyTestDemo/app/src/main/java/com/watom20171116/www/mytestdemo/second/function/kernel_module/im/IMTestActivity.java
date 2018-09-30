@@ -1,4 +1,4 @@
-package com.watom20171116.www.mytestdemo.second.function;
+package com.watom20171116.www.mytestdemo.second.function.kernel_module.im;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,11 +10,17 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.watom20171116.www.mytestdemo.R;
-import com.watom20171116.www.mytestdemo.second.logic.LogicTest.PhotoAlbumActivity;
 import com.watom20171116.www.mytestdemo.second.function.kernel_module.barcode.activity.BarCodeMainActivity;
+import com.watom20171116.www.mytestdemo.second.function.kernel_module.im.socket.SocketActivity;
+import com.watom20171116.www.mytestdemo.second.function.kernel_module.im.xmpp.XMPPActivity;
 import com.watom20171116.www.mytestdemo.second.function.kernel_module.map.MapTestActivity;
+import com.watom20171116.www.mytestdemo.second.logic.LogicTest.PhotoAlbumActivity;
 
-public class FunctionImpActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
+/**
+ * Created by Administrator on 2018/3/1 0001.
+ */
+
+public class IMTestActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
     private String[] content;
 
     @Override
@@ -26,7 +32,7 @@ public class FunctionImpActivity extends AppCompatActivity implements AdapterVie
     }
 
     private void initData(ListView view) {
-        content = new String[]{"二维码","相机相册","地图","及时通信","视频直播","移动支付","搜索引擎"};
+        content = new String[]{"xmpp","socket"};
         ArrayAdapter stringArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,content);
         view.setAdapter(stringArrayAdapter);
         view.setOnItemClickListener(this);
@@ -35,26 +41,11 @@ public class FunctionImpActivity extends AppCompatActivity implements AdapterVie
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         String s = content[position];
         switch (s){
-            case "二维码":
-                startActivity(new Intent(this, BarCodeMainActivity.class));
+            case "xmpp":
+                startActivity(new Intent(this, XMPPActivity.class));
                 break;
-            case "地图":
-                startActivity(new Intent(this, MapTestActivity.class));
-                break;
-            case "相机相册":
-                startActivity(new Intent(this, PhotoAlbumActivity.class));
-                break;
-            case "及时通信":
-//                startActivity(new Intent(this, null));
-                break;
-            case "视频直播":
-//                startActivity(new Intent(this, null));
-                break;
-            case "移动支付":
-//                startActivity(new Intent(this, null));
-                break;
-            case "搜索引擎":
-//                startActivity(new Intent(this, null));
+            case "socket":
+                startActivity(new Intent(this, SocketActivity.class));
                 break;
         }
     }
