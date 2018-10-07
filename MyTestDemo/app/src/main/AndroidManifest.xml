@@ -36,15 +36,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".main.MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".main.WelcomeActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".main.MainActivity"  />
         <activity android:name=".SampleActivity" />
         <activity android:name=".second.ui.ui_common.listview.XListView.ListViewActivity" />
         <activity android:name=".second.ui.ui_common.listview.XListView.XListViewActivity" />
@@ -87,6 +87,7 @@
         <activity android:name=".second.nettys.NettysActivity" />
         <activity android:name=".second.nettys.comnettys.HttpURLConnectionActivity" />
         <activity android:name=".second.function.FunctionImpActivity" />
+        <activity android:name=".second.function.kernel_module.speech_recognition.SpeechRecognitionActivity" />
         <activity android:name=".h5.H5HomeActivity" />
         <activity android:name=".h5.h5_dome.WebViewPlatform" />
         <activity android:name=".second.ui.ui_common.animation.ADPageActivity">

@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.watom20171116.www.mytestdemo.R;
+import com.watom20171116.www.mytestdemo.second.function.kernel_module.speech_recognition.SpeechRecognitionActivity;
 import com.watom20171116.www.mytestdemo.second.logic.LogicTest.PhotoAlbumActivity;
 import com.watom20171116.www.mytestdemo.second.function.kernel_module.barcode.activity.BarCodeMainActivity;
 import com.watom20171116.www.mytestdemo.second.function.kernel_module.map.MapTestActivity;
@@ -55,6 +56,8 @@ public class FunctionImpActivity extends AppCompatActivity implements AdapterVie
                 break;
             case "搜索引擎":
 //                startActivity(new Intent(this, null));
+            case "语音识别":
+                startActivity(new Intent(this, SpeechRecognitionActivity.class));
                 break;
         }
     }

@@ -14,9 +14,11 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -45,10 +47,11 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
         context = MainActivity.this;
         findViews();
-        setSupportActionBar(toolbar);
+//        setSupportActionBar(toolbar);
         setFloatingAndDrawe();
         initFragment();
 
@@ -88,9 +91,9 @@ public class MainActivity extends AppCompatActivity
         });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ImageView geekPortrait = (ImageView)findViewById(R.id.Geek_Portrait);
-        TextView geekName = (TextView)findViewById(R.id.Geek_Name);
-        TextView geekMotto = (TextView)findViewById(R.id.Geek_Motto);
+        ImageView geekPortrait = (ImageView) findViewById(R.id.Geek_Portrait);
+        TextView geekName = (TextView) findViewById(R.id.Geek_Name);
+        TextView geekMotto = (TextView) findViewById(R.id.Geek_Motto);
 
 //        geekPortrait.setImageResource(R.drawable.lunbotu_01);
 //        geekName.setText("王海涛");
@@ -111,7 +114,7 @@ public class MainActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            System.exit(0);
         }
     }
 
@@ -211,4 +214,31 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+//    @Override
+//    public boolean onKeyUp(int keyCode, KeyEvent event) {
+//        // return false 或者return true 都不会走onBackPressed了
+//        if (keyCode == KeyEvent.KEYCODE_BACK) {
+//            Logout.e("onKeyUp","111");
+//            return false;
+//        }
+//        Logout.e("onKeyUp","222");
+//        return false;
+//    }
+//
+//    /**
+//     * 目标做成点击一下：弹出对话框，连续点击两下：退出APP
+//     * @param keyCode
+//     * @param event
+//     * @return
+//     */
+//    @Override
+//    public boolean onKeyDown(int keyCode, KeyEvent event) {
+//        // 不拦截，如果这里拦截了，也不会走到onBackPressed方法了
+//        if (keyCode == KeyEvent.KEYCODE_BACK) {
+//            Logout.e("onKeyDown","111");
+//            return super.onKeyDown(keyCode, event);
+//        }
+//        Logout.e("onKeyDown","222");
+//        return false;
+//    }
 }
