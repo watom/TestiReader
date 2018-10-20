@@ -45,7 +45,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     //相当于getView绑定数据,根据位置得到对应的数据，然后绑定。
     @Override
     public void onBindViewHolder(RecyclerViewAdapter.ViewHolder holder, int position) {
-        //holder.itemRecyclerIvIcon.setImageDrawable(getDrawable(R.drawable.common_icon));//这里给item设置了一个固定的图片
+//        holder.itemRecyclerIvIcon.setImageDrawable(getDrawable(R.drawable.common_icon));//这里给item设置了一个固定的图片
         holder.itemRecyclerTvName.setText(mData.get(position));
     }
 

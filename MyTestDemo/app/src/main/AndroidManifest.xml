@@ -84,13 +84,19 @@
         <activity android:name=".second.ui.ui_common.viewpager.adsalternate.AdsAlternateActivity01" />
         <activity android:name=".second.ui.ui_common.viewpager.adsalternate.AdsAlternateActivity02" />
         <activity android:name=".second.ui.ui_common.bitmap.BitmapActivity" />
+        <activity android:name=".second.ui.ui_common.component.timepicker.DatePickerActivity" />
+        <activity android:name=".second.structure_design.StructureDesignActivity" />
+        <activity android:name=".common.base.BaseActivity" />
+        <activity android:name=".second.structure_design.mvp.TestView" />
         <activity android:name=".second.nettys.NettysActivity" />
         <activity android:name=".second.nettys.comnettys.HttpURLConnectionActivity" />
         <activity android:name=".second.function.FunctionImpActivity" />
         <activity android:name=".second.function.kernel_module.speech_recognition.SpeechRecognitionActivity" />
         <activity android:name=".h5.H5HomeActivity" />
         <activity android:name=".h5.h5_dome.WebViewPlatform" />
-        <activity android:name=".second.ui.ui_common.animation.ADPageActivity">
+        <activity android:name=".second.ui.ui_common.animation.ADPageActivity"/>
+        <activity android:name=".second.ui.ui_common.component.imageview.ImageViewCategory" />
+        <activity android:name=".second.ui.ui_common.component.imageview.circle_imageview.CircleImageViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />

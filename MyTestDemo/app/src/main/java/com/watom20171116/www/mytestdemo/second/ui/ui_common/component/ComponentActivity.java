@@ -12,7 +12,9 @@ import android.widget.TextView;
 
 import com.watom20171116.www.mytestdemo.Config;
 import com.watom20171116.www.mytestdemo.R;
+import com.watom20171116.www.mytestdemo.second.ui.ui_common.component.imageview.ImageViewCategory;
 import com.watom20171116.www.mytestdemo.second.ui.ui_common.component.textview.SpannableStringActivity;
+import com.watom20171116.www.mytestdemo.second.ui.ui_common.component.timepicker.DatePickerActivity;
 import com.watom20171116.www.mytestdemo.second.ui.ui_common.component.timepicker.TimePickerActivity;
 import com.watom20171116.www.mytestdemo.utils.Logout;
 import com.watom20171116.www.mytestdemo.utils.MyToast;
@@ -31,7 +33,7 @@ public class ComponentActivity extends AppCompatActivity implements AdapterView.
     private GridView gridview;
     private ArrayList<Map<String, Object>> dataList;
     private int[] icon = {R.drawable.common_icon, R.drawable.common_icon};
-    private String[] label = {"ImageView", "TextView", "时间选择器"};
+    private String[] label = {"ImageView", "TextView", "时间选择器","日期选择器"};
 
     /**
      * 关键代码SimpleAdapter的参数
@@ -84,14 +86,17 @@ public class ComponentActivity extends AppCompatActivity implements AdapterView.
         Map<String, Object> itemAtPosition = (Map<String, Object>) parent.getItemAtPosition(position);
         String name = (String) itemAtPosition.get("label");
         switch (name) {
-            case "ImageView":
-
-                break;
             case "TextView":
                 startActivity(new Intent(this, SpannableStringActivity.class));
                 break;
+            case "ImageView":
+                startActivity(new Intent(this, ImageViewCategory.class));
+                break;
             case "时间选择器":
                 startActivity(new Intent(this, TimePickerActivity.class));
+                break;
+            case "日期选择器":
+                startActivity(new Intent(this, DatePickerActivity.class));
                 break;
             default:
                 MyToast.showToast(this, "暂时未开通\"" + name + "\"功能");

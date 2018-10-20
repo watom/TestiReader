@@ -14,7 +14,6 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -32,9 +31,10 @@ import com.watom20171116.www.mytestdemo.main.main_fragement.LookFragment;
 import com.watom20171116.www.mytestdemo.main.main_fragement.NewsFragment;
 import com.watom20171116.www.mytestdemo.main.main_fragement.TalkFragment;
 import com.watom20171116.www.mytestdemo.main.main_fragement.WodeFragment;
+import com.watom20171116.www.mytestdemo.second.structure_design.StructureDesignActivity;
+import com.watom20171116.www.mytestdemo.second.structure_design.mvp.TestView;
 import com.watom20171116.www.mytestdemo.second.function.kernel_module.share.ShareTestActivity;
 import com.watom20171116.www.mytestdemo.utils.Logout;
-import com.watom20171116.www.mytestdemo.utils.WebViewTool;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, RadioGroup.OnCheckedChangeListener {
@@ -153,7 +153,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_stream) {
 
         } else if (id == R.id.nav_voyage) {
-
+            startActivity(new Intent(this, StructureDesignActivity.class));
         } else if (id == R.id.nav_earth) {
 
         } else if (id == R.id.nav_interest) {
