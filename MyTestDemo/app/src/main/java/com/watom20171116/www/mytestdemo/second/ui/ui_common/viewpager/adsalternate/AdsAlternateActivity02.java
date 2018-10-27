@@ -2,6 +2,7 @@ package com.watom20171116.www.mytestdemo.second.ui.ui_common.viewpager.adsaltern
 
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -26,6 +27,8 @@ public class AdsAlternateActivity02 extends AppCompatActivity {
     private MyViewPager myviewpager;
     private TextView tvImageDesc;
     private LinearLayout roundPointGroup;
+
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

@@ -49,7 +49,7 @@ public class MyViewPager extends ViewPager {
     private void animStack(View left, View right, float offset, int offsetPixels) {
         if (right != null) {
 
-            // 从0-1页，offset:0`1
+            // 从0-1页，offset:0~1
             mScale = (1 - MIN_SCALE) * offset + MIN_SCALE;
 
             mTrans = -getWidth() - getPageMargin() + offsetPixels;

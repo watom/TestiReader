@@ -3,6 +3,7 @@ package com.watom20171116.www.mytestdemo.second.ui.ui_common.tabActivity.tabActi
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.widget.TabHost;
 
@@ -31,7 +32,6 @@ public class TabActivityTabHost extends TabActivity {
                 break;
         }
     }
-
 
     /**
      * 切换的是View布局文件

@@ -1,5 +1,6 @@
 package com.watom20171116.www.mytestdemo.second.ui.ui_common.dialog.popupwindow_dialog;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -10,6 +11,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.view.menu.MenuPopupHelper;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
@@ -25,6 +27,8 @@ import android.widget.PopupWindow;
 import com.watom20171116.www.mytestdemo.R;
 import com.watom20171116.www.mytestdemo.utils.Logout;
 import com.watom20171116.www.mytestdemo.utils.MyToast;
+
+import java.lang.reflect.Field;
 
 /**
  * Created by Administrator on 2017/12/28 0028.
@@ -47,7 +51,7 @@ public class PopupWindowDialog extends AppCompatActivity implements View.OnClick
         }
     };
     private PopupWindow popupWindow;
-    private View parentView, popupmenu, popupwindowAnimation;
+    private View parentView, popupmenu, popupwindowAnimation,btnPopupwindowCustomMenu;
     private boolean changceTrend = false;// true增加 false减少
 
     @Override
@@ -60,6 +64,7 @@ public class PopupWindowDialog extends AppCompatActivity implements View.OnClick
 
     private void initView() {
         popupmenu = findViewById(R.id.btn_popupmenu);
+        btnPopupwindowCustomMenu = findViewById(R.id.btn_popupwindow_custom_menu);
         popupwindowAnimation = findViewById(R.id.btn_popupwindow_animation);
     }
 
@@ -75,6 +80,9 @@ public class PopupWindowDialog extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.btn_popupwindow_animation:
                 showPopupWindowAnimation(popupwindowAnimation);
+                break;
+            case R.id.btn_popupwindow_custom_menu:
+                showCustomPopmenu(popupwindowAnimation);
                 break;
         }
     }
@@ -263,6 +271,47 @@ public class PopupWindowDialog extends AppCompatActivity implements View.OnClick
             }
         });
         MyToast.showToast(PopupWindowDialog.this, "根据按钮大小自适应位置，在按钮附近弹出");
+        popupMenu.show();
+    }
+    /**
+     * PopupMenu实现附近menu弹出
+     *
+     * @param view
+     */
+    @SuppressLint("RestrictedApi")
+    private void showCustomPopmenu(View view) {
+        PopupMenu popupMenu = new PopupMenu(this, view);
+        popupMenu.getMenuInflater().inflate(R.menu.menu_custom_item, popupMenu.getMenu());
+        int[] location = new int[2];
+        view.getLocationOnScreen(location);
+        Logout.e("控件的位置","X = "+location[0]+"、 Y = "+location[1]);
+
+        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.camera:
+                        MyToast.showToast(PopupWindowDialog.this, "Click camera");
+                        break;
+                    case R.id.gallery:
+                        MyToast.showToast(PopupWindowDialog.this, "Click gallery");
+                        break;
+                    case R.id.cancel:
+                        MyToast.showToast(PopupWindowDialog.this, "Click cancel");
+                        break;
+                }
+                return false;
+            }
+        });
+        //使用反射，强制显示菜单图标
+        try {
+            Field field = popupMenu.getClass().getDeclaredField("mPopup");
+            field.setAccessible(true);
+            MenuPopupHelper mHelper = (MenuPopupHelper) field.get(popupMenu);
+            mHelper.setForceShowIcon(true);
+        } catch (IllegalAccessException | NoSuchFieldException e) {
+            e.printStackTrace();
+        }
         popupMenu.show();
     }
 }
