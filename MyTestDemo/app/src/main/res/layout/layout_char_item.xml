@@ -28,7 +28,6 @@
             android:minHeight="20dp"
             android:padding="8dp"
             android:text="Hello World ~" />
-
     </RelativeLayout>
 
     <RelativeLayout

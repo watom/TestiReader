@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.watom20171116.www.mytestdemo.main.MainActivity">
+    tools:context="projects.main.MainActivity">
     <!--标题栏-->
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/background">
 
-    <com.watom20171116.www.mytestdemo.second.ui.widget.XListView
+    <com.watom20171116.www.myformer.second.ui.ui_common.listview.XListView.XListView
         android:id="@+id/list_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

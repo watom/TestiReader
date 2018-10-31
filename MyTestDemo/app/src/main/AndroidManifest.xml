@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.watom20171116.www.mytestdemo">
+    package="com.watom20171116.www.myformer">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <!--二维码需要的权限-->
@@ -36,7 +36,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".main.WelcomeActivity"
+            android:name="projects.main.WelcomeActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,7 +44,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".main.MainActivity"  />
+        <activity android:name="projects.main.MainActivity"  />
         <activity android:name=".SampleActivity" />
         <activity android:name=".second.ui.ui_common.listview.XListView.ListViewActivity" />
         <activity android:name=".second.ui.ui_common.listview.XListView.XListViewActivity" />
@@ -96,7 +96,8 @@
         <activity android:name=".h5.h5_dome.WebViewPlatform" />
         <activity android:name=".second.ui.ui_common.animation.ADPageActivity"/>
         <activity android:name=".second.ui.ui_common.component.imageview.ImageViewCategory" />
-        <activity android:name=".second.ui.ui_common.component.imageview.circle_imageview.CircleImageViewActivity">
+        <activity android:name=".second.ui.ui_common.component.imageview.circle_imageview.CircleImageViewActivity"/>
+        <activity android:name=".second.ui.ui_common.dialog.progressBar.ProgressBarActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
