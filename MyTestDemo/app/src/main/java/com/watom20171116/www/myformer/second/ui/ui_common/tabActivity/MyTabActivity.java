@@ -15,6 +15,7 @@ import com.watom20171116.www.myformer.R;
 import com.watom20171116.www.myformer.second.ui.ui_common.tabActivity.activityGroupGridView.ActivityGroupGridView;
 import com.watom20171116.www.myformer.second.ui.ui_common.tabActivity.tabActivityTabHost.TabActivityTabHost;
 import com.watom20171116.www.myformer.second.ui.ui_common.tabActivity.tabFragmentActivity.TabFragmentActivity;
+import com.watom20171116.www.myformer.second.ui.ui_common.tabActivity.tablayout.TabLayoutActivity;
 import com.watom20171116.www.myformer.second.ui.ui_common.tabActivity.viewpage.MyViewPagerActivity;
 
 /**
@@ -33,7 +34,7 @@ public class MyTabActivity extends AppCompatActivity implements AdapterView.OnIt
     }
 
     private void initData(ListView view) {
-        content = new String[]{"TabActivity+TabHost实现分页(不常试用)","ActivityGroup+GridView实现分页","FragmentActivity实现分页","ViewPager+Fragment实现滑动切换"};
+        content = new String[]{"TabActivity+TabHost实现分页(不常试用)","ActivityGroup+GridView实现分页","FragmentActivity实现分页","ViewPager+Fragment实现滑动切换","TabLayout"};
         ArrayAdapter stringArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,content);
         view.setAdapter(stringArrayAdapter);
         view.setOnItemClickListener(this);
@@ -54,6 +55,9 @@ public class MyTabActivity extends AppCompatActivity implements AdapterView.OnIt
                 break;
             case "ViewPager+Fragment实现滑动切换":
                 startActivity(new Intent(this, MyViewPagerActivity.class));
+                break;
+            case "TabLayout":
+                startActivity(new Intent(this, TabLayoutActivity.class));
                 break;
         }
     }

@@ -13,6 +13,7 @@ import com.watom20171116.www.myformer.R;
 import com.watom20171116.www.myformer.second.ui.ui_common.viewpager.adsalternate.AdsAlternateActivity01;
 import com.watom20171116.www.myformer.second.ui.ui_common.viewpager.adsalternate.AdsAlternateActivity02;
 import com.watom20171116.www.myformer.second.ui.ui_common.viewpager.baseviewpager.BaseViewPagerActivity;
+import com.watom20171116.www.myformer.second.ui.ui_common.viewpager.baseviewpager.ViewPagerTitleStripActivity;
 
 /**
  * Created by Administrator on 2018/3/6 0006.
@@ -30,7 +31,7 @@ public class ViewPagerActivity extends AppCompatActivity implements AdapterView.
     }
 
     private void initData(ListView view) {
-        content = new String[]{"简单的ViewPager","广告轮播-1","广告轮播-2"};
+        content = new String[]{"简单的ViewPager","简单的ViewPager带标题栏","广告轮播-1","广告轮播-2"};
         ArrayAdapter stringArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,content);
         view.setAdapter(stringArrayAdapter);
         view.setOnItemClickListener(this);
@@ -42,6 +43,9 @@ public class ViewPagerActivity extends AppCompatActivity implements AdapterView.
         switch (s){
             case "简单的ViewPager":
                 startActivity(new Intent(this, BaseViewPagerActivity.class));
+                break;
+            case "简单的ViewPager带标题栏":
+                startActivity(new Intent(this, ViewPagerTitleStripActivity.class));
                 break;
             case "广告轮播-1":
                 startActivity(new Intent(this, AdsAlternateActivity01.class));

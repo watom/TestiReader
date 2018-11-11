@@ -3,6 +3,7 @@ package com.watom20171116.www.myformer.second.ui.ui_common.viewpager.baseviewpag
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.PagerTitleStrip;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
@@ -11,26 +12,33 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.watom20171116.www.myformer.R;
-import projects.main.MainActivity;
 
 /**
- * 最基本的ViewPager
- * Created by Administrator on 2018/3/6 0006.
+ * 最基本的ViewPager+带标签title
+ * 标签的方式：
+ * PagerTabStrip： 带有下划线
+ * PagerTitleStrip： 不带下划线
+ * TabLayout：5.0后推出
+ * 说明：带标题栏的ViewPager和最基本的的区别就是重写这个getPageTitle方法
+ * 参考：https://blog.csdn.net/weixin_39251617/article/details/79399592
  */
 
-public class BaseViewPagerActivity extends AppCompatActivity {
+public class ViewPagerTitleStripActivity extends AppCompatActivity {
     private ViewPager baseViewpager;
+    private PagerTitleStrip pagerTitleStrip;
+    private String[] pagerTitle={"标题一","标题二","标题三","标题四"};
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_base_viewpager);
+        setContentView(R.layout.activity_viewpager_title);
         findViews();
         baseViewpager.setAdapter(new BaseViewpagerAdapter());
     }
 
     private void findViews() {
         baseViewpager = (ViewPager)findViewById( R.id.base_viewpager );
+        pagerTitleStrip = (PagerTitleStrip)findViewById( R.id.viewpager_title );
     }
 
     class BaseViewpagerAdapter extends PagerAdapter{
@@ -66,7 +74,7 @@ public class BaseViewPagerActivity extends AppCompatActivity {
         @Override
         public Object instantiateItem(ViewGroup container, int position) {
             // 准备显示的数据，一个简单的TextView
-            TextView tv = new TextView(BaseViewPagerActivity.this);
+            TextView tv = new TextView(ViewPagerTitleStripActivity.this);
             tv.setGravity(Gravity.CENTER);
             tv.setTextSize(20);
             tv.setText("我是" + position + "号页面");
@@ -88,6 +96,16 @@ public class BaseViewPagerActivity extends AppCompatActivity {
         @Override
         public void destroyItem(ViewGroup container, int position, Object object) {
             container.removeView((View) object);
+        }
+
+        /**
+         * 带标题栏的ViewPager和最基本的的区别就是重写这个getPageTitle方法，从这个方法中获取每个页面的标题栏
+         * @param position
+         * @return
+         */
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return pagerTitle[position];
         }
     }
 
