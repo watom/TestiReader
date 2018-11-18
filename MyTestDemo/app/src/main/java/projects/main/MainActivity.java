@@ -23,17 +23,17 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-import com.watom20171116.www.myformer.R;
-import com.watom20171116.www.myformer.SampleActivity;
-import com.watom20171116.www.myformer.h5.h5_dome.WebViewPlatform;
+import com.haitao.www.myformer.R;
+import com.haitao.www.myformer.SampleActivity;
+import com.haitao.www.myformer.h5.h5_dome.WebViewPlatform;
 import projects.main.main_fragement.DiscoveryFragment;
 import projects.main.main_fragement.LookFragment;
 import projects.main.main_fragement.NewsFragment;
 import projects.main.main_fragement.TalkFragment;
 import projects.main.main_fragement.WodeFragment;
-import com.watom20171116.www.myformer.second.structure_design.StructureDesignActivity;
-import com.watom20171116.www.myformer.second.function.kernel_module.share.ShareTestActivity;
-import com.watom20171116.www.myformer.utils.Logout;
+import com.haitao.www.myformer.second.structure_design.StructureDesignActivity;
+import com.haitao.www.myformer.second.function.kernel_module.share.ShareTestActivity;
+import com.haitao.www.myformer.utils.Lout;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, RadioGroup.OnCheckedChangeListener {
@@ -176,8 +176,8 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
-        Logout.e("group", "" + group.getCheckedRadioButtonId());
-        Logout.e("checkedId", "" + checkedId);
+        Lout.e("group", "" + group.getCheckedRadioButtonId());
+        Lout.e("checkedId", "" + checkedId);
         switch (group.getCheckedRadioButtonId()) {
             case R.id.radiobutton_01:
                 switchFragment(newsFragment);
@@ -217,10 +217,10 @@ public class MainActivity extends AppCompatActivity
 //    public boolean onKeyUp(int keyCode, KeyEvent event) {
 //        // return false 或者return true 都不会走onBackPressed了
 //        if (keyCode == KeyEvent.KEYCODE_BACK) {
-//            Logout.e("onKeyUp","111");
+//            Lout.e("onKeyUp","111");
 //            return false;
 //        }
-//        Logout.e("onKeyUp","222");
+//        Lout.e("onKeyUp","222");
 //        return false;
 //    }
 //
@@ -234,10 +234,10 @@ public class MainActivity extends AppCompatActivity
 //    public boolean onKeyDown(int keyCode, KeyEvent event) {
 //        // 不拦截，如果这里拦截了，也不会走到onBackPressed方法了
 //        if (keyCode == KeyEvent.KEYCODE_BACK) {
-//            Logout.e("onKeyDown","111");
+//            Lout.e("onKeyDown","111");
 //            return super.onKeyDown(keyCode, event);
 //        }
-//        Logout.e("onKeyDown","222");
+//        Lout.e("onKeyDown","222");
 //        return false;
 //    }
 }

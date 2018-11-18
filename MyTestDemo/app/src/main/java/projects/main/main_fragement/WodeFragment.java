@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.watom20171116.www.myformer.R;
+import com.haitao.www.myformer.R;
 
 /**
  * Created by watom_Thinkpad on 2018/9/1.

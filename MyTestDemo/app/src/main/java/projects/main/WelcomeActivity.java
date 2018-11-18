@@ -8,8 +8,8 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 
-import com.watom20171116.www.myformer.R;
-import com.watom20171116.www.myformer.utils.Logout;
+import com.haitao.www.myformer.R;
+import com.haitao.www.myformer.utils.Lout;
 
 public class WelcomeActivity extends AppCompatActivity {
     private View welcome;
@@ -34,18 +34,18 @@ public class WelcomeActivity extends AppCompatActivity {
         alphaAnimation.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
-                Logout.e("Start","strat");
+                Lout.e("Start","strat");
             }
 
             @Override
             public void onAnimationEnd(Animation animation) {
                 startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
-                Logout.e("End","End");
+                Lout.e("End","End");
             }
 
             @Override
             public void onAnimationRepeat(Animation animation) {
-                Logout.e("Repeat","Repeat");
+                Lout.e("Repeat","Repeat");
             }
         });
     }

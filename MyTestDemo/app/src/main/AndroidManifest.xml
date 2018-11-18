@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.watom20171116.www.myformer">
+    package="com.haitao.www.myformer">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <!--二维码需要的权限-->
@@ -193,6 +193,11 @@
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity android:name=".second.ui.ui_common.viewpager.baseviewpager.ViewPagerTitleStripActivity" />
-        <activity android:name=".second.ui.ui_common.tabActivity.tablayout.TabLayoutActivity" />
+        <activity android:name=".second.ui.ui_common.tabActivity.tablayout.TabLayoutActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".second.ui.ui_common.component.customassemblewidget.CustomAssembleWidgetActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
     </application>
 </manifest>

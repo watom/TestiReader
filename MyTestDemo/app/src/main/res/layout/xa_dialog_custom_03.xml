@@ -20,7 +20,7 @@
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
             android:layout_marginTop="15dp"
-            android:text="********"
+            android:text="提示内容"
             android:textColor="#0B0B0B"
             android:textSize="18sp" />
 
