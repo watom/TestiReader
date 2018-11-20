@@ -9,6 +9,7 @@ import com.haitao.www.myformer.Config;
  */
 
 public class Lout {
+    //需要完善的是自动获取类名
     private static String mTag= "wanghaitao";//自定义APP的Log识别名称
 
     /**

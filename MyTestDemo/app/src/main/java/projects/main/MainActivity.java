@@ -113,7 +113,8 @@ public class MainActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            System.exit(0);
+//            System.exit(0);//退出比较突兀，不推荐使用
+            moveTaskToBack(false);//退出界面比较柔和
         }
     }
 
@@ -240,4 +241,5 @@ public class MainActivity extends AppCompatActivity
 //        Lout.e("onKeyDown","222");
 //        return false;
 //    }
+
 }

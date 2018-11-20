@@ -37,14 +37,14 @@
         android:theme="@style/AppTheme">
         <activity
             android:name="projects.main.WelcomeActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="projects.main.MainActivity"  />
+        <activity android:name="projects.main.MainActivity" />
         <activity android:name=".SampleActivity" />
         <activity android:name=".second.ui.ui_common.listview.XListView.ListViewActivity" />
         <activity android:name=".second.ui.ui_common.listview.XListView.XListViewActivity" />
@@ -72,7 +72,7 @@
         <activity android:name=".second.ui.ui_common.component.timepicker.TimePickerActivity" />
         <activity android:name=".second.function.kernel_module.barcode.BarCodeTestActivity" />
         <activity android:name=".second.nettys.okhttp.OkHttpTestActivity" />
-        <activity android:name=".second.ui.ui_common.listview.recyclerview.RecyclerViewTestActivity"/>
+        <activity android:name=".second.ui.ui_common.listview.recyclerview.RecyclerViewTestActivity" />
         <activity android:name=".second.logic.LogicTest.CountDownTimerActivity" />
         <activity android:name=".second.function.kernel_module.barcode.activity.BarCodeMainActivity" />
         <activity android:name=".second.function.kernel_module.barcode.activity.CaptureActivity" />
@@ -94,14 +94,16 @@
         <activity android:name=".second.function.kernel_module.speech_recognition.SpeechRecognitionActivity" />
         <activity android:name=".h5.H5HomeActivity" />
         <activity android:name=".h5.h5_dome.WebViewPlatform" />
-        <activity android:name=".second.ui.ui_common.animation.ADPageActivity"/>
+        <activity android:name=".second.ui.ui_common.animation.ADPageActivity" />
         <activity android:name=".second.ui.ui_common.component.imageview.ImageViewCategory" />
-        <activity android:name=".second.ui.ui_common.component.imageview.circle_imageview.CircleImageViewActivity"/>
+        <activity android:name=".second.ui.ui_common.component.imageview.circle_imageview.CircleImageViewActivity" />
         <activity android:name=".second.ui.ui_common.dialog.progressBar.ProgressBarActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
                     android:host="www.sgcc.com.cn"
                     android:pathPrefix="/open_AD_page"
@@ -193,11 +195,13 @@
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity android:name=".second.ui.ui_common.viewpager.baseviewpager.ViewPagerTitleStripActivity" />
-        <activity android:name=".second.ui.ui_common.tabActivity.tablayout.TabLayoutActivity"
+        <activity
+            android:name=".second.ui.ui_common.tabActivity.tablayout.TabLayoutActivity"
             android:exported="false"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".second.ui.ui_common.component.customassemblewidget.CustomAssembleWidgetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".second.ui.ui_common.component.customassemblewidget.CustomAssembleWidgetActivity"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
     </application>
 </manifest>
