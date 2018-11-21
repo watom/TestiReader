@@ -26,18 +26,15 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:paddingTop="5dp"
-        android:text="点击跳过 剩余0秒"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
-    <TextView
+    <com.dk.view.patheffect.PathTextView
+        android:id="@+id/created_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_created_time"
-        android:textColor="@color/white"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
-        android:textSize="10sp"
-        android:textStyle="bold"/>
+        />
 </RelativeLayout>

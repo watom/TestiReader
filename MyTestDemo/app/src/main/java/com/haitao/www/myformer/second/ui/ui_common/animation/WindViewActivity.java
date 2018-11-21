@@ -10,8 +10,8 @@ import com.haitao.www.myformer.R;
 
 /**
  * 开源：https://github.com/AhmadNemati/WindView
- * Created by Administrator on 2018/4/10 0010.
- *
+ * 注意：还需要在build.gradle中添加 maven { url "https://jitpack.io" }
+ * Created by Administrator on 2018/11/21 0010.
  */
 
 public class WindViewActivity extends AppCompatActivity {

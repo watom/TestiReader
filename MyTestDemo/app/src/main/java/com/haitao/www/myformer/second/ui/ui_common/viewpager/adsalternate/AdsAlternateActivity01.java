@@ -117,6 +117,7 @@ public class AdsAlternateActivity01 extends AppCompatActivity{
         isRunning = false;
     };
 
+
     private void findViews() {
         myviewpager = (ViewPager)findViewById( R.id.myviewpager );
         tvImageDesc = (TextView)findViewById( R.id.tv_image_desc );
@@ -167,5 +168,6 @@ public class AdsAlternateActivity01 extends AppCompatActivity{
         }
 
     }
+
 
 }

@@ -36,7 +36,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="projects.main.WelcomeActivity"
+            android:name="projects.main.weclome.WelcomeActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
@@ -204,5 +204,6 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity android:name=".second.ui.ui_common.animation.WindViewActivity" />
+        <activity android:name=".second.ui.ui_common.dialog.popupwindow_dialog.BottomSheetTestActivity" />
     </application>
 </manifest>

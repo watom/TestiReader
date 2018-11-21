@@ -1,6 +1,7 @@
 package com.haitao.www.myformer.second.ui.ui_common.dialog.popupwindow_dialog;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
@@ -8,6 +9,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
+import android.support.design.widget.BottomSheetBehavior;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.view.menu.MenuPopupHelper;
 import android.support.v7.widget.PopupMenu;
@@ -47,7 +49,8 @@ public class PopupWindowDialog extends AppCompatActivity implements View.OnClick
         }
     };
     private PopupWindow popupWindow;
-    private View parentView, popupmenu, popupwindowAnimation,btnPopupwindowCustomMenu;
+    private View parentView, popupmenu, popupwindowAnimation, btnPopupwindowCustomMenu, btnBottomSheet;
+    private BottomSheetBehavior mBottomSheetBehavior;
     private boolean changceTrend = false;// true增加 false减少
 
     @Override
@@ -62,25 +65,8 @@ public class PopupWindowDialog extends AppCompatActivity implements View.OnClick
         popupmenu = findViewById(R.id.btn_popupmenu);
         btnPopupwindowCustomMenu = findViewById(R.id.btn_popupwindow_custom_menu);
         popupwindowAnimation = findViewById(R.id.btn_popupwindow_animation);
-    }
+        btnBottomSheet = findViewById(R.id.btn_BottomSheet);
 
-    @Override
-    public void onClick(View v) {
-        int id = v.getId();
-        switch (id) {
-            case R.id.btn_popupwindow:
-                showPopupWindow();
-                break;
-            case R.id.btn_popupmenu:
-                showPopmenu(popupmenu);
-                break;
-            case R.id.btn_popupwindow_animation:
-                showPopupWindowAnimation(popupwindowAnimation);
-                break;
-            case R.id.btn_popupwindow_custom_menu:
-                showCustomPopmenu(popupwindowAnimation);
-                break;
-        }
     }
 
     private void generallyChangeUI(final boolean changceTrend, final float startAlpha) {
@@ -116,13 +102,40 @@ public class PopupWindowDialog extends AppCompatActivity implements View.OnClick
                         msg.what = 1;
                         alpha += 0.01f;
                         msg.obj = alpha;
-                        if(alpha < 1.0f)  mHandler.sendMessage(msg);
+                        if (alpha < 1.0f) mHandler.sendMessage(msg);
                     }
                 }
             }
         }).start();
     }
 
+
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+        switch (id) {
+            case R.id.btn_popupwindow:
+                showPopupWindow();
+                break;
+            case R.id.btn_popupmenu:
+                showPopmenu(popupmenu);
+                break;
+            case R.id.btn_popupwindow_animation:
+                showPopupWindowAnimation(popupwindowAnimation);
+                break;
+            case R.id.btn_popupwindow_custom_menu:
+                showCustomPopmenu(popupwindowAnimation);
+                break;
+            case R.id.btn_BottomSheet:
+                showButtomSheet();
+                break;
+        }
+    }
+
+    private void showButtomSheet() {
+        //在BottomSheetTestActivity中详细介绍BottomSheet的使用
+        startActivity(new Intent(this, BottomSheetTestActivity.class));
+    }
 
     /**
      * 实现动画弹出
@@ -131,7 +144,7 @@ public class PopupWindowDialog extends AppCompatActivity implements View.OnClick
      */
     private void showPopupWindowAnimation(View view) {
         if (popupWindow != null && popupWindow.isShowing()) return;
-        generallyChangeUI(true,1.0f);
+        generallyChangeUI(true, 1.0f);
         View contentView = getLayoutInflater().inflate(R.layout.popupwindow_dialog_drawer_layout, null);
         popupWindow = new PopupWindow(contentView,
                 ViewGroup.LayoutParams.MATCH_PARENT,
@@ -145,7 +158,7 @@ public class PopupWindowDialog extends AppCompatActivity implements View.OnClick
 //      获得当前的父View的位置
         int[] location = new int[2];
         view.getLocationOnScreen(location);
-        Lout.e("控件的位置","X = "+location[0]+"、 Y = "+location[1]);
+        Lout.e("控件的位置", "X = " + location[0] + "、 Y = " + location[1]);
         popupWindow.showAtLocation(view, Gravity.LEFT | Gravity.BOTTOM, 0, -location[1]);
         //添加按键事件监听
         contentView.findViewById(R.id.camera).setOnClickListener(new View.OnClickListener() {
@@ -154,7 +167,7 @@ public class PopupWindowDialog extends AppCompatActivity implements View.OnClick
                 if (popupWindow != null && popupWindow.isShowing()) {
                     ToastUtils.showToast(PopupWindowDialog.this, "Click 相机");
                     popupWindow.dismiss();
-                    generallyChangeUI(false,0.5f);
+                    generallyChangeUI(false, 0.5f);
                 }
             }
         });
@@ -164,7 +177,7 @@ public class PopupWindowDialog extends AppCompatActivity implements View.OnClick
                 if (popupWindow != null && popupWindow.isShowing()) {
                     ToastUtils.showToast(PopupWindowDialog.this, "Click 相册");
                     popupWindow.dismiss();
-                    generallyChangeUI(false,0.5f);
+                    generallyChangeUI(false, 0.5f);
                 }
             }
         });
@@ -174,7 +187,7 @@ public class PopupWindowDialog extends AppCompatActivity implements View.OnClick
                 if (popupWindow != null && popupWindow.isShowing()) {
                     ToastUtils.showToast(PopupWindowDialog.this, "Click 保存");
                     popupWindow.dismiss();
-                    generallyChangeUI(false,0.5f);
+                    generallyChangeUI(false, 0.5f);
                 }
             }
         });
@@ -184,7 +197,7 @@ public class PopupWindowDialog extends AppCompatActivity implements View.OnClick
                 if (popupWindow != null && popupWindow.isShowing()) {
                     ToastUtils.showToast(PopupWindowDialog.this, "Click 取消");
                     popupWindow.dismiss();
-                    generallyChangeUI(false,0.5f);
+                    generallyChangeUI(false, 0.5f);
                 }
             }
         });
@@ -193,7 +206,7 @@ public class PopupWindowDialog extends AppCompatActivity implements View.OnClick
             @Override
             public void onDismiss() {
                 popupWindow.dismiss();
-                generallyChangeUI(false,0.5f);
+                generallyChangeUI(false, 0.5f);
             }
         });
     }
@@ -212,7 +225,7 @@ public class PopupWindowDialog extends AppCompatActivity implements View.OnClick
 //      popupWindow.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//设置一个透明背景
         int[] location = new int[2];
         parentView.getLocationOnScreen(location);
-        Lout.e("控件的位置","X = "+location[0]+"、 Y = "+location[1]);
+        Lout.e("控件的位置", "X = " + location[0] + "、 Y = " + location[1]);
         popupWindow.showAtLocation(parentView, Gravity.CENTER, 0, 0);
         popupWindow.setTouchable(true);
         popupWindow.getContentView().findViewById(R.id.sure_popupwindow).setOnTouchListener(new View.OnTouchListener() {
@@ -248,7 +261,7 @@ public class PopupWindowDialog extends AppCompatActivity implements View.OnClick
         popupMenu.getMenuInflater().inflate(R.menu.popupmenu, popupMenu.getMenu());
         int[] location = new int[2];
         view.getLocationOnScreen(location);
-        Lout.e("控件的位置","X = "+location[0]+"、 Y = "+location[1]);
+        Lout.e("控件的位置", "X = " + location[0] + "、 Y = " + location[1]);
         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
@@ -269,6 +282,7 @@ public class PopupWindowDialog extends AppCompatActivity implements View.OnClick
         ToastUtils.showToast(PopupWindowDialog.this, "根据按钮大小自适应位置，在按钮附近弹出");
         popupMenu.show();
     }
+
     /**
      * PopupMenu实现附近menu弹出
      *
@@ -280,7 +294,7 @@ public class PopupWindowDialog extends AppCompatActivity implements View.OnClick
         popupMenu.getMenuInflater().inflate(R.menu.menu_custom_item, popupMenu.getMenu());
         int[] location = new int[2];
         view.getLocationOnScreen(location);
-        Lout.e("控件的位置","X = "+location[0]+"、 Y = "+location[1]);
+        Lout.e("控件的位置", "X = " + location[0] + "、 Y = " + location[1]);
 
         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
