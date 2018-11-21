@@ -2,68 +2,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:orientation="vertical">
+    android:orientation="horizontal">
 
     <Button
         android:id="@+id/btn_popupwindow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:background="@drawable/selector_ispress_common"
-        android:onClick="onClick"
-        android:padding="10dp"
-        android:text="Activity的方法中直接调用Dialog"
-        android:textColor="@color/baise_white" />
+        style="@style/Button_Sample"
+        android:text="Activity的方法中直接调用Dialog" />
+
     <Button
         android:id="@+id/btn_popupmenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:background="@drawable/selector_ispress_common"
-        android:onClick="onClick"
-        android:padding="10dp"
-        android:text="按钮附近弹出popupmenu对话框"
-        android:textColor="@color/baise_white" />
+        style="@style/Button_Sample"
+        android:text="按钮附近弹出popupmenu对话框" />
+
     <Button
         android:id="@+id/btn_popupwindow_animation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:background="@drawable/selector_ispress_common"
-        android:onClick="onClick"
-        android:padding="10dp"
-        android:text="从底部弹出"
-        android:textColor="@color/baise_white" />
+        style="@style/Button_Sample"
+        android:text="从底部弹出" />
+
     <Button
         android:id="@+id/btn_popupwindow_custom_menu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:background="@drawable/selector_ispress_common"
-        android:onClick="onClick"
-        android:padding="10dp"
-        android:text="自定义menu菜单item"
-        android:textColor="@color/baise_white" />
+        style="@style/Button_Sample"
+        android:text="自定义menu菜单item" />
+
     <Button
-        android:id="@+id/btn_popupmenu_custom"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:background="@drawable/selector_ispress_common"
-        android:onClick="onClick"
-        android:padding="10dp"
-        android:text="自定义PopupMenu菜单"
-        android:textColor="@color/baise_white" />
+        android:id="@+id/btn_BottomSheet"
+        style="@style/Button_Sample"
+        android:text="原生BottomSheet" />
 
 </LinearLayout>

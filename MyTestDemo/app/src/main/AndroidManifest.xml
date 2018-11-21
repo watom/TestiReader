@@ -203,5 +203,6 @@
             android:name=".second.ui.ui_common.component.customassemblewidget.CustomAssembleWidgetActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
+        <activity android:name=".second.ui.ui_common.animation.WindViewActivity" />
     </application>
 </manifest>

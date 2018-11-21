@@ -36,7 +36,7 @@ public class WelcomeActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        mCountDownTimerUtils = new CountDownTimerUtils(tvSkip, 60000, 1000);
+        mCountDownTimerUtils = new CountDownTimerUtils(tvSkip, 5000, 1000);
         mCountDownTimerUtils.start();
         mCountDownTimerUtils.setCountDownListener(new CountDownTimerUtils.OnCountDownListener() {
             @Override
@@ -72,7 +72,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
     private void setAnimation() {
         AlphaAnimation alphaAnimation = new AlphaAnimation(0.5f, 1.0f);
-        alphaAnimation.setDuration(70000);
+        alphaAnimation.setDuration(3000);
         welcome.setAnimation(alphaAnimation);
         alphaAnimation.setAnimationListener(new Animation.AnimationListener() {
             @Override

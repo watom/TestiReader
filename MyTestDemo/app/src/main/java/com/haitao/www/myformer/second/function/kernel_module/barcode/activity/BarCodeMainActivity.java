@@ -55,7 +55,7 @@ public class BarCodeMainActivity extends AppCompatActivity {
                 String contentString = qrStrEditText.getText().toString();
                 if (!contentString.equals("")) {
                     //根据字符串生成二维码图片并显示在界面上，第二个参数为图片的大小（350*350）
-                    Bitmap qrCodeBitmap = EncodingUtils.createQRCode(contentString, 350, 350,
+                    Bitmap qrCodeBitmap = EncodingUtils.createQRCode(contentString, 450, 450,
                             mCheckBox.isChecked() ?
                                     BitmapFactory.decodeResource(getResources(), R.drawable.barcode_launcher_icon) :
                                     null);
