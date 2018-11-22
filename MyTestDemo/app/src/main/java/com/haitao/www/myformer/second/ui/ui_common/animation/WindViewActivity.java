@@ -18,7 +18,7 @@ public class WindViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wind_view);
+        setContentView(R.layout.activity_bottom_sheet_wind_main);
         initView();
     }
 
