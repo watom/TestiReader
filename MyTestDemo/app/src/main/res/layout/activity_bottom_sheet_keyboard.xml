@@ -13,5 +13,5 @@
     <include layout="@layout/layout_keyboard_main" />
 
     <!-- 关键：Bottom Sheet Content -->
-    <include layout="@layout/layout_bottom_sheet_keyboard_content" />
+    <include layout="@layout/layout_bottom_sheet_keyboard_edit" />
 </android.support.design.widget.CoordinatorLayout>

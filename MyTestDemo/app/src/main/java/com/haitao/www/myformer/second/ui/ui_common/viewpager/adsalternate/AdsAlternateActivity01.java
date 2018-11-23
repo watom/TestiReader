@@ -20,15 +20,15 @@ import java.util.ArrayList;
  * Created by Administrator on 2018/3/6 0006.
  */
 
-public class AdsAlternateActivity01 extends AppCompatActivity{
+public class AdsAlternateActivity01 extends AppCompatActivity {
 
     private ViewPager myviewpager;
     private TextView tvImageDesc;
     private LinearLayout roundPointGroup;
     // 图片资源ID
-    private final int[] imageIds = { R.drawable.lunbotu_00, R.drawable.lunbotu_01, R.drawable.lunbotu_02,R.drawable.lunbotu_03, R.drawable.lunbotu_04 };
+    private final int[] imageIds = {R.drawable.lunbotu_00, R.drawable.lunbotu_01, R.drawable.lunbotu_02, R.drawable.lunbotu_03, R.drawable.lunbotu_04};
     // 图片标题集合
-    private final String[] imageDes = { "经典家装设计","美女香车西安车展！", "新款宝马7系驾车上市", "城市车展美女香车", "上海天价车展女模" };
+    private final String[] imageDes = {"经典家装设计", "美女香车西安车展！", "新款宝马7系驾车上市", "城市车展美女香车", "上海天价车展女模"};
 
     private ArrayList<ImageView> imageList;
     protected int lastPosition;  //上一个页面的位置
@@ -45,7 +45,9 @@ public class AdsAlternateActivity01 extends AppCompatActivity{
             if (isRunning) {
                 handler.sendEmptyMessageDelayed(0, 3000);
             }
-        };
+        }
+
+        ;
     };
 
     @Override
@@ -58,7 +60,7 @@ public class AdsAlternateActivity01 extends AppCompatActivity{
     }
 
     private void initDate() {
-        imageList=new ArrayList<>();
+        imageList = new ArrayList<>();
         for (int i = 0; i < imageIds.length; i++) {
             // 初始化图片资源
             ImageView image = new ImageView(this);
@@ -83,7 +85,7 @@ public class AdsAlternateActivity01 extends AppCompatActivity{
 
         myviewpager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             /**
-             * 页面切换后调用
+             * 页面滑动完成后执行/调用此方法
              * position  新的页面位置
              * @param position
              */
@@ -100,11 +102,17 @@ public class AdsAlternateActivity01 extends AppCompatActivity{
                 lastPosition = position;
             }
 
+            /**
+             * 监听页面的状态
+             * @param state 0--静止 1--滑动  2--滑动完成
+             */
             @Override
-            public void onPageScrollStateChanged(int state) {} //当页面状态发生变化的时候，回调
+            public void onPageScrollStateChanged(int state) {
+            } //当页面状态发生变化的时候，回调
 
             @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {}  //页面正在滑动的时候，回调
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+            }  //页面正在滑动的时候，回调
         });
 
         isRunning = true;
@@ -115,13 +123,15 @@ public class AdsAlternateActivity01 extends AppCompatActivity{
     protected void onDestroy() {
         super.onDestroy();
         isRunning = false;
-    };
+    }
+
+    ;
 
 
     private void findViews() {
-        myviewpager = (ViewPager)findViewById( R.id.myviewpager );
-        tvImageDesc = (TextView)findViewById( R.id.tv_image_desc );
-        roundPointGroup = (LinearLayout)findViewById( R.id.round_point_group );
+        myviewpager = (ViewPager) findViewById(R.id.myviewpager);
+        tvImageDesc = (TextView) findViewById(R.id.tv_image_desc);
+        roundPointGroup = (LinearLayout) findViewById(R.id.round_point_group);
     }
 
 
