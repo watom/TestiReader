@@ -110,6 +110,12 @@ public class AdsAlternateActivity01 extends AppCompatActivity {
             public void onPageScrollStateChanged(int state) {
             } //当页面状态发生变化的时候，回调
 
+            /**
+             * position和当前页面index是一致的
+             * @param position position和当前页面index是一致的
+             * @param positionOffset   positionOffset是当前页面滑动比例，如果页面向右翻动，这个值不断变大，最后在趋近1的情况后突变为0。如果页面向左翻动，这个值不断变小，最后变为0。
+             * @param positionOffsetPixels  positionOffsetPixels是当前页面滑动像素，变化情况和positionOffset一致。
+             */
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
             }  //页面正在滑动的时候，回调

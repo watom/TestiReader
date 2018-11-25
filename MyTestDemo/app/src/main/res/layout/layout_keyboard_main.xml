@@ -35,4 +35,18 @@
             style="@style/Button_Sample"
             android:text="安全键盘" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_emoji_sample"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="--" />
+
+    <android.support.text.emoji.widget.EmojiAppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
 </LinearLayout>

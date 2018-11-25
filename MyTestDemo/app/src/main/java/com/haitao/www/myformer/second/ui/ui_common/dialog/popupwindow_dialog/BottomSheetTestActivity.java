@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.haitao.www.myformer.R;
 import com.haitao.www.myformer.second.ui.ui_common.tabActivity.tablayout.MyFragmentAdapter;
@@ -24,6 +25,7 @@ public class BottomSheetTestActivity extends AppCompatActivity implements View.O
     private Button btnQqKeyboard;
     private Button btnSougoKeyboard;
     private Button btnSecurityKeyboard;
+    private TextView tvEmojiSample;
     private LinearLayout roundPointGroup;
     private int lastPosition;
 
@@ -42,6 +44,7 @@ public class BottomSheetTestActivity extends AppCompatActivity implements View.O
         btnQqKeyboard = (Button) findViewById(R.id.btn_qq_keyboard);
         btnSougoKeyboard = (Button) findViewById(R.id.btn_sougo_keyboard);
         btnSecurityKeyboard = (Button) findViewById(R.id.btn_security_keyboard);
+        tvEmojiSample = (TextView) findViewById(R.id.tv_emoji_sample);
 
 
     }
@@ -49,6 +52,22 @@ public class BottomSheetTestActivity extends AppCompatActivity implements View.O
     private void initData() {
         //把这个底部菜单和一个BottomSheetBehavior关联起来
         bottomSheetBehavior = BottomSheetBehavior.from(bottomSheetLayout);
+
+        int unicodeJoy = 0x1F602;
+        String emojiString = getEmojiStringByUnicode(unicodeJoy);
+        tvEmojiSample.setText(emojiString);
+    }
+
+    /**
+     * 功能：将emoji表情显示到页面上
+     *
+     * 原理：通过emoji表情的通用Unicode编码就可以实现，直接使用Character.toChars()方法将unicode编码转换为一个char数组，
+     * 再将这个char数组转换成为字符串就可以直接操作了，系统会自动将其解析为表情图片，可以直接显示在textview组件当中，不需要我们做任何其他的事情。
+     * @param unicode emoji表情对应的unicode编码
+     * @return
+     */
+    private String getEmojiStringByUnicode(int unicode){
+        return new String(Character.toChars(unicode));
     }
 
     private void initEvent() {

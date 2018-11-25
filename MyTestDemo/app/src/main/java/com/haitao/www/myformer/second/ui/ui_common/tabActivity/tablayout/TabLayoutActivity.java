@@ -11,6 +11,7 @@ import com.haitao.www.myformer.R;
 /**
  * TabLayout使用
  * 参考： https://blog.csdn.net/weixin_39251617/article/details/79032641
+ * 今日头条分类效果：https://blog.csdn.net/qq_30000411/article/details/53340192
  */
 public class TabLayoutActivity extends AppCompatActivity {
     private String[] function = {"最基本的用法", "与ViewPager联合使用"};

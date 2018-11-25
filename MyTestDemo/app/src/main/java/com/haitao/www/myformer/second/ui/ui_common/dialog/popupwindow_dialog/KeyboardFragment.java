@@ -12,6 +12,12 @@ import android.widget.TextView;
 
 import com.haitao.www.myformer.R;
 
+/**
+ * emoji的Unicode编码
+ * 网站：Emoji Unicode Tables，该网站上面给出了每个emoji表情的图片,描述,Unicode编码的对照表,点击表中每一项emoji就可以得到这个表情对应的Unicode，
+ * 在java中的Unicode表示就是:”\ud83d\ude01”,该编码字符可以直接被Android的TextView和EditText控件识别成对应的emoji表情.
+ * https://apps.timwhitlock.info/emoji/tables/unicode
+ */
 public class KeyboardFragment extends Fragment {
     private static final String Arguments = "position";
     Activity activity;

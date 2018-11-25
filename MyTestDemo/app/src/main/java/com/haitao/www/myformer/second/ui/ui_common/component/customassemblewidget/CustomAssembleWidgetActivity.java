@@ -93,6 +93,7 @@ public class CustomAssembleWidgetActivity extends RelativeLayout {
         }
     }
 
+
     public void setTitleClickListener(OnClickListener onClickListener) {
         if (onClickListener != null) {
             titleBarLeftBtn.setOnClickListener(onClickListener);

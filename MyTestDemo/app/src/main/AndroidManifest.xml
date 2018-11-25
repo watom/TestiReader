@@ -199,10 +199,6 @@
             android:name=".second.ui.ui_common.tabActivity.tablayout.TabLayoutActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".second.ui.ui_common.component.customassemblewidget.CustomAssembleWidgetActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
         <activity android:name=".second.ui.ui_common.animation.WindViewActivity" />
         <activity android:name=".second.ui.ui_common.dialog.popupwindow_dialog.BottomSheetTestActivity" />
     </application>
