@@ -27,7 +27,6 @@
                 android:id="@+id/btn_set_mode_voice"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:layout_gravity="center_vertical"
                 android:layout_margin="8dp"
                 android:background="@drawable/chat_setmode_voice_btn"
                 android:visibility="visible" />
@@ -36,7 +35,6 @@
                 android:id="@+id/btn_set_mode_keyboard"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:layout_gravity="center_vertical"
                 android:layout_margin="8dp"
                 android:background="@drawable/chat_setmode_keyboard_btn"
                 android:visibility="gone" />

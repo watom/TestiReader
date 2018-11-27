@@ -14,7 +14,7 @@
     <com.haitao.www.myformer.second.ui.ui_common.component.customassemblewidget.CustomTitleBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:right_button_drawable="@drawable/delete"
+        app:right_button_drawable="@drawable/ic_delete"
         app:title_background_color="@color/darkcyan"
         app:title_text="你好"
         app:title_text_color="@color/red" />
