@@ -23,6 +23,7 @@ import projects.main.MainActivity;
 
 /**
  * 渐变动画和倒计时同时进行，倒计时多执行1秒
+ * 每次打开APP不同的背景
  */
 public class WelcomeActivity extends AppCompatActivity {
     private View welcome;
@@ -33,7 +34,10 @@ public class WelcomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //全屏
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //禁止黑屏
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON, WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_launcher_background);
 
         findViews();

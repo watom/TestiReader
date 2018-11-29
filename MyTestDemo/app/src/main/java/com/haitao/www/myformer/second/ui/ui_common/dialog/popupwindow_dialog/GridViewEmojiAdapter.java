@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.haitao.www.myformer.R;
@@ -70,13 +71,13 @@ public class GridViewEmojiAdapter extends BaseAdapter {
     }
 
     private void setViewData(ViewHolder holder, int position) {
-        if(emojiArray==null)return;
-        if (position < emojiArray.length-1) {
+        if (emojiArray == null) return;
+        if (position < emojiArray.length - 1) {
             String emjioUnicode = emojiArray[position];
             if (!Util.isEmpty(emjioUnicode)) {
                 holder.tv_emoji.setText(emjioUnicode);
             }
-        }else if(position == emojiArray.length-1) {
+        } else if (position == emojiArray.length - 1) {
             holder.tv_emoji.setBackgroundResource(R.drawable.delete);
         }
     }

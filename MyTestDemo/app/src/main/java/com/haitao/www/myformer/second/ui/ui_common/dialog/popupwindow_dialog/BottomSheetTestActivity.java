@@ -60,7 +60,6 @@ public class BottomSheetTestActivity extends AppCompatActivity implements View.O
 
     /**
      * 功能：将emoji表情显示到页面上
-     * <p>
      * 原理：通过emoji表情的通用Unicode编码就可以实现，直接使用Character.toChars()方法将unicode编码转换为一个char数组，
      * 再将这个char数组转换成为字符串就可以直接操作了，系统会自动将其解析为表情图片，可以直接显示在textview组件当中，不需要我们做任何其他的事情。
      *
