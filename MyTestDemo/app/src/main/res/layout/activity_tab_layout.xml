@@ -6,9 +6,9 @@
     android:orientation="vertical">
     <!--最基本的TabLayout-->
     <com.haitao.www.myformer.second.ui.ui_common.component.customassemblewidget.CustomDescribeTitle
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:describe_title="最基本的TabLayout" />
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:describe_title="最基本的TabLayout" />
 
     <android.support.design.widget.TabLayout
         android:id="@+id/tab_layout"

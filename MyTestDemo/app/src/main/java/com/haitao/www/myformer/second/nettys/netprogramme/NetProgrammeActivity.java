@@ -1,4 +1,4 @@
-package com.haitao.www.myformer.second.nettys;
+package com.haitao.www.myformer.second.nettys.netprogramme;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,17 +10,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.haitao.www.myformer.R;
-import com.haitao.www.myformer.second.nettys.comnettys.HttpURLConnectionActivity;
-import com.haitao.www.myformer.second.nettys.netprogramme.NetProgrammeActivity;
-import com.haitao.www.myformer.second.nettys.okhttp.OKhttpActivity;
-import com.haitao.www.myformer.second.nettys.okhttp.OkHttpTestActivity;
-import com.haitao.www.myformer.second.ui.ui_common.UIActivity;
 
-/**
- * Created by Administrator on 2018/7/9 0009.
- */
-
-public class NettysActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class NetProgrammeActivity extends AppCompatActivity  implements AdapterView.OnItemClickListener {
     private String[] content;
 
     @Override
@@ -32,7 +23,7 @@ public class NettysActivity extends AppCompatActivity implements AdapterView.OnI
     }
 
     private void initData(ListView view) {
-        content = new String[]{"网络编程","HttpURLConnection","OKhttp"};
+        content = new String[]{"网络基础","Socket","UDP","TCP"};
         ArrayAdapter stringArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, content);
         view.setAdapter(stringArrayAdapter);
         view.setOnItemClickListener(this);
@@ -42,14 +33,8 @@ public class NettysActivity extends AppCompatActivity implements AdapterView.OnI
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         String s = content[position];
         switch (s) {
-            case "网络编程":
-                startActivity(new Intent(this, NetProgrammeActivity.class));
-                break;
-            case "HttpURLConnection":
-                startActivity(new Intent(this, HttpURLConnectionActivity.class));
-                break;
-            case "OKhttp":
-                startActivity(new Intent(this, OkHttpTestActivity.class));
+            case "网络基础":
+                startActivity(new Intent(this, NetBaseActivity .class));
                 break;
         }
     }
