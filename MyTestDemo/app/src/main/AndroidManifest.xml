@@ -27,6 +27,9 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <!-- 短信验证登陆功能需要添加次权限来自动填充验证码，用不到可以去掉 -->
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
 
     <application
         android:allowBackup="true"
@@ -203,5 +206,6 @@
         <activity android:name=".second.ui.ui_common.dialog.popupwindow_dialog.BottomSheetTestActivity" />
         <activity android:name=".second.nettys.netprogramme.NetProgrammeActivity" />
         <activity android:name=".second.nettys.netprogramme.NetBaseActivity" />
+        <activity android:name=".second.function.kernel_module.speechvideo.SpeechVideoActivity" />
     </application>
 </manifest>

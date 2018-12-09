@@ -16,6 +16,7 @@ import android.view.inputmethod.InputMethodInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.view.inputmethod.InputMethodSubtype;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -38,6 +39,9 @@ public class BottomSheetTestActivity extends AppCompatActivity implements View.O
     private Button btnSecurityKeyboard;
     private TextView tvEmojiSample;
     private LinearLayout parentLayout;
+    private Button btn_set_mode_voice, btn_set_mode_keyboard_01, btn_smile, btn_set_mode_keyboard_02, btn_send, btn_more;
+    private LinearLayout btn_press_to_speak;
+    private EditText et_sendmessage;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -56,49 +60,30 @@ public class BottomSheetTestActivity extends AppCompatActivity implements View.O
         btnSougoKeyboard = (Button) findViewById(R.id.btn_sougo_keyboard);
         btnSecurityKeyboard = (Button) findViewById(R.id.btn_security_keyboard);
         tvEmojiSample = (TextView) findViewById(R.id.tv_emoji_sample);
+
     }
 
     private void initData() {
         //把这个底部菜单和一个BottomSheetBehavior关联起来
         bottomSheetBehavior = BottomSheetBehavior.from(bottomSheetLayout);
-        //通过BottomSheetBehavior控制bottom_sheet_layout布局的显示和隐藏
-        bottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
-            @Override
-            public void onStateChanged(@NonNull View bottomSheet, int newState) {
-                switch (newState){
-                    case BottomSheetBehavior.STATE_COLLAPSED:
-                        Log.e("Bottom Sheet Behaviour", "STATE_COLLAPSED");
-                        bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);//展开
-                        break;
-                    case BottomSheetBehavior.STATE_DRAGGING:
-                        Log.e("Bottom Sheet Behaviour", "STATE_DRAGGING");
-                        break;
-                    case BottomSheetBehavior.STATE_EXPANDED:
-                        Log.e("Bottom Sheet Behaviour", "STATE_EXPANDED");
-                        bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);//折叠
-                        break;
-                    case BottomSheetBehavior.STATE_HIDDEN:
-                        Log.e("Bottom Sheet Behaviour", "STATE_HIDDEN");
-                        break;
-                    case BottomSheetBehavior.STATE_SETTLING:
-                        Log.e("Bottom Sheet Behaviour", "STATE_SETTLING");
-                        bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);//隐藏
-                        break;
-
-                }
-            }
-
-            @Override
-            public void onSlide(@NonNull View bottomSheet, float slideOffset) {
-
-            }
-        });
-        //当为STATE_COLLAPSED（折叠）状态的时候bottom_sheet_layout残留的高度，默认为0px。
-        bottomSheetBehavior.setPeekHeight(66);
+        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
 
         int unicodeJoy = 0x1F639;
         String emojiString = getEmojiStringByUnicode(unicodeJoy);
         tvEmojiSample.setText(emojiString);
+    }
+
+    private int height;
+
+    private int getViewHeight(final View view) {
+        int viewHeight = 0;
+        view.post(new Runnable() {
+            @Override
+            public void run() {
+                height = view.getHeight();// 获取高度
+            }
+        });
+        return viewHeight = height;
     }
 
     /**
@@ -118,12 +103,29 @@ public class BottomSheetTestActivity extends AppCompatActivity implements View.O
         btnQqKeyboard.setOnClickListener(this);
         btnSougoKeyboard.setOnClickListener(this);
         btnSecurityKeyboard.setOnClickListener(this);
+        //通过BottomSheetBehavior控制bottom_sheet_layout布局的显示和隐藏
         bottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
             @Override
             public void onStateChanged(@NonNull View bottomSheet, int newState) {
-                if (newState == BottomSheetBehavior.STATE_EXPANDED) {
-
-                } else {
+                switch (newState) {
+                    case BottomSheetBehavior.STATE_COLLAPSED:
+                        Log.e("Bottom Sheet Behaviour", "STATE_COLLAPSED");
+//                        bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);//展开
+                        break;
+                    case BottomSheetBehavior.STATE_DRAGGING:
+                        Log.e("Bottom Sheet Behaviour", "STATE_DRAGGING");
+                        break;
+                    case BottomSheetBehavior.STATE_EXPANDED:
+                        Log.e("Bottom Sheet Behaviour", "STATE_EXPANDED");
+//                        bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);//折叠
+                        break;
+                    case BottomSheetBehavior.STATE_HIDDEN:
+                        Log.e("Bottom Sheet Behaviour", "STATE_HIDDEN");
+                        break;
+                    case BottomSheetBehavior.STATE_SETTLING:
+                        Log.e("Bottom Sheet Behaviour", "STATE_SETTLING");
+//                        bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);//隐藏
+                        break;
 
                 }
             }
@@ -145,6 +147,24 @@ public class BottomSheetTestActivity extends AppCompatActivity implements View.O
             ToastUtils.showToast(this, "搜狗键盘暂未开发");
         } else if (view == btnSecurityKeyboard) {
             ToastUtils.showToast(this, "安全键盘暂未开发");
+        } else if (view == btn_set_mode_voice) {
+            btn_set_mode_voice.setVisibility(View.GONE);
+            btn_set_mode_keyboard_01.setVisibility(View.VISIBLE);
+            et_sendmessage.setVisibility(View.GONE);
+            btn_press_to_speak.setVisibility(View.VISIBLE);
+        } else if (view == btn_set_mode_keyboard_01) {
+            btn_set_mode_voice.setVisibility(View.VISIBLE);
+            btn_set_mode_keyboard_01.setVisibility(View.GONE);
+            btn_press_to_speak.setVisibility(View.GONE);
+            et_sendmessage.setVisibility(View.VISIBLE);
+        } else if (view == btn_smile) {
+
+        } else if (view == btn_set_mode_keyboard_02) {
+
+        } else if (view == btn_send) {
+
+        } else if (view == btn_more) {
+
         }
     }
 
@@ -152,6 +172,15 @@ public class BottomSheetTestActivity extends AppCompatActivity implements View.O
         TabLayout keyboardTabLayout = findViewById(R.id.keyboard_tab_layout);
         ViewPager keyboardContainerViewpager = findViewById(R.id.keyboard_container_viewpager);
         LinearLayout roundPointGroup = findViewById(R.id.dot_viewgroup);
+        LinearLayout llInputEditor = findViewById(R.id.ll_input_editor);
+        btn_set_mode_voice = findViewById(R.id.btn_set_mode_voice);
+        btn_set_mode_keyboard_01 = findViewById(R.id.btn_set_mode_keyboard_01);
+        btn_press_to_speak = findViewById(R.id.btn_press_to_speak);
+        et_sendmessage = findViewById(R.id.et_sendmessage);
+        btn_smile = findViewById(R.id.btn_smile);
+        btn_set_mode_keyboard_02 = findViewById(R.id.btn_set_mode_keyboard_02);
+        btn_send = findViewById(R.id.btn_send);
+        btn_more = findViewById(R.id.btn_more);
 
         KeyboardFragmentAdapter keyboardFragmentAdapter = new KeyboardFragmentAdapter(getSupportFragmentManager(), this);
         keyboardContainerViewpager.setAdapter(keyboardFragmentAdapter);
@@ -162,29 +191,36 @@ public class BottomSheetTestActivity extends AppCompatActivity implements View.O
         //设置表情键盘的展开高度。根据软件键盘的高度来确定
 
         //设置表情键盘的高度
-        setKeyboardHeight();
-        getInputEditorHeight();
+        //当为STATE_COLLAPSED（折叠）状态的时候bottom_sheet_layout残留的高度，默认为0px。
+        int inputEditorHeight = getViewHeight(llInputEditor);
+        int softInputHeight = getSoftInputHeight();
+        bottomSheetBehavior.setPeekHeight(inputEditorHeight);
+        setKeyboardHeight(963);
     }
 
 
-    private void setKeyboardHeight() {
+    /**
+     * 由于会受到其他应用布局的影响，所以需在onResume中重新设置高度
+     */
+    @Override
+    protected void onResume() {
+        super.onResume();
+        initData();
+    }
+
+    private void setKeyboardHeight(int height) {
         LinearLayout llKeyboard = findViewById(R.id.ll_keyboard);
         LinearLayout.LayoutParams linearParams = (LinearLayout.LayoutParams) llKeyboard.getLayoutParams(); //取控件textView当前的布局参数
-        linearParams.height = 970;// 强制设成控件的高
+        linearParams.height = height;// 强制设成控件的高
         llKeyboard.setLayoutParams(linearParams); //使设置好的布局参数应用到控件
     }
 
-    /**
-     * 获取输入框的高
-     */
-    private void getInputEditorHeight() {
-        LinearLayout llInputEditor = findViewById(R.id.ll_input_editor);
-    }
 
     /**
      * 获取键盘的高
      */
-    private int getSoftInputHeight2() {
+    private int getSoftInputHeight() {
+        int realKeyboardHeight = 0;
         final TextView tv_input_attribute = (TextView) findViewById(R.id.tv_input_attribute);
         final View myLayout = getWindow().getDecorView();
         parentLayout.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
@@ -210,14 +246,20 @@ public class BottomSheetTestActivity extends AppCompatActivity implements View.O
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-                int realKeyboardHeight = heightDiff - statusBarHeight;
-                tv_input_attribute.setText("keyboard height(单位像素) = " + realKeyboardHeight);
+                height = heightDiff - statusBarHeight;
+                tv_input_attribute.append("keyboard height(单位像素) = " + height + "\r\n");
             }
         });
-        return 0;
+//        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+//        List<InputMethodInfo> inputMethodList = imm.getInputMethodList();
+//        for (int i = 0; i < inputMethodList.size(); i++) {
+//            tv_input_attribute.append(inputMethodList.get(i).toString());
+//        }
+        realKeyboardHeight = height;
+        return realKeyboardHeight;
     }
 
-    private int getSoftInputHeight() {
+    private int getSoftInputHeight2() {
         Rect r = new Rect();
         //decorView是window中的最顶层view，可以从window中通过getDecorView获取到decorView。
         //通过decorView获取到程序显示的区域，包括标题栏，但不包括状态栏。

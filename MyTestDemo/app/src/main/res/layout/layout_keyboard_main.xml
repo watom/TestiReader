@@ -51,8 +51,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:describe_title="软键盘的属性" />
+
     <TextView
+        android:id="@+id/tv_input_attribute"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/tv_input_attribute"/>
+        android:layout_height="match_parent" />
 </LinearLayout>

@@ -32,5 +32,7 @@
     <string name="btn_open_flashlight_text">打开手电筒</string>
     <string name="btn_close_flashlight_text">关闭手电筒</string>
     <string name="scan_fail">扫描失败!</string>
+    <!--音视频通话-->
+    <string name="agora_app_id">24385e0aaabc4bb6bec24a30a4ecc630</string>
 
 </resources>

@@ -54,7 +54,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
     private void initData() {
         //设置倒计时功能
-        mCountDownTimerUtils = new CountDownTimerUtils(tvSkip, 3000, 1000);
+        mCountDownTimerUtils = new CountDownTimerUtils(tvSkip, 2000, 1000);
         mCountDownTimerUtils.start();
         mCountDownTimerUtils.setCountDownListener(new CountDownTimerUtils.OnCountDownListener() {
             @Override
@@ -79,7 +79,7 @@ public class WelcomeActivity extends AppCompatActivity {
         createdTime.init("2017.11.16");
 
         createdTime.setPaintType(PathTextView.Type.MULTIPLY);
-        createdTime.setTextColor(Color.BLUE);
+        createdTime.setTextColor(Color.RED);
         createdTime.setTextSize(50);
         createdTime.setTextWeight(10);
         createdTime.setDuration(2000);

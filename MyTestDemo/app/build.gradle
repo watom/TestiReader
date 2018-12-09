@@ -67,4 +67,5 @@ dependencies {
     implementation files('libs/gson-2.2.4.jar')
     compile 'com.dk.view.patheffect:Library:0.1.1@aar'
     compile 'com.github.AhmadNemati:WindView:1.1.1'
+    implementation files('libs/agora-rtc-sdk.jar')
 }
