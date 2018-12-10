@@ -11,7 +11,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.alert_dialog_layout.runner.AndroidJUnitRunner"
         ndk {
-            abiFilters "armeabi", "armeabi-v7a", "x86_64", "x86"
+            abiFilters "armeabi", "armeabi-v7a", "armeabi-v7", "x86_64", "x86","arm64-v8a"
         }
     }
     buildTypes {
@@ -20,11 +20,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    sourceSets {
-        main {
-            res.srcDirs += "src/main/res-emotion"
-        }
-    }
+//    sourceSets {
+//        main {
+//            res.srcDirs += "src/main/res-emotion"
+//            jniLibs.srcDirs = ['../../../libs']
+//        }
+//    }
 }
 
 dependencies {
@@ -67,5 +68,5 @@ dependencies {
     implementation files('libs/gson-2.2.4.jar')
     compile 'com.dk.view.patheffect:Library:0.1.1@aar'
     compile 'com.github.AhmadNemati:WindView:1.1.1'
-    implementation files('libs/agora-rtc-sdk.jar')
+//    implementation files('libs/agora-rtc-sdk.jar')
 }
