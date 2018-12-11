@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom">
 
     <RadioGroup
         android:id="@+id/radiogroup_bottom_menu"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
         android:background="@drawable/buttom_tab_bg"
         android:gravity="center"
         android:orientation="horizontal">
@@ -21,7 +21,7 @@
             android:background="?android:attr/selectableItemBackground"
             android:button="@null"
             android:checked="true"
-            android:drawableTop="@drawable/selector_shouye_menu_tab"
+            android:drawableTop="@drawable/selector_tabmenu_browse"
             android:gravity="center"
             android:paddingBottom="4dp"
             android:paddingTop="8dp"
@@ -37,7 +37,7 @@
             android:layout_weight="1"
             android:background="?android:attr/selectableItemBackground"
             android:button="@null"
-            android:drawableTop="@drawable/selector_kefu_menu_tab"
+            android:drawableTop="@drawable/selector_tabmenu_momo"
             android:gravity="center"
             android:paddingBottom="4dp"
             android:paddingTop="8dp"
@@ -54,7 +54,7 @@
             android:layout_weight="1"
             android:background="?android:attr/selectableItemBackgroundBorderless"
             android:button="@null"
-            android:drawableTop="@drawable/selector_yongdian_menu_tab"
+            android:drawableTop="@drawable/selector_tabmenu_chat"
             android:gravity="center"
             android:paddingBottom="4dp"
             android:paddingTop="8dp"
@@ -70,7 +70,7 @@
             android:layout_weight="1"
             android:background="?android:attr/selectableItemBackground"
             android:button="@null"
-            android:drawableTop="@drawable/selector_yongdian_menu_tab"
+            android:drawableTop="@drawable/selector_tabmenu_discovery"
             android:gravity="center"
             android:paddingBottom="4dp"
             android:paddingTop="8dp"
@@ -86,7 +86,7 @@
             android:layout_weight="1"
             android:background="?android:attr/selectableItemBackground"
             android:button="@null"
-            android:drawableTop="@drawable/selector_wode_menu_tab"
+            android:drawableTop="@drawable/selector_tabmenu_mine"
             android:gravity="center"
             android:paddingBottom="4dp"
             android:paddingTop="8dp"
@@ -96,4 +96,4 @@
             android:textSize="11sp" />
     </RadioGroup>
 
-</RelativeLayout>
+</LinearLayout>

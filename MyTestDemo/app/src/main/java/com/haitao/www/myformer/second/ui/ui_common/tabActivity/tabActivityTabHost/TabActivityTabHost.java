@@ -3,7 +3,6 @@ package com.haitao.www.myformer.second.ui.ui_common.tabActivity.tabActivityTabHo
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.widget.TabHost;
 
@@ -52,8 +51,8 @@ public class TabActivityTabHost extends TabActivity {
      */
     private void secondWay() {
         TabHost tabHost = this.getTabHost();//获得当前TabActivity的TabHost
-        tabHost.addTab(tabHost.newTabSpec("gushi").setIndicator("故事",getResources().getDrawable(R.drawable.selector_shouye_menu_tab)).setContent(new Intent().setClass(this, AlertDialogDemo.class)));
-        tabHost.addTab(tabHost.newTabSpec("lishi").setIndicator("历史",getResources().getDrawable(R.drawable.selector_wode_menu_tab)).setContent(new Intent().setClass(this, PopupWindowDialog.class)));
+        tabHost.addTab(tabHost.newTabSpec("gushi").setIndicator("故事",getResources().getDrawable(R.drawable.selector_tabmenu_browse)).setContent(new Intent().setClass(this, AlertDialogDemo.class)));
+        tabHost.addTab(tabHost.newTabSpec("lishi").setIndicator("历史",getResources().getDrawable(R.drawable.selector_tabmenu_mine)).setContent(new Intent().setClass(this, PopupWindowDialog.class)));
         tabHost.setCurrentTab(1);
     }
 
