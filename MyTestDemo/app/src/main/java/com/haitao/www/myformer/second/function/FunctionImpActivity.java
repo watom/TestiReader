@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.haitao.www.myformer.R;
+import com.haitao.www.myformer.second.function.kernel_module.msgcode.MsgCodeActivity;
 import com.haitao.www.myformer.second.function.kernel_module.speech_recognition.SpeechRecognitionActivity;
 import com.haitao.www.myformer.second.function.kernel_module.speechvideo.SpeechVideoActivity;
 import com.haitao.www.myformer.second.logic.LogicTest.PhotoAlbumActivity;
@@ -28,7 +29,7 @@ public class FunctionImpActivity extends AppCompatActivity implements AdapterVie
     }
 
     private void initData(ListView view) {
-        content = new String[]{"二维码","相机相册","地图","及时通信","语音/视频直播","移动支付","搜索引擎"};
+        content = new String[]{"二维码","相机相册","地图","及时通信","语音/视频直播","移动支付","搜索引擎","短信验证码"};
         ArrayAdapter stringArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,content);
         view.setAdapter(stringArrayAdapter);
         view.setOnItemClickListener(this);
@@ -59,6 +60,9 @@ public class FunctionImpActivity extends AppCompatActivity implements AdapterVie
 //                startActivity(new Intent(this, null));
             case "语音识别":
                 startActivity(new Intent(this, SpeechRecognitionActivity.class));
+                break;
+            case "短信验证码":
+                startActivity(new Intent(this, MsgCodeActivity.class));
                 break;
         }
     }

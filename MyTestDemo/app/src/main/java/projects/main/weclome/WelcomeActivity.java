@@ -77,7 +77,6 @@ public class WelcomeActivity extends AppCompatActivity {
 
         //设置艺术字效果
         createdTime.init("2017.11.16");
-
         createdTime.setPaintType(PathTextView.Type.MULTIPLY);
         createdTime.setTextColor(Color.RED);
         createdTime.setTextSize(50);

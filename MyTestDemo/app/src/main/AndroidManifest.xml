@@ -31,6 +31,9 @@
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
 
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -153,10 +156,10 @@
         <!-- 填写您从Mob开发者后台中得到的Appkey和AppSecret -->
         <meta-data
             android:name="Mob-AppKey"
-            android:value="247303d390ef8" />
+            android:value="293edd8848c8a" />
         <meta-data
             android:name="Mob-AppSecret"
-            android:value="11bf0f3a364e10f1be29bc8bcf21dc91" />
+            android:value="ed553d3e7b272e401cffa2749a137c91" />
         <!--没有此activity在微信分享后回调会检查是否有此activity,没有将会报错。-->
         <activity
             android:name=".second.function.kernel_module.share.wxapi.WXEntryActivity"
@@ -207,5 +210,6 @@
         <activity android:name=".second.nettys.netprogramme.NetProgrammeActivity" />
         <activity android:name=".second.nettys.netprogramme.NetBaseActivity" />
         <activity android:name=".second.function.kernel_module.speechvideo.SpeechVideoActivity" />
+        <activity android:name=".second.function.kernel_module.msgcode.MsgCodeActivity" />
     </application>
 </manifest>

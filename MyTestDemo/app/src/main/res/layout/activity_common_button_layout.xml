@@ -5,10 +5,16 @@
     android:orientation="horizontal">
 
     <Button
-        android:id="@+id/btn_common"
+        android:id="@+id/btn_common_01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="封装对话框"/>
+
+    <Button
+        android:id="@+id/btn_common_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="从底部滑出"/>
 
 
 </LinearLayout>

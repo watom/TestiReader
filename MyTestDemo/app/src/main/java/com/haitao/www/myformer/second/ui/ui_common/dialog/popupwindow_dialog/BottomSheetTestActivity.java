@@ -64,24 +64,9 @@ public class BottomSheetTestActivity extends AppCompatActivity implements View.O
     }
 
     private void initData() {
-        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-
         int unicodeJoy = 0x1F639;
         String emojiString = getEmojiStringByUnicode(unicodeJoy);
         tvEmojiSample.setText(emojiString);
-    }
-
-    private int height;
-
-    private int getViewHeight(final View view) {
-        int viewHeight = 0;
-        view.post(new Runnable() {
-            @Override
-            public void run() {
-                height = view.getHeight();// 获取高度
-            }
-        });
-        return viewHeight = height;
     }
 
     /**
@@ -126,7 +111,6 @@ public class BottomSheetTestActivity extends AppCompatActivity implements View.O
                     case BottomSheetBehavior.STATE_SETTLING:
                         Log.e("Bottom Sheet Behaviour", "STATE_SETTLING");//移动测量中
                         break;
-
                 }
             }
 
@@ -213,6 +197,17 @@ public class BottomSheetTestActivity extends AppCompatActivity implements View.O
         setKeyboardHeight(963);
     }
 
+    private int height;
+    private int getViewHeight(final View view) {
+        int viewHeight = 0;
+        view.post(new Runnable() {
+            @Override
+            public void run() {
+                height = view.getHeight();// 获取高度
+            }
+        });
+        return viewHeight = height;
+    }
 
     /**
      * 由于会受到其他应用布局的影响，所以需在onResume中重新设置高度
