@@ -64,6 +64,7 @@ public class SettingActivity extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                 ToastUtils.showToast(SettingActivity.this,"您选择的颜色是"+colorValue);
+                dialog.dismiss();
             }
         });
     }

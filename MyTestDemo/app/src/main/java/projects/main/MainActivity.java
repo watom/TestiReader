@@ -35,6 +35,7 @@ import projects.main.main_fragement.WodeFragment;
 import com.haitao.www.myformer.second.structure_design.StructureDesignActivity;
 import com.haitao.www.myformer.second.function.kernel_module.share.ShareTestActivity;
 import com.haitao.www.myformer.utils.Lout;
+import com.haitao.www.myformer.utils.SystemBarTintManager;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, RadioGroup.OnCheckedChangeListener {
@@ -67,14 +68,16 @@ public class MainActivity extends AppCompatActivity
         radiobutton05 = (RadioButton) findViewById(R.id.radiobutton_05);
         radiogroupBottomMenu.setOnCheckedChangeListener(this);
 //        toolbar.
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {  //版本检测
-//            SystemBarTintManager tintManager = new SystemBarTintManager(this);
-//            tintManager.setStatusBarTintEnabled(true);  //更改状态栏设置
-//            setSupportActionBar(toolbar);  //将ToolBar设置成ActionBar
-//            tintManager.setStatusBarTintResource(android.R.color.holo_blue_bright);
-//        }
-//        getSupportActionBar().setHomeButtonEnabled(true); //设置返回键可用
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        SystemBarTintManager tintManager = new SystemBarTintManager(this);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {  //版本检测
+            tintManager.setStatusBarTintEnabled(true);  //更改状态栏设置
+            setSupportActionBar(toolbar);                //将ToolBar设置成ActionBar
+            tintManager.setStatusBarTintResource(android.R.color.holo_green_light);
+        }else {
+            getSupportActionBar().setHomeButtonEnabled(true); //设置返回键可用
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            tintManager.setStatusBarTintResource(android.R.color.holo_green_light);
+        }
 
     }
 
