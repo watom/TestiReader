@@ -3,6 +3,7 @@ package projects.main;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
+//        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
         context = MainActivity.this;
         findViews();
@@ -65,6 +66,16 @@ public class MainActivity extends AppCompatActivity
         radiobutton04 = (RadioButton) findViewById(R.id.radiobutton_04);
         radiobutton05 = (RadioButton) findViewById(R.id.radiobutton_05);
         radiogroupBottomMenu.setOnCheckedChangeListener(this);
+//        toolbar.
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {  //版本检测
+//            SystemBarTintManager tintManager = new SystemBarTintManager(this);
+//            tintManager.setStatusBarTintEnabled(true);  //更改状态栏设置
+//            setSupportActionBar(toolbar);  //将ToolBar设置成ActionBar
+//            tintManager.setStatusBarTintResource(android.R.color.holo_blue_bright);
+//        }
+//        getSupportActionBar().setHomeButtonEnabled(true); //设置返回键可用
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 
     private void initFragment() {
@@ -167,7 +178,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_tools) {
 
         } else if (id == R.id.nav_settings) {
-
+            startActivity(new Intent(this, SettingActivity.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

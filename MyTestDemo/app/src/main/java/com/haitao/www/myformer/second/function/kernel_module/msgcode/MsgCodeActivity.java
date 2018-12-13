@@ -29,7 +29,7 @@ import com.mob.MobSDK;
 import cn.smssdk.EventHandler;
 import cn.smssdk.SMSSDK;
 
-public class MsgCodeActivity extends AppCompatActivity implements View.OnClickListener, View.OnTouchListener {
+public class MsgCodeActivity extends AppCompatActivity implements View.OnClickListener{
     private EditText etPhoneNum;
     private TextView btnSendPhoneNum;
     private EditText etInputCode;
@@ -37,6 +37,7 @@ public class MsgCodeActivity extends AppCompatActivity implements View.OnClickLi
     private TextView tvCheckoutResult;
     private FrameLayout moveVideoView;
     private LinearLayout llMsgcode;
+    private int lastX, lastY;
 
     EventHandler eventHandler = new EventHandler() {
         public void afterEvent(int event, int result, Object data) {
@@ -100,7 +101,55 @@ public class MsgCodeActivity extends AppCompatActivity implements View.OnClickLi
 
         btnSendPhoneNum.setOnClickListener(this);
         btnSendCode.setOnClickListener(this);
-        moveVideoView.setOnTouchListener(this);
+        moveVideoView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent event) {
+                DisplayMetrics dm = getResources().getDisplayMetrics();
+                int screenWidth = dm.widthPixels;
+                int screenHeight = dm.heightPixels;
+                switch (event.getAction() & MotionEvent.ACTION_MASK) {
+                    case MotionEvent.ACTION_DOWN:
+                        //暂存按下的点的坐标
+                        lastX = (int) event.getRawX();
+                        lastY = (int) event.getRawY();
+                        break;
+
+                    case MotionEvent.ACTION_MOVE:
+                        //计算出需要移动的距离=最新的坐标-之前的坐标
+                        int offsetX = (int) event.getRawX() - lastX;
+                        int offsetY = (int) event.getRawY() - lastY;
+                        //视图的最新位置=视图本身的边框的位置坐标 +移动距离
+                        int l = view.getLeft() + offsetX;
+                        int t = view.getTop() + offsetY;
+                        int r = view.getRight() + offsetX;
+                        int b = view.getBottom() + offsetY;
+                        //下面判断移动是否超出屏幕
+                        if (l < 0) {
+                            l = 0;
+                            r = view.getWidth();
+                        }
+                        if (t < 0) {
+                            t = 0;
+                            b = view.getHeight();
+                        }
+                        if (r > screenWidth) {
+                            r = screenWidth;
+                            l = r - view.getWidth();
+                        }
+                        if (b > screenHeight) {
+                            b = screenHeight;
+                            t = b - view.getHeight();
+                        }
+                        view.layout(l, t, r, b);
+                        //记录最后一次移动的位置
+                        lastX = (int) event.getRawX();
+                        lastY = (int) event.getRawY();
+                        view.postInvalidate();
+                        break;
+                }
+                return true;
+            }
+        });
     }
 
     @Override
@@ -157,53 +206,5 @@ public class MsgCodeActivity extends AppCompatActivity implements View.OnClickLi
         SMSSDK.unregisterEventHandler(eventHandler);
     }
 
-    private int lastX, lastY;
 
-    @Override
-    public boolean onTouch(View view, MotionEvent event) {
-        DisplayMetrics dm = getResources().getDisplayMetrics();
-        int screenWidth = dm.widthPixels;
-        int screenHeight = dm.heightPixels;
-        switch (event.getAction() & MotionEvent.ACTION_MASK) {
-            case MotionEvent.ACTION_DOWN:
-                //暂存按下的点的坐标
-                lastX = (int) event.getRawX();
-                lastY = (int) event.getRawY();
-                break;
-
-            case MotionEvent.ACTION_MOVE:
-                //计算出需要移动的距离=最新的坐标-之前的坐标
-                int offsetX = (int) event.getRawX() - lastX;
-                int offsetY = (int) event.getRawY() - lastY;
-                //视图的最新位置=视图本身的边框的位置坐标 +移动距离
-                int l = view.getLeft() + offsetX;
-                int t = view.getTop() + offsetY;
-                int r = view.getRight() + offsetX;
-                int b = view.getBottom() + offsetY;
-                //下面判断移动是否超出屏幕
-                if (l < 0) {
-                    l = 0;
-                    r = view.getWidth();
-                }
-                if (t < 0) {
-                    t = 0;
-                    b = view.getHeight();
-                }
-                if (r > screenWidth) {
-                    r = screenWidth;
-                    l = r - view.getWidth();
-                }
-                if (b > screenHeight) {
-                    b = screenHeight;
-                    t = b - view.getHeight();
-                }
-                view.layout(l, t, r, b);
-                //记录最后一次移动的位置
-                lastX = (int) event.getRawX();
-                lastY = (int) event.getRawY();
-                view.postInvalidate();
-                break;
-        }
-        return true;
-    }
 }

@@ -19,7 +19,7 @@ import android.widget.TextView;
 import com.haitao.www.myformer.R;
 
 /**
- * 掌上电力标题栏
+ * 自定义标题栏
  *
  */
 public class TitleBar extends RelativeLayout {
