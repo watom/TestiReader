@@ -24,6 +24,8 @@
                 android:minHeight="?android:attr/actionBarSize"
                 android:background="?attr/colorPrimary"
                 android:fitsSystemWindows="true"
+                app:logo="@mipmap/ic_browse_press"
+                app:navigationIcon="@drawable/app_back"
                 app:popupTheme="@style/AppTheme.PopupOverlay" />
 
         </android.support.design.widget.AppBarLayout>

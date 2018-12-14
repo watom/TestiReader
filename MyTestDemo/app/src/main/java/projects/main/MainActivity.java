@@ -27,18 +27,19 @@ import android.widget.TextView;
 import com.haitao.www.myformer.R;
 import com.haitao.www.myformer.SampleActivity;
 import com.haitao.www.myformer.h5.h5_dome.WebViewPlatform;
+
 import projects.main.main_fragement.DiscoveryFragment;
 import projects.main.main_fragement.LookFragment;
 import projects.main.main_fragement.NewsFragment;
 import projects.main.main_fragement.TalkFragment;
 import projects.main.main_fragement.WodeFragment;
+
 import com.haitao.www.myformer.second.structure_design.StructureDesignActivity;
 import com.haitao.www.myformer.second.function.kernel_module.share.ShareTestActivity;
 import com.haitao.www.myformer.utils.Lout;
 import com.haitao.www.myformer.utils.SystemBarTintManager;
 
-public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, RadioGroup.OnCheckedChangeListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, RadioGroup.OnCheckedChangeListener {
     private Context context;
     private Toolbar toolbar;
     private RadioGroup radiogroupBottomMenu;
@@ -67,17 +68,14 @@ public class MainActivity extends AppCompatActivity
         radiobutton04 = (RadioButton) findViewById(R.id.radiobutton_04);
         radiobutton05 = (RadioButton) findViewById(R.id.radiobutton_05);
         radiogroupBottomMenu.setOnCheckedChangeListener(this);
-//        toolbar.
-        SystemBarTintManager tintManager = new SystemBarTintManager(this);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {  //版本检测
-            tintManager.setStatusBarTintEnabled(true);  //更改状态栏设置
-            setSupportActionBar(toolbar);                //将ToolBar设置成ActionBar
-            tintManager.setStatusBarTintResource(android.R.color.holo_green_light);
-        }else {
-            getSupportActionBar().setHomeButtonEnabled(true); //设置返回键可用
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            tintManager.setStatusBarTintResource(android.R.color.holo_green_light);
-        }
+        toolbar.setLogo(R.mipmap.ic_launcher);
+        toolbar.setTitle("开发集合");
+        toolbar.setSubtitle("专门用于测试Demo");
+        setSupportActionBar(toolbar);
+
+        // Navigation Icon 要設定在 setSupoortActionBar 才有作用
+        // 否則會出現 back button
+        toolbar.setNavigationIcon(R.drawable.ic_chat);
 
     }
 
@@ -98,8 +96,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
             }
         });
 
@@ -112,8 +109,7 @@ public class MainActivity extends AppCompatActivity
 //        geekName.setText("王海涛");
 //        geekMotto.setText("灵感会稍纵即逝，机会也会相伴而来，请抓住它！");
 
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
@@ -218,8 +214,7 @@ public class MainActivity extends AppCompatActivity
             //判断切换的Fragment是否已经添加过。
             if (!fragment.isAdded()) {
                 //如果没有添加，则先把当前的Fragment隐藏，把切换的Fragment添加上。
-                getSupportFragmentManager().beginTransaction().hide(currentFragment)
-                        .add(R.id.frame_layout, fragment).commit();
+                getSupportFragmentManager().beginTransaction().hide(currentFragment).add(R.id.frame_layout, fragment).commit();
             } else {
                 //如果已经添加过，则先把当前的Fragment隐藏，把切换的Fragment显示出来。
                 getSupportFragmentManager().beginTransaction().hide(currentFragment).show(fragment).commit();
