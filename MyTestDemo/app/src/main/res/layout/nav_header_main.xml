@@ -6,31 +6,28 @@
     android:background="@drawable/side_nav_bar"
     android:gravity="bottom"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:padding="10dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <ImageView
-        android:id="@+id/Geek_Portrait"
+        android:id="@+id/geek_portrait"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:src="@mipmap/ic_launcher" />
 
     <TextView
-        android:id="@+id/Geek_Name"
+        android:id="@+id/geek_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="王海涛"
+        android:paddingTop="10dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
-        android:id="@+id/Geek_Motto"
+        android:id="@+id/geek_motto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="灵感会稍纵即逝，机会也会相伴而来，请抓住它！" />
+        android:paddingTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/blue"/>
 
 </LinearLayout>

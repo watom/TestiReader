@@ -1,7 +1,9 @@
 package com.haitao.www.myformer.second.ui.ui_common.dialog.popupwindow_dialog;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Rect;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -9,6 +11,7 @@ import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewTreeObserver;
@@ -24,6 +27,7 @@ import android.widget.TextView;
 import com.haitao.www.myformer.R;
 import com.haitao.www.myformer.second.ui.ui_common.tabActivity.tablayout.MyFragmentAdapter;
 import com.haitao.www.myformer.utils.Lout;
+import com.haitao.www.myformer.utils.PrefUtils;
 import com.haitao.www.myformer.utils.ToastUtils;
 
 import java.lang.reflect.Field;
@@ -127,6 +131,7 @@ public class BottomSheetTestActivity extends AppCompatActivity implements View.O
             wechatKeyboard();//微信键盘的入口
         } else if (view == btnQqKeyboard) {
             ToastUtils.showToast(this, "qq键盘暂未开发");
+
         } else if (view == btnSougoKeyboard) {
             ToastUtils.showToast(this, "搜狗键盘暂未开发");
         } else if (view == btnSecurityKeyboard) {
@@ -268,6 +273,39 @@ public class BottomSheetTestActivity extends AppCompatActivity implements View.O
         realKeyboardHeight = height;
         return realKeyboardHeight;
     }
+
+//    private int getSupportSoftInputHeight() {
+//        Rect r = new Rect();
+//        this.getWindow().getDecorView().getWindowVisibleDisplayFrame(r);
+//        int screenHeight = mActivity.getWindow().getDecorView().getRootView().getHeight();
+//        int softInputHeight = screenHeight - r.bottom;
+//        if (Build.VERSION.SDK_INT >= 20) {
+//            // When SDK Level >= 20 (Android L),
+//            // the softInputHeight will contain the height of softButtonsBar (if has)
+//            softInputHeight = softInputHeight - getSoftButtonsBarHeight();
+//        }
+//        if (softInputHeight < 0) {
+//            Log.w("EmotionInputDetector", "Warning: value of softInputHeight is below zero!");
+//        }
+//        if (softInputHeight > 0) {
+//            PrefUtils.putInt("softInputHeight", softInputHeight,this);
+//        }
+//        return softInputHeight;
+//    }
+
+//    @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
+//    private int getSoftButtonsBarHeight() {
+//        DisplayMetrics metrics = new DisplayMetrics();
+//        this.getWindowManager().getDefaultDisplay().getMetrics(metrics);
+//        int usableHeight = metrics.heightPixels;
+//        this.getWindowManager().getDefaultDisplay().getRealMetrics(metrics);
+//        int realHeight = metrics.heightPixels;
+//        if (realHeight > usableHeight) {
+//            return realHeight - usableHeight;
+//        } else {
+//            return 0;
+//        }
+//    }
 
     private int getSoftInputHeight2() {
         Rect r = new Rect();

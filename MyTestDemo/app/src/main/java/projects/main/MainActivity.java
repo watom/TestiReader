@@ -3,6 +3,7 @@ package projects.main;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -15,9 +16,12 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.DisplayMetrics;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.RadioButton;
@@ -49,11 +53,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
+//      supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
         context = MainActivity.this;
         findViews();
-//        setSupportActionBar(toolbar);
+//      setSupportActionBar(toolbar);
         setFloatingAndDrawe();
         initFragment();
 
@@ -101,20 +105,26 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ImageView geekPortrait = (ImageView) findViewById(R.id.Geek_Portrait);
-        TextView geekName = (TextView) findViewById(R.id.Geek_Name);
-        TextView geekMotto = (TextView) findViewById(R.id.Geek_Motto);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
 
-//        geekPortrait.setImageResource(R.drawable.lunbotu_01);
-//        geekName.setText("王海涛");
-//        geekMotto.setText("灵感会稍纵即逝，机会也会相伴而来，请抓住它！");
+
+        //设置navigationView的样式
+        View headerView = navigationView.getHeaderView(0);
+        ImageView geekPortrait = (ImageView) headerView.findViewById(R.id.geek_portrait);
+        TextView geekName = (TextView) headerView.findViewById(R.id.geek_name);
+        TextView geekMotto = (TextView)headerView.findViewById(R.id.geek_motto);
+        geekPortrait.setImageResource(R.mipmap.ic_launcher);
+        geekName.setTypeface(Typeface.createFromAsset(this.getAssets(), "fonts/创艺简魏碑.TTF"));
+        geekName.setText("王海涛");
+        geekMotto.setTypeface(Typeface.createFromAsset(this.getAssets(), "fonts/华文行楷.ttf"));
+        geekMotto.setText("灵感会稍纵即逝，机会也会相伴而来，请抓住它！");
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
