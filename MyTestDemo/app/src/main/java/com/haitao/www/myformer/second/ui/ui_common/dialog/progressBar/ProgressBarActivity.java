@@ -1,6 +1,5 @@
 package com.haitao.www.myformer.second.ui.ui_common.dialog.progressBar;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -17,7 +16,7 @@ public class ProgressBarActivity extends AppCompatActivity implements AdapterVie
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.listview_activity);
+        setContentView(R.layout.activity_listview);
         ListView listview = findViewById(R.id.list_view_enter);
         initData(listview);
     }

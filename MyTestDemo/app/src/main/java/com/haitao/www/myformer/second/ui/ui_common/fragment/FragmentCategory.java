@@ -11,8 +11,6 @@ import android.widget.ListView;
 
 import com.haitao.www.myformer.R;
 import com.haitao.www.myformer.second.ui.ui_common.fragment.InitialFragment.ContainerFragment;
-import com.haitao.www.myformer.second.ui.ui_common.fragment.InitialFragment.LifeCycleFragment;
-import com.haitao.www.myformer.second.ui.ui_common.listview.XListView.ListViewActivity;
 
 /**
  * Created by Administrator on 2017/11/21 0021.
@@ -24,7 +22,7 @@ public class FragmentCategory extends AppCompatActivity implements AdapterView.O
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.listview_activity);
+        setContentView(R.layout.activity_listview);
         ListView listview = findViewById(R.id.list_view_enter);
         initData(listview);
     }

@@ -12,9 +12,7 @@ import android.widget.ListView;
 import com.haitao.www.myformer.R;
 import com.haitao.www.myformer.second.nettys.comnettys.HttpURLConnectionActivity;
 import com.haitao.www.myformer.second.nettys.netprogramme.NetProgrammeActivity;
-import com.haitao.www.myformer.second.nettys.okhttp.OKhttpActivity;
 import com.haitao.www.myformer.second.nettys.okhttp.OkHttpTestActivity;
-import com.haitao.www.myformer.second.ui.ui_common.UIActivity;
 
 /**
  * Created by Administrator on 2018/7/9 0009.
@@ -26,7 +24,7 @@ public class NettysActivity extends AppCompatActivity implements AdapterView.OnI
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.listview_activity);
+        setContentView(R.layout.activity_listview);
         ListView listview =  findViewById(R.id.list_view_enter);
         initData(listview);
     }

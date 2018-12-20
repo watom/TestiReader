@@ -26,7 +26,7 @@ public class ModuleTestActivity extends AppCompatActivity implements AdapterView
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.listview_activity);
+        setContentView(R.layout.activity_listview);
         ListView listview =  findViewById(R.id.list_view_enter);
         initData(listview);
     }

@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.text.SpannableString;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -16,7 +15,6 @@ import com.haitao.www.myformer.second.ui.ui_common.ModuleTest.measureScreen.Meas
 import com.haitao.www.myformer.second.ui.ui_common.animation.AnimationActivity;
 import com.haitao.www.myformer.second.ui.ui_common.bitmap.BitmapActivity;
 import com.haitao.www.myformer.second.ui.ui_common.component.ComponentActivity;
-import com.haitao.www.myformer.second.ui.ui_common.component.textview.SpannableStringActivity;
 import com.haitao.www.myformer.second.ui.ui_common.dialog.DialogActivity;
 import com.haitao.www.myformer.second.ui.ui_common.fragment.FragmentCategory;
 import com.haitao.www.myformer.second.ui.ui_common.listview.ListViewCategory;
@@ -33,7 +31,7 @@ public class UIActivity extends AppCompatActivity implements AdapterView.OnItemC
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.listview_activity);
+        setContentView(R.layout.activity_listview);
         ListView listview = (ListView) findViewById(R.id.list_view_enter);
         initData(listview);
     }

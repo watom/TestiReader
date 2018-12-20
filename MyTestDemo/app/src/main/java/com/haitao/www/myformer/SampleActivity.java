@@ -32,7 +32,7 @@ public class SampleActivity extends AppCompatActivity implements AdapterView.OnI
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.listview_activity);
+        setContentView(R.layout.activity_listview);
         ListView listview = (ListView) findViewById(R.id.list_view_enter);
         initData(listview);
     }

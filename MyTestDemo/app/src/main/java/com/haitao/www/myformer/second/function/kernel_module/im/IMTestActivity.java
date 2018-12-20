@@ -10,11 +10,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.haitao.www.myformer.R;
-import com.haitao.www.myformer.second.function.kernel_module.barcode.activity.BarCodeMainActivity;
 import com.haitao.www.myformer.second.function.kernel_module.im.socket.SocketActivity;
 import com.haitao.www.myformer.second.function.kernel_module.im.xmpp.XMPPActivity;
-import com.haitao.www.myformer.second.function.kernel_module.map.MapTestActivity;
-import com.haitao.www.myformer.second.logic.LogicTest.PhotoAlbumActivity;
 
 /**
  * Created by Administrator on 2018/3/1 0001.
@@ -26,7 +23,7 @@ public class IMTestActivity extends AppCompatActivity implements AdapterView.OnI
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.listview_activity);
+        setContentView(R.layout.activity_listview);
         ListView listview =  findViewById(R.id.list_view_enter);
         initData(listview);
     }

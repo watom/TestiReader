@@ -210,5 +210,7 @@
         <activity android:name=".second.function.kernel_module.speechvideo.SpeechVideoActivity" />
         <activity android:name=".second.function.kernel_module.msgcode.MsgCodeActivity" />
         <activity android:name="projects.main.SettingActivity" />
+        <activity android:name=".CourseActivity" />
+        <activity android:name="projects.main.activity.ShareAppActivity" />
     </application>
 </manifest>

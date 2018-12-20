@@ -4,7 +4,6 @@ package projects.main;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -16,22 +15,19 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.DisplayMetrics;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import com.haitao.www.myformer.CourseActivity;
 import com.haitao.www.myformer.R;
 import com.haitao.www.myformer.SampleActivity;
-import com.haitao.www.myformer.h5.h5_dome.WebViewPlatform;
 
+import projects.main.activity.ShareAppActivity;
 import projects.main.main_fragement.DiscoveryFragment;
 import projects.main.main_fragement.LookFragment;
 import projects.main.main_fragement.NewsFragment;
@@ -39,9 +35,7 @@ import projects.main.main_fragement.TalkFragment;
 import projects.main.main_fragement.WodeFragment;
 
 import com.haitao.www.myformer.second.structure_design.StructureDesignActivity;
-import com.haitao.www.myformer.second.function.kernel_module.share.ShareTestActivity;
 import com.haitao.www.myformer.utils.Lout;
-import com.haitao.www.myformer.utils.SystemBarTintManager;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, RadioGroup.OnCheckedChangeListener {
     private Context context;
@@ -177,11 +171,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.nav_earth) {
 
         } else if (id == R.id.nav_interest) {
-            startActivity(new Intent(MainActivity.this, WebViewPlatform.class));
+            startActivity(new Intent(MainActivity.this, CourseActivity.class));
         } else if (id == R.id.nav_favorite) {
 
         } else if (id == R.id.nav_share) {
-            new ShareTestActivity(this).showShare();
+            startActivity(new Intent(this, ShareAppActivity.class));
         } else if (id == R.id.nav_secure) {
 
         } else if (id == R.id.nav_tools) {

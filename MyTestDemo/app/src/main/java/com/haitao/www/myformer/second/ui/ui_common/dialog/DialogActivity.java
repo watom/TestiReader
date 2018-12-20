@@ -10,8 +10,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.haitao.www.myformer.R;
-import com.haitao.www.myformer.second.ui.ui_common.ModuleTest.timeLine.TimeLineActivity;
-import com.haitao.www.myformer.second.ui.ui_common.ModuleTest.excellayout.ExcelTablayout;
 import com.haitao.www.myformer.second.ui.ui_common.dialog.alert_dialog.AlertDialogDemo;
 import com.haitao.www.myformer.second.ui.ui_common.dialog.dialogUtils.DialogUtilsActivity;
 import com.haitao.www.myformer.second.ui.ui_common.dialog.dialogfragment.FragmentDialog;
@@ -28,7 +26,7 @@ public class DialogActivity extends AppCompatActivity implements AdapterView.OnI
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.listview_activity);
+        setContentView(R.layout.activity_listview);
         ListView listview =  findViewById(R.id.list_view_enter);
         initData(listview);
     }

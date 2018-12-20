@@ -33,6 +33,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.List;
+import java.util.regex.Pattern;
 
 public class Util {
 
@@ -42,9 +43,9 @@ public class Util {
     private static Toast mToast;
 
     /* Convert byte[] to hex string.这里我们可以将byte转换成int，然后利用Integer.toHexString(int)来转换成16进制字符串。
-            * @param src byte[] data
-    * @return hex string
-    */
+     * @param src byte[] data
+     * @return hex string
+     */
     public static String bytesToHexString(byte[] src) {
         StringBuilder stringBuilder = new StringBuilder("");
         if (src == null || src.length <= 0) {
@@ -412,17 +413,14 @@ public class Util {
         return null;
     }
 
-    public static final void showResultDialog(Context context, String msg,
-                                              String title) {
+    public static final void showResultDialog(Context context, String msg, String title) {
         if (msg == null) return;
         String rmsg = msg.replace(",", "\n");
         Log.d("Util", rmsg);
-        new AlertDialog.Builder(context).setTitle(title).setMessage(rmsg)
-                .setNegativeButton("知道了", null).create().show();
+        new AlertDialog.Builder(context).setTitle(title).setMessage(rmsg).setNegativeButton("知道了", null).create().show();
     }
 
-    public static final void showProgressDialog(Context context, String title,
-                                                String message) {
+    public static final void showProgressDialog(Context context, String title, String message) {
         dismissDialog();
         if (TextUtils.isEmpty(title)) {
             title = "请稍候";
@@ -433,12 +431,8 @@ public class Util {
         mProgressDialog = ProgressDialog.show(context, title, message);
     }
 
-    public static AlertDialog showConfirmCancelDialog(Context context,
-                                                      String title, String message,
-                                                      DialogInterface.OnClickListener posListener) {
-        AlertDialog dlg = new AlertDialog.Builder(context).setMessage(message)
-                .setPositiveButton("确认", posListener)
-                .setNegativeButton("取消", null).create();
+    public static AlertDialog showConfirmCancelDialog(Context context, String title, String message, DialogInterface.OnClickListener posListener) {
+        AlertDialog dlg = new AlertDialog.Builder(context).setMessage(message).setPositiveButton("确认", posListener).setNegativeButton("取消", null).create();
         dlg.setCanceledOnTouchOutside(false);
         dlg.show();
         return dlg;
@@ -458,8 +452,7 @@ public class Util {
      * @param message
      * @param logLevel 填d, w, e分别代表debug, warn, error; 默认是debug
      */
-    public static final void toastMessage(final Activity activity,
-                                          final String message, String logLevel) {
+    public static final void toastMessage(final Activity activity, final String message, String logLevel) {
         if ("w".equals(logLevel)) {
             Log.w("sdkDemo", message);
         } else if ("e".equals(logLevel)) {
@@ -488,8 +481,7 @@ public class Util {
      * @param message
      * @param logLevel 填d, w, e分别代表debug, warn, error; 默认是debug
      */
-    public static final void toastMessage(final Activity activity,
-                                          final String message) {
+    public static final void toastMessage(final Activity activity, final String message) {
         toastMessage(activity, message, null);
     }
 
@@ -506,8 +498,7 @@ public class Util {
         Bitmap bitmap = null;
         try {
             URL myFileUrl = new URL(imageUri);
-            HttpURLConnection conn = (HttpURLConnection) myFileUrl
-                    .openConnection();
+            HttpURLConnection conn = (HttpURLConnection) myFileUrl.openConnection();
             conn.setDoInput(true);
             conn.connect();
             InputStream is = conn.getInputStream();
@@ -560,8 +551,7 @@ public class Util {
             else if (isDownloadsDocument(uri)) {
 
                 final String id = getDocumentId(uri);
-                final Uri contentUri = ContentUris.withAppendedId(Uri.parse("content://downloads/public_downloads"),
-                        Long.valueOf(id));
+                final Uri contentUri = ContentUris.withAppendedId(Uri.parse("content://downloads/public_downloads"), Long.valueOf(id));
 
                 return getDataColumn(context, contentUri, null, null);
             }
@@ -590,8 +580,7 @@ public class Util {
         else if ("content".equalsIgnoreCase(uri.getScheme())) {
 
             // Return the remote address
-            if (isGooglePhotosUri(uri))
-                return uri.getLastPathSegment();
+            if (isGooglePhotosUri(uri)) return uri.getLastPathSegment();
 
             return getDataColumn(context, uri, null, null);
         }
@@ -656,8 +645,7 @@ public class Util {
                 return cursor.getString(index);
             }
         } finally {
-            if (cursor != null)
-                cursor.close();
+            if (cursor != null) cursor.close();
         }
         return null;
     }
@@ -703,6 +691,35 @@ public class Util {
     public static boolean isEmpty(String str) {
 
         return str == null || str.equalsIgnoreCase("null") || str.trim().length() == 0 || str.equals("");
+    }
+
+    /**
+     * 手机号码
+     */
+    public static final String REGEX_TELE = "^((13[0-9])|(14[5,7,9])|(15[^4])|(18[0-9])|(17[0,1,3,5,6,7,8]))\\d{8}$";// "[1]"代表下一位为数字可以是几，"[0-9]"代表可以为0-9中的一个，"[5,7,9]"表示可以是5,7,9中的任意一位,[^4]表示除4以外的任何一个,\\d{9}"代表后面是可以是0～9的数字，有9位。
+
+    public static boolean isMobileNO(String mobileNums) {
+        /**
+         * 判断字符串是否符合手机号码格式
+         * 移动号段: 134,135,136,137,138,139,147,150,151,152,157,158,159,170,178,182,183,184,187,188
+         * 联通号段: 130,131,132,145,155,156,170,171,175,176,185,186
+         * 电信号段: 133,149,153,170,173,177,180,181,189
+         * @param str
+         * @return 待检测的字符串
+         */
+        if (TextUtils.isEmpty(mobileNums)) {
+            return false;
+        } else {
+            return mobileNums.matches(REGEX_TELE);
+        }
+    }
+
+    /**
+     * 判断邮箱
+     */
+    public static final String REGEX_EMAIL = "\\w[-\\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\\.)+[A-Za-z]{2,14}";
+    public static boolean isEmail(String email) {
+        return Pattern.matches(REGEX_EMAIL, email);
     }
 
 }

@@ -9,11 +9,11 @@
         <item
             android:id="@+id/nav_source"
             android:icon="@drawable/ic_menu_sourcecode"
-            android:title="source" />
+            android:title="文件" />
         <item
             android:id="@+id/nav_stream"
             android:icon="@drawable/ic_menu_video"
-            android:title="stream" />
+            android:title="流媒体" />
         <item
             android:id="@+id/nav_voyage"
             android:icon="@drawable/ic_menu_steamship"
@@ -25,11 +25,11 @@
         <item
             android:id="@+id/nav_interest"
             android:icon="@drawable/ic_menu_interest"
-            android:title="interest" />
+            android:title="课程" />
         <item
             android:id="@+id/nav_favorite"
             android:icon="@drawable/ic_menu_favorite"
-            android:title="favorite" />
+            android:title="兴趣" />
     </group>
 
     <item android:title="Communicate">
@@ -45,11 +45,11 @@
             <item
                 android:id="@+id/nav_tools"
                 android:icon="@drawable/ic_menu_manage"
-                android:title="Tools" />
+                android:title="更新" />
             <item
                 android:id="@+id/nav_settings"
                 android:icon="@drawable/ic_menu_settings"
-                android:title="设置" />
+                android:title="个人设置" />
         </menu>
     </item>
 
