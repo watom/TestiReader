@@ -7,20 +7,18 @@ import android.os.StatFs;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.text.DecimalFormat;
 
-/**
- * Created by 青春正媚 on 2017/4/26.
- */
 
-public class SDFileSizeUtil {
+public class SDCardUtil {
 
     private static final int ERROR = -1;
 
     /**
-     * SDCARD是否存
+     * 判断手机中SDCARD
      */
     public static boolean externalMemoryAvailable() {
         return android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED);
@@ -162,4 +160,5 @@ public class SDFileSizeUtil {
             return file.length();
         }
     }
+
 }
