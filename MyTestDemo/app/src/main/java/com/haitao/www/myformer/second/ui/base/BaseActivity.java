@@ -3,13 +3,20 @@ package com.haitao.www.myformer.second.ui.base;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.os.TokenWatcher;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
+import android.view.Window;
+import android.widget.Toast;
 
 import com.haitao.www.myformer.second.ui.ui_common.dialog.progressBar.LoadingDialog;
+import com.haitao.www.myformer.utils.NetUtils;
 
 /**
  * Created by watom_Thinkpad on 2017/11/16.
@@ -19,6 +26,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     private LoadingDialog mProcessDialog;
     protected Handler handler;
     private MyBroadCast myBroadCast;//注册广播
+    private boolean isCancerBack;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -66,7 +74,6 @@ public abstract class BaseActivity extends AppCompatActivity {
      */
     protected abstract void updateData(Message msg);
 
-    public abstract void initAppMsgBroad();
 
     protected void initHandler() {
         handler = new Handler() {
@@ -78,19 +85,18 @@ public abstract class BaseActivity extends AppCompatActivity {
                         break;
 
                     case BaseBusiness.FAILURE:
-                        getDatafailure(msg.obj);
+                        failureToast(msg.obj);
                         closeProgressDialog();
                         break;
                     case BaseBusiness.FAILURE_NOT_CLOSE_PROGRESS:
-                        getDatafailure(msg.obj);
+                        failureToast(msg.obj);
                         break;
                     case BaseBusiness.END:
                         closeProgressDialog();
                         break;
                     case BaseBusiness.RELOGIN:
                         closeProgressDialog();
-                        ToastUtils.toastLong(getBaseContext(), getString(R.string.app_relogin));
-                        relogin();
+                        Toast.makeText(getBaseContext(), "请重新登录", Toast.LENGTH_LONG).show();
                         break;
                     default:
                         updateData(msg);
@@ -120,12 +126,58 @@ public abstract class BaseActivity extends AppCompatActivity {
         myBroadCast.setOnMyBroadCastListener(new MyBroadCast.MyBroadCastListener() {
             @Override
             public void onReceive(BroadcastReceiver broadcastReceiver, Context context, Intent intent) {
-                if (intent.getAction().equals(IntentFinal.BROADCAST_LOGOUT) && isFinish()) {
+                if (intent.getAction().equals("BROADCAST_LOGOUT")) {
                     finish();
                 }
             }
 
         });
+    }
+
+    public void showProgressDialog() {
+        if (mProcessDialog == null) {
+            if (getParent() != null) {
+                mProcessDialog = new LoadingDialog(getParent(), isCancerBack);
+            } else {
+                mProcessDialog = new LoadingDialog(this, isCancerBack);
+            }
+            mProcessDialog.setCancelable(false);
+            mProcessDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        }
+        if (!isFinishing()) {
+            mProcessDialog.show();
+        }
+    }
+
+
+    /**
+     * 获取业务数据失败提示
+     */
+    public void failureToast(Object object) {
+        if (object != null) {
+            String ts = object.toString();
+            if (!TextUtils.isEmpty(ts)) {
+                Toast.makeText(this, ts, Toast.LENGTH_LONG).show();
+            } else {
+                if (NetUtils.isNetworkAvailable(this)) {
+                    Toast.makeText(this, "数据请求失败", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(this, "网络连接失败，请重试", Toast.LENGTH_LONG).show();
+                }
+            }
+        } else {
+            if (NetUtils.isNetworkAvailable(this)) {
+                Toast.makeText(this, "数据请求失败", Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(this, "网络连接失败，请重试", Toast.LENGTH_LONG).show();
+            }
+        }
+    }
+
+    public void closeProgressDialog() {
+        if (mProcessDialog != null) {
+            mProcessDialog.dismiss();
+        }
     }
 
     @Override

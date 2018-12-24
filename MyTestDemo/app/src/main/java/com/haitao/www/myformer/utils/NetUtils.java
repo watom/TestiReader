@@ -1,6 +1,9 @@
 package com.haitao.www.myformer.utils;
 
 import android.accounts.NetworkErrorException;
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Handler;
 
 import java.io.ByteArrayOutputStream;
@@ -145,6 +148,67 @@ public class NetUtils {
         String state = os.toString();// 把流中的数据转换成字符串,采用的编码是utf-8(模拟器默认编码)
         os.close();
         return state;
+    }
+
+    /**
+     * 网络是否可用
+     */
+    public static boolean isNetworkAvailable(Context context) {
+        ConnectivityManager cm = (ConnectivityManager) context
+                .getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (cm == null) {
+            return false;
+        } else {
+            NetworkInfo[] info = cm.getAllNetworkInfo();
+            if (info != null) {
+                for (int i = 0; i < info.length; i++) {
+                    if (info[i].getState() == NetworkInfo.State.CONNECTED) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+    }
+
+
+    /**
+     * 判断网络是否连接
+     * @param context
+     * @return
+     */
+    public static boolean isConnect(Context context) {
+        boolean isConnected = false;
+        ConnectivityManager manager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo.State mobile = null;
+        if (manager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE) != null) {
+            mobile = manager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState();
+        }
+        NetworkInfo.State wifi = null;
+        if (manager.getNetworkInfo(ConnectivityManager.TYPE_WIFI) != null) {
+            wifi = manager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState();
+        }
+        if (mobile != null && (mobile == NetworkInfo.State.CONNECTED || mobile == NetworkInfo.State.CONNECTING)) {
+            isConnected = true;
+        } else if (wifi != null && (wifi == NetworkInfo.State.CONNECTED || wifi == NetworkInfo.State.CONNECTING)) {
+            isConnected = true;
+        }
+        return isConnected;
+    }
+
+
+
+    public static boolean isWiFi(Context context){
+        boolean isWifi = false;
+        ConnectivityManager manager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo.State wifi = null;
+        if(manager.getNetworkInfo(ConnectivityManager.TYPE_WIFI)!=null){
+            wifi = manager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState();
+        }
+        if (wifi!=null&&(wifi == NetworkInfo.State.CONNECTED || wifi == NetworkInfo.State.CONNECTING)) {
+            isWifi = true;
+        }
+        return isWifi;
     }
 
 }

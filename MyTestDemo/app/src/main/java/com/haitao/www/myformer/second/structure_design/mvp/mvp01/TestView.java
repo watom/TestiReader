@@ -1,4 +1,4 @@
-package com.haitao.www.myformer.second.structure_design.mvp;
+package com.haitao.www.myformer.second.structure_design.mvp.mvp01;
 
 import android.app.Activity;
 import android.os.Bundle;

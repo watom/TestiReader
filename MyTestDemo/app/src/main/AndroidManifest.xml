@@ -94,7 +94,7 @@
         <activity android:name=".second.ui.ui_common.component.timepicker.DatePickerActivity" />
         <activity android:name=".second.structure_design.StructureDesignActivity" />
         <activity android:name=".common.base.BaseActivity" />
-        <activity android:name=".second.structure_design.mvp.TestView" />
+        <activity android:name=".second.structure_design.mvp.mvp01.TestView" />
         <activity android:name=".second.nettys.NettysActivity" />
         <activity android:name=".second.nettys.comnettys.HttpURLConnectionActivity" />
         <activity android:name=".second.function.FunctionImpActivity" />
