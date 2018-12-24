@@ -12,6 +12,7 @@ import android.widget.ListView;
 import com.haitao.www.myformer.R;
 import com.haitao.www.myformer.second.nettys.comnettys.HttpURLConnectionActivity;
 import com.haitao.www.myformer.second.nettys.netprogramme.NetProgrammeActivity;
+import com.haitao.www.myformer.second.nettys.netty.MyNettyActivity;
 import com.haitao.www.myformer.second.nettys.okhttp.OkHttpTestActivity;
 
 /**
@@ -30,7 +31,7 @@ public class NettysActivity extends AppCompatActivity implements AdapterView.OnI
     }
 
     private void initData(ListView view) {
-        content = new String[]{"网络编程","HttpURLConnection","OKhttp"};
+        content = new String[]{"网络编程","HttpURLConnection","OKhttp","封装网络框架"};
         ArrayAdapter stringArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, content);
         view.setAdapter(stringArrayAdapter);
         view.setOnItemClickListener(this);
@@ -48,6 +49,9 @@ public class NettysActivity extends AppCompatActivity implements AdapterView.OnI
                 break;
             case "OKhttp":
                 startActivity(new Intent(this, OkHttpTestActivity.class));
+                break;
+            case "封装网络框架":
+                startActivity(new Intent(this, MyNettyActivity.class));
                 break;
         }
     }

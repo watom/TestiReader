@@ -1,6 +1,14 @@
 package com.haitao.www.myformer.utils;
 
 
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.text.TextUtils;
+import android.widget.Toast;
+
+import com.haitao.www.myformer.second.nettys.comnettys.HttpURLConnectionActivity;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,7 +21,6 @@ import java.net.URLEncoder;
 /**
  * Created by Administrator on 2018/7/9 0009.
  */
-
 public class HttpRequestTool {
 
     //从流中读取数据，将流转化为二进制数组
@@ -29,18 +36,22 @@ public class HttpRequestTool {
     }
 
     // GET  定义一个获取网络图片数据的方法:
-    public static byte[] getImage(String path) throws Exception {
-        byte[] bt;
+    public static byte[] getImage(Context context, String path) throws Exception {
+        byte[] bt=null;
         URL url = new URL(path);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-        conn.setConnectTimeout(5000);
         conn.setRequestMethod("GET");
+        conn.setConnectTimeout(5000);//连接5秒超时
+        conn.setReadTimeout(5000);// 读取5秒超时
+        String userAgent = "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C)";
+        conn.setRequestProperty("User-Agent", userAgent);
         if (conn.getResponseCode() == 200) {
             InputStream inStream = conn.getInputStream();
+//            Bitmap bitmap = BitmapFactory.decodeStream(inStream);
             bt = HttpRequestTool.read(inStream);
             inStream.close();
         } else {
-            throw new RuntimeException("请求url失败");
+            Toast.makeText(context, "请求失败", Toast.LENGTH_LONG).show();
         }
         return bt;
     }

@@ -13,6 +13,7 @@ import com.haitao.www.myformer.R;
 import com.haitao.www.myformer.second.ui.ui_common.listview.recyclerview.RecyclerViewTestActivity;
 import com.haitao.www.myformer.second.ui.ui_common.listview.XListView.ListViewActivity;
 import com.haitao.www.myformer.second.ui.ui_common.listview.expandablelistView.MyExpandableListView;
+import com.haitao.www.myformer.second.ui.ui_common.listview.scrollviewlist.ScrollViewTestActivity;
 
 /**
  * Created by Administrator on 2017/11/29 0029.
@@ -30,7 +31,7 @@ public class ListViewCategory extends AppCompatActivity implements AdapterView.O
     }
 
     private void initData(ListView view) {
-        content = new String[]{"ListView","XListView","ExpandableListView","RecyclerView"};
+        content = new String[]{"ListView","XListView","ExpandableListView","RecyclerView","ScrollView"};
         ArrayAdapter stringArrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, content);
         view.setAdapter(stringArrayAdapter);
         view.setOnItemClickListener(this);
@@ -51,6 +52,9 @@ public class ListViewCategory extends AppCompatActivity implements AdapterView.O
                 break;
             case "RecyclerView":
                 startActivity(new Intent(this, RecyclerViewTestActivity.class));
+                break;
+            case "ScrollView":
+                startActivity(new Intent(this, ScrollViewTestActivity.class));
                 break;
         }
     }

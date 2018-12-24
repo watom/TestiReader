@@ -215,5 +215,6 @@
         <activity android:name="projects.main.SettingActivity" />
         <activity android:name=".CourseActivity" />
         <activity android:name="projects.main.activity.ShareAppActivity" />
+        <activity android:name=".second.ui.ui_common.listview.scrollviewlist.ScrollViewTestActivity" />
     </application>
 </manifest>

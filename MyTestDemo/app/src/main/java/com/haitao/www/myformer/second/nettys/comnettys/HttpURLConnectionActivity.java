@@ -103,7 +103,7 @@ public class HttpURLConnectionActivity extends AppCompatActivity {
                 new Thread() {
                     public void run() {
                         try {
-                            byte[] data = HttpRequestTool.getImage(PIC_URL);
+                            byte[] data = HttpRequestTool.getImage(HttpURLConnectionActivity.this,PIC_URL);
                             bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
                         } catch (Exception e) {
                             e.printStackTrace();
