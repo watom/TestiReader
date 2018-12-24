@@ -12,4 +12,5 @@ public class Config {
     public static final boolean isTest = false;//是否开启测试模块/数据,true:开启
 
     public static final int x  = 11001;
+    public static final int Y  = 11001;
 }
