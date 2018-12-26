@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/action_shortcut"
+        android:icon="@drawable/ic_sousuo"
+        android:iconTint="@color/yellow"
         android:orderInCategory="1"
-      android:iconTint="@color/yellow"
         android:title="快捷方式"
-        app:showAsAction="never" />
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_scan"
         android:orderInCategory="2"

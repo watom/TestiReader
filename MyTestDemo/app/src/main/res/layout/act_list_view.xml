@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/background">
 
-    <com.haitao.www.myformer.second.ui.ui_common.listview.XListView.XListView
+    <com.haitao.www.myformer.ui.ui_common.listview.XListView.XListView
         android:id="@+id/list_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

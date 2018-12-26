@@ -6,7 +6,7 @@
      <!--静态加载Fragment -->
     <fragment
         android:id="@+id/container_fragment"
-        android:name="com.haitao.www.myformer.second.ui.ui_common.fragment.InitialFragment.LifeCycleFragment"
+        android:name="com.haitao.www.myformer.ui.ui_common.fragment.InitialFragment.LifeCycleFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

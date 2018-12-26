@@ -4,7 +4,7 @@
     android:id="@+id/activity_voice_chat_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.haitao.www.myformer.second.function.kernel_module.speechvideo.SpeechVideoActivity">
+    tools:context=".function.kernel_module.speechvideo.SpeechVideoActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

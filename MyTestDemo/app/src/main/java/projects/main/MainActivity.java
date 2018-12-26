@@ -34,7 +34,7 @@ import projects.main.main_fragement.NewsFragment;
 import projects.main.main_fragement.TalkFragment;
 import projects.main.main_fragement.WodeFragment;
 
-import com.haitao.www.myformer.second.structure_design.StructureDesignActivity;
+import com.haitao.www.myformer.structure_design.StructureDesignActivity;
 import com.haitao.www.myformer.utils.Lout;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, RadioGroup.OnCheckedChangeListener {
@@ -51,14 +51,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
         context = MainActivity.this;
         findViews();
-//      setSupportActionBar(toolbar);
         setFloatingAndDrawe();
         initFragment();
 
     }
 
     private void findViews() {
-        toolbar = findViewById(R.id.toolbar);
+        setToolBar();
         radiogroupBottomMenu = (RadioGroup) findViewById(R.id.radiogroup_bottom_menu);
         radiobutton01 = (RadioButton) findViewById(R.id.radiobutton_01);
         radiobutton02 = (RadioButton) findViewById(R.id.radiobutton_02);
@@ -66,15 +65,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         radiobutton04 = (RadioButton) findViewById(R.id.radiobutton_04);
         radiobutton05 = (RadioButton) findViewById(R.id.radiobutton_05);
         radiogroupBottomMenu.setOnCheckedChangeListener(this);
-        toolbar.setLogo(R.mipmap.ic_launcher);
+    }
+
+    private void setToolBar() {
+
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);//利用Toolbar代替ActionBar
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);//左侧添加一个默认的返回图标
+        getSupportActionBar().setHomeButtonEnabled(true); //设置返回键可用
         toolbar.setTitle("开发集合");
         toolbar.setSubtitle("专门用于测试Demo");
-        setSupportActionBar(toolbar);
 
-        // Navigation Icon 要設定在 setSupoortActionBar 才有作用
-        // 否則會出現 back button
+        // Navigation Icon 要設定在 setSupoortActionBar 才有作用否則會出現 back button
         toolbar.setNavigationIcon(R.drawable.ic_chat);
-
+        //设置Toolbar右边的menu入口图片,如果不设置会使用系统默认的灰色三点图标
+        toolbar.setOverflowIcon(getResources().getDrawable(R.drawable.ic_plus));
     }
 
     private void initFragment() {
@@ -117,8 +122,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
-
-
     }
 
     @Override
@@ -127,31 +130,35 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-//            System.exit(0);//退出比较突兀，不推荐使用
+            //System.exit(0);              //退出比较突兀，不推荐使用
             moveTaskToBack(false);//退出界面比较柔和
         }
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the MenuDefine; this adds items to the action bar if it is present.
+        //可以通过app:popupTheme属性来控制的，在style文件里可以设置风格、字体颜色大小等等属性。
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        switch (item.getItemId()){
+            case R.id.action_shortcut:
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+                break;
+            case R.id.action_scan:
+
+                break;
+            case R.id.action_search:
+
+                break;
+            case R.id.action_settings:
+
+                break;
         }
-
-        return super.onOptionsItemSelected(item);
+        return false;
     }
 
     @SuppressWarnings("StatementWithEmptyBody")

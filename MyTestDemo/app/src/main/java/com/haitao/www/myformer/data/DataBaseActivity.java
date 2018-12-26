@@ -11,11 +11,11 @@ import android.widget.ListView;
 
 import com.haitao.www.myformer.R;
 import com.haitao.www.myformer.h5.H5HomeActivity;
-import com.haitao.www.myformer.second.function.FunctionImpActivity;
-import com.haitao.www.myformer.second.logic.ModuleTestActivity;
-import com.haitao.www.myformer.second.nettys.NettysActivity;
-import com.haitao.www.myformer.second.structure_design.StructureDesignActivity;
-import com.haitao.www.myformer.second.ui.ui_common.UIActivity;
+import com.haitao.www.myformer.function.FunctionImpActivity;
+import com.haitao.www.myformer.logic.ModuleTestActivity;
+import com.haitao.www.myformer.nettys.NettysActivity;
+import com.haitao.www.myformer.structure_design.StructureDesignActivity;
+import com.haitao.www.myformer.ui.ui_common.UIActivity;
 import com.haitao.www.myformer.utils.Lout;
 
 /***********************************************

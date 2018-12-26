@@ -16,7 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.haitao.www.myformer.R;
-import com.haitao.www.myformer.second.function.kernel_module.share.onekeyshare.OnekeyShare;
+import com.haitao.www.myformer.function.kernel_module.share.onekeyshare.OnekeyShare;
 import com.haitao.www.myformer.utils.AlipayUtil;
 import com.haitao.www.myformer.utils.ToastUtils;
 import com.mob.MobSDK;
