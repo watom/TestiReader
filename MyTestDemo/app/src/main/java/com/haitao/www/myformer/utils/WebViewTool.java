@@ -24,7 +24,12 @@ public class WebViewTool {
     private PackageManager packageManager;
 
     public WebViewTool(Context context) {
-        this.context=context;
+        this.context = context;
+    }
+
+    public WebViewTool(Context context, WebView webViewLayout, String url) {
+        this.context = context;
+        init(webViewLayout, url);
     }
 
     public void init(WebView webViewLayout, String url) {

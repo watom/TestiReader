@@ -34,5 +34,6 @@
     <string name="scan_fail">扫描失败!</string>
     <!--音视频通话-->
     <string name="agora_app_id">24385e0aaabc4bb6bec24a30a4ecc630</string>
+    <string name="design_discipline">设计原则包括：\n1.开闭原则(Open Close Principle);\n2.里氏代换原则(Liskov Substitution Principle);\n3.依赖倒转原则(Dependence Inversion Principle);\n4.接口隔离原则(Interface Segregation Principle);\n4.组合/聚合复用原则;\n5.迪米特法则(Law Of Demeter);\n6.单一职责原则(Single Responsibility Principle);\n</string>
 
 </resources>
