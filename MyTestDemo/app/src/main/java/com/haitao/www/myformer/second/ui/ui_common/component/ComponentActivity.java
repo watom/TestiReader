@@ -14,6 +14,7 @@ import com.haitao.www.myformer.Config;
 import com.haitao.www.myformer.R;
 import com.haitao.www.myformer.second.ui.ui_common.component.customassemblewidget.CustomAssembleWidgetActivity;
 import com.haitao.www.myformer.second.ui.ui_common.component.imageview.ImageViewCategory;
+import com.haitao.www.myformer.second.ui.ui_common.component.ratingbarview.RatingBarActivity;
 import com.haitao.www.myformer.second.ui.ui_common.component.textview.SpannableStringActivity;
 import com.haitao.www.myformer.second.ui.ui_common.component.timepicker.DatePickerActivity;
 import com.haitao.www.myformer.second.ui.ui_common.component.timepicker.TimePickerActivity;
@@ -34,7 +35,7 @@ public class ComponentActivity extends AppCompatActivity implements AdapterView.
     private GridView gridview;
     private ArrayList<Map<String, Object>> dataList;
     private int[] icon = {R.drawable.common_icon, R.drawable.common_icon};
-    private String[] label = {"ImageView", "TextView", "时间选择器", "日期选择器", "自定义组合控件"};
+    private String[] label = {"ImageView", "TextView", "时间选择器", "日期选择器", "自定义组合控件","评价条"};
 
     /**
      * 关键代码SimpleAdapter的参数
@@ -101,6 +102,9 @@ public class ComponentActivity extends AppCompatActivity implements AdapterView.
                 break;
             case "自定义组合控件":
                 startActivity(new Intent(this, CustomAssembleWidgetActivity.class));
+                break;
+            case "评价条":
+                startActivity(new Intent(this, RatingBarActivity.class));
                 break;
             default:
                 ToastUtils.showToast(this, "暂时未开通\"" + name + "\"功能");

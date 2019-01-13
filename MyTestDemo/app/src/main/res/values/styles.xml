@@ -152,4 +152,11 @@
         <item name="android:layout_marginRight">14dp</item>
         <item name="android:background">#EBEBEB</item>
     </style>
+
+    <style name="ratingBar22" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/layer_list_ratingbar</item>
+        <item name="android:minHeight">24dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:maxHeight">24dp</item>
+    </style>
 </resources>
