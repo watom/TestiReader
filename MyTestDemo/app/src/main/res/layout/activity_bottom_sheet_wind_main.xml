@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.haitao.www.myformer.second.ui.ui_common.dialog.popupwindow_dialog.BottomSheetTestActivity">
+    tools:context=".ui.ui_common.dialog.popupwindow_dialog.BottomSheetTestActivity">
     <!--注意：BottomSheet依赖于CoordinatorLayout，只能这样使用-->
     <!--title-->
 

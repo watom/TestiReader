@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.haitao.www.myformer.h5.h5_dome.WebViewPlatform;
-import com.haitao.www.myformer.second.ui.ui_common.dialog.bottomsheet_dialog.BottomSheetDialog;
+import com.haitao.www.myformer.ui.ui_common.dialog.bottomsheet_dialog.BottomSheetDialog;
 import com.haitao.www.myformer.utils.ToastUtils;
 import com.haitao.www.myformer.utils.Util;
 

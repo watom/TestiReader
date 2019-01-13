@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.haitao.www.myformer.R;
-import com.haitao.www.myformer.second.ui.ui_common.widget.ColorPicker;
+import com.haitao.www.myformer.ui.ui_common.widget.ColorPicker;
 import com.haitao.www.myformer.utils.SystemBarTintManager;
 import com.haitao.www.myformer.utils.ToastUtils;
 

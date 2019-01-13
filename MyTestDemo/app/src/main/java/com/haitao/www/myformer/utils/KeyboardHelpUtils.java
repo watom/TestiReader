@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.haitao.www.myformer.R;
-import com.haitao.www.myformer.second.ui.ui_common.dialog.popupwindow_dialog.BottomSheetTestActivity;
+import com.haitao.www.myformer.ui.ui_common.dialog.popupwindow_dialog.BottomSheetTestActivity;
 
 import java.lang.reflect.Field;
 

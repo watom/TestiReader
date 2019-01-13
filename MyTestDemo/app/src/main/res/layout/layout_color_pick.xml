@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="10dp">
 
-    <com.haitao.www.myformer.second.ui.ui_common.widget.ColorPicker
+    <com.haitao.www.myformer.ui.ui_common.widget.ColorPicker
         android:id="@+id/pan_color_picker"
         android:layout_width="240dp"
         android:layout_height="wrap_content"

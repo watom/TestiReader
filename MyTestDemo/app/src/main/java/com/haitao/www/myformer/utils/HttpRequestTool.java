@@ -7,7 +7,7 @@ import android.graphics.BitmapFactory;
 import android.text.TextUtils;
 import android.widget.Toast;
 
-import com.haitao.www.myformer.second.nettys.comnettys.HttpURLConnectionActivity;
+import com.haitao.www.myformer.nettys.comnettys.HttpURLConnectionActivity;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

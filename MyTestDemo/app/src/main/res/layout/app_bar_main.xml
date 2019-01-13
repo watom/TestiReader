@@ -21,12 +21,13 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:minHeight="?android:attr/actionBarSize"
                 android:background="?attr/colorPrimary"
                 android:fitsSystemWindows="true"
+                android:minHeight="?android:attr/actionBarSize"
                 app:logo="@mipmap/ic_browse_press"
-                app:navigationIcon="@drawable/app_back"
-                app:popupTheme="@style/AppTheme.PopupOverlay" />
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
+                app:titleTextAppearance="@style/Toolbar.TitleText"/>
 
         </android.support.design.widget.AppBarLayout>
 

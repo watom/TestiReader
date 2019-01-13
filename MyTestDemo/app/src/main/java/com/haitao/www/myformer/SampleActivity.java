@@ -9,16 +9,17 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.haitao.www.myformer.design_pattern.DesignPatternActivity;
+import com.haitao.www.myformer.function.FunctionImpActivity;
 import com.haitao.www.myformer.h5.H5HomeActivity;
-import com.haitao.www.myformer.second.function.FunctionImpActivity;
-import com.haitao.www.myformer.second.logic.ModuleTestActivity;
-import com.haitao.www.myformer.second.nettys.NettysActivity;
-import com.haitao.www.myformer.second.structure_design.StructureDesignActivity;
-import com.haitao.www.myformer.second.ui.ui_common.UIActivity;
+import com.haitao.www.myformer.logic.ModuleTestActivity;
+import com.haitao.www.myformer.nettys.NettysActivity;
+import com.haitao.www.myformer.structure_design.StructureDesignActivity;
+import com.haitao.www.myformer.ui.ui_common.UIActivity;
 import com.haitao.www.myformer.utils.Lout;
 
 /***********************************************
- *@Copyright: 2017(C), 国电通__期
+ *@Copyright: 2018(C), 我的超级APP，包含样板/测试模块
  *@Author&Email: wanghaitao 1164973719@qq.com
  *@Function: 1、
  *@Description: 1、       
@@ -55,9 +56,9 @@ public class SampleActivity extends AppCompatActivity implements AdapterView.OnI
                 break;
             case "网络请求":
                 startActivity(new Intent(this, NettysActivity.class));
-                Lout.d("watom", "onAttach");
                 break;
             case "设计模式":
+                startActivity(new Intent(this, DesignPatternActivity.class));
                 break;
             case "架构设计":
                 startActivity(new Intent(this, StructureDesignActivity.class));
