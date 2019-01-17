@@ -1,4 +1,4 @@
-package com.haitao.www.myformer.second.ui.ui_common.component.ratingbarview;
+package com.haitao.www.myformer.ui.ui_common.component.ratingbarview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -29,14 +29,14 @@ public class RatingBarView extends LinearLayout {
 
     public RatingBarView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
+        setOrientation(LinearLayout.HORIZONTAL);
         initView(context, attrs);
     }
 
     private void initView(Context context, AttributeSet attrs) {
         ImageView imageView = null;
-        setOrientation(LinearLayout.HORIZONTAL);
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.RatingBarView);
-        starImageSize = ta.getDimension(R.styleable.RatingBarView_starImageSize, 20);
+        starImageSize = ta.getDimension(R.styleable.RatingBarView_starSize, 20);
         starCount = ta.getInteger(R.styleable.RatingBarView_starCount, 5);
         starEmptyDrawable = ta.getDrawable(R.styleable.RatingBarView_starEmpty);
         starFillDrawable = ta.getDrawable(R.styleable.RatingBarView_starFill);

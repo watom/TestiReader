@@ -161,7 +161,9 @@ public class RecyclerViewTestActivity extends AppCompatActivity {
                                     recyclerview.setLayoutManager(new StaggeredGridLayoutManager(4, orientation));
                                     break;
                             }
+
                             setAdapter();
+
                             ToastUtils.showToast(RecyclerViewTestActivity.this,
                                     items[orientation] + "滑动");
                         }

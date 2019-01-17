@@ -219,5 +219,6 @@
         <activity android:name=".ui.base.TestBaseAcitvity" />
         <activity android:name=".design_pattern.DesignPatternActivity" />
         <activity android:name=".design_pattern.PatternContentShow" />
+        <activity android:name=".ui.ui_common.component.ratingbarview.RatingBarActivity" />
     </application>
 </manifest>

@@ -12,9 +12,9 @@ import android.widget.TextView;
 
 import com.haitao.www.myformer.Config;
 import com.haitao.www.myformer.R;
-import com.haitao.www.myformer.second.ui.ui_common.component.ratingbarview.RatingBarActivity;
 import com.haitao.www.myformer.ui.ui_common.component.customassemblewidget.CustomAssembleWidgetActivity;
 import com.haitao.www.myformer.ui.ui_common.component.imageview.ImageViewCategory;
+import com.haitao.www.myformer.ui.ui_common.component.ratingbarview.RatingBarActivity;
 import com.haitao.www.myformer.ui.ui_common.component.textview.SpannableStringActivity;
 import com.haitao.www.myformer.ui.ui_common.component.timepicker.DatePickerActivity;
 import com.haitao.www.myformer.ui.ui_common.component.timepicker.TimePickerActivity;
