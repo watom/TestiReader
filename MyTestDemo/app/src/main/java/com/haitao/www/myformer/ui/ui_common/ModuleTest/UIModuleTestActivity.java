@@ -11,6 +11,7 @@ import android.widget.ListView;
 
 import com.haitao.www.myformer.R;
 import com.haitao.www.myformer.ui.ui_common.ModuleTest.excellayout.ExcelTablayout;
+import com.haitao.www.myformer.ui.ui_common.ModuleTest.ratingbarview.RatingBarActivity;
 import com.haitao.www.myformer.ui.ui_common.ModuleTest.timeLine.TimeLineActivity;
 
 /**
@@ -29,7 +30,7 @@ public class UIModuleTestActivity extends AppCompatActivity implements AdapterVi
     }
 
     private void initData(ListView view) {
-        content = new String[]{"表格","时间轴"};
+        content = new String[]{"表格","时间轴","评价条"};
         ArrayAdapter stringArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,content);
         view.setAdapter(stringArrayAdapter);
         view.setOnItemClickListener(this);
@@ -44,6 +45,9 @@ public class UIModuleTestActivity extends AppCompatActivity implements AdapterVi
                 break;
             case "时间轴":
                 startActivity(new Intent(this, TimeLineActivity.class));
+                break;
+            case "评价条":
+                startActivity(new Intent(this, RatingBarActivity.class));
                 break;
         }
     }

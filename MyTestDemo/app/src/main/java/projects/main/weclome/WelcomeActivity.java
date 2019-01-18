@@ -42,8 +42,8 @@ public class WelcomeActivity extends AppCompatActivity {
 
         findViews();
         initData();
-        setAnimation();
         initEvent();
+        setAnimation();
     }
 
     private void findViews() {
@@ -52,8 +52,10 @@ public class WelcomeActivity extends AppCompatActivity {
         createdTime = findViewById(R.id.created_time);
     }
 
+    /**
+     * 设置倒计时功能
+     */
     private void initData() {
-        //设置倒计时功能
         mCountDownTimerUtils = new CountDownTimerUtils(tvSkip, 2000, 1000);
         mCountDownTimerUtils.start();
         mCountDownTimerUtils.setCountDownListener(new CountDownTimerUtils.OnCountDownListener() {
@@ -72,6 +74,7 @@ public class WelcomeActivity extends AppCompatActivity {
                 TextView tv = (TextView) view;
                 tv.setText("点击跳过");
                 tv.setClickable(true);//重新获得点击
+                startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
             }
         });
 

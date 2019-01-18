@@ -7,7 +7,6 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
@@ -35,6 +34,7 @@ import projects.main.main_fragement.TalkFragment;
 import projects.main.main_fragement.WodeFragment;
 
 import com.haitao.www.myformer.structure_design.StructureDesignActivity;
+import com.haitao.www.myformer.ui.ui_common.ModuleTest.ratingbarview.RatingBarActivity;
 import com.haitao.www.myformer.utils.Lout;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, RadioGroup.OnCheckedChangeListener {
@@ -99,7 +99,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                startActivity(new Intent(MainActivity.this, RatingBarActivity.class));
             }
         });
 

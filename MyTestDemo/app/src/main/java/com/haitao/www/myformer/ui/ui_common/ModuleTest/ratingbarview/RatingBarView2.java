@@ -1,19 +1,12 @@
-package com.haitao.www.myformer.ui.ui_common.component.ratingbarview;
+package com.haitao.www.myformer.ui.ui_common.ModuleTest.ratingbarview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.Bitmap;
-import android.graphics.Matrix;
-import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.animation.ScaleAnimation;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 

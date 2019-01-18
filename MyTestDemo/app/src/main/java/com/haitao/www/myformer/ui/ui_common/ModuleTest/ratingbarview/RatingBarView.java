@@ -1,4 +1,4 @@
-package com.haitao.www.myformer.ui.ui_common.component.ratingbarview;
+package com.haitao.www.myformer.ui.ui_common.ModuleTest.ratingbarview;
 
 import android.content.Context;
 import android.content.res.TypedArray;

@@ -38,7 +38,7 @@ public class UIActivity extends AppCompatActivity implements AdapterView.OnItemC
     }
 
     private void initData(ListView view) {
-        content = new String[]{"ListView", "Dialog", "Fragment","ViewPager", "Animation","Component","分页","侧边栏","UI模块测试","测量屏幕","Bitmap","测试基类Activity"};
+        content = new String[]{"ListView", "Dialog", "Fragment","ViewPager", "Animation","Component","分页","侧边栏","模块测试","测量屏幕","Bitmap","测试基类Activity"};
         ArrayAdapter stringArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,content);
         view.setAdapter(stringArrayAdapter);
         view.setOnItemClickListener(this);
@@ -71,7 +71,7 @@ public class UIActivity extends AppCompatActivity implements AdapterView.OnItemC
                 break;
             case "侧边栏":
                 break;
-            case "UI模块测试":
+            case "模块测试":
                 startActivity(new Intent(this, UIModuleTestActivity.class));
                 break;
             case "测量屏幕":
