@@ -17,6 +17,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -33,13 +34,17 @@ import projects.main.main_fragement.NewsFragment;
 import projects.main.main_fragement.TalkFragment;
 import projects.main.main_fragement.WodeFragment;
 
+import com.haitao.www.myformer.function.kernel_module.barcode.activity.BarCodeMainActivity;
+import com.haitao.www.myformer.function.kernel_module.barcode.activity.CaptureActivity;
 import com.haitao.www.myformer.structure_design.StructureDesignActivity;
 import com.haitao.www.myformer.ui.ui_common.ModuleTest.ratingbarview.RatingBarActivity;
 import com.haitao.www.myformer.utils.Lout;
+import com.haitao.www.myformer.utils.WebViewTool;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, RadioGroup.OnCheckedChangeListener {
     private Context context;
     private Toolbar toolbar;
+    private WebView framelayoutWebview;
     private RadioGroup radiogroupBottomMenu;
     private RadioButton radiobutton01, radiobutton02, radiobutton03, radiobutton04, radiobutton05;
     private Fragment currentFragment, newsFragment, lookFragment, talkFragment, discoveryFragment, wodeFragment;
@@ -65,6 +70,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         radiobutton04 = (RadioButton) findViewById(R.id.radiobutton_04);
         radiobutton05 = (RadioButton) findViewById(R.id.radiobutton_05);
         radiogroupBottomMenu.setOnCheckedChangeListener(this);
+        framelayoutWebview = (WebView) findViewById(R.id.framelayout_webview);
     }
 
     private void setToolBar() {
@@ -113,7 +119,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         View headerView = navigationView.getHeaderView(0);
         ImageView geekPortrait = (ImageView) headerView.findViewById(R.id.geek_portrait);
         TextView geekName = (TextView) headerView.findViewById(R.id.geek_name);
-        TextView geekMotto = (TextView)headerView.findViewById(R.id.geek_motto);
+        TextView geekMotto = (TextView) headerView.findViewById(R.id.geek_motto);
         geekPortrait.setImageResource(R.mipmap.ic_launcher);
         geekName.setTypeface(Typeface.createFromAsset(this.getAssets(), "fonts/创艺简魏碑.TTF"));
         geekName.setText("王海涛");
@@ -145,12 +151,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.action_shortcut:
 
                 break;
             case R.id.action_scan:
-
+                Intent openCameraIntent = new Intent(this, CaptureActivity.class);
+                startActivityForResult(openCameraIntent, 0);
                 break;
             case R.id.action_search:
 
@@ -263,4 +270,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //        return false;
 //    }
 
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 0 && resultCode == RESULT_OK) {
+            Bundle bundle = data.getExtras();
+            String url = bundle.getString("result");
+            new WebViewTool(this, framelayoutWebview, url);
+        }
+    }
 }

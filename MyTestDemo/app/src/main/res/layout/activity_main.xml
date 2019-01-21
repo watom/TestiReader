@@ -8,6 +8,17 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <WebView
+            android:id="@+id/framelayout_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
     <include
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"

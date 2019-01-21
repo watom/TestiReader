@@ -132,9 +132,7 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
         beepManager = new BeepManager(this);
 //        ambientLightManager = new AmbientLightManager(this);
 
-        TranslateAnimation animation = new TranslateAnimation(Animation.RELATIVE_TO_PARENT, 0.0f, Animation
-                .RELATIVE_TO_PARENT, 0.0f, Animation.RELATIVE_TO_PARENT, 0.0f, Animation.RELATIVE_TO_PARENT,
-                0.9f);
+        TranslateAnimation animation = new TranslateAnimation(Animation.RELATIVE_TO_PARENT, 0.0f, Animation.RELATIVE_TO_PARENT, 0.0f, Animation.RELATIVE_TO_PARENT, 0.0f, Animation.RELATIVE_TO_PARENT, 0.9f);
         animation.setDuration(2000);
         animation.setRepeatCount(-1);
         animation.setRepeatMode(Animation.RESTART);
@@ -171,8 +169,7 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
         mScanLocalPic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                pickPictureFromAblum(v
-                );
+                pickPictureFromAblum(v);
             }
         });
 //        setRequestedOrientation(getCurrentOrientation());
@@ -340,6 +337,7 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
 
     /**
      * 扫描本地图片上的二维码
+     *
      * @param v
      */
     public void pickPictureFromAblum(View v) {
@@ -362,8 +360,7 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
                     Uri selectedImage = data.getData();
                     String[] filePathColumn = {MediaStore.Images.Media.DATA};
 
-                    Cursor cursor = getContentResolver().query(selectedImage,
-                            filePathColumn, null, null, null);
+                    Cursor cursor = getContentResolver().query(selectedImage, filePathColumn, null, null, null);
                     cursor.moveToFirst();
 
                     int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
@@ -387,6 +384,7 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
 
     /**
      * 解析QR图内容
+     *
      * @return
      */
     private Result scanImageQR(String picturePath) {
@@ -414,25 +412,22 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
         int[] pixels = new int[width * height];
         bitmap.getPixels(pixels, 0, width, 0, 0, width, height);
 
-        RGBLuminanceSource source = new RGBLuminanceSource(width,height,pixels);
+        RGBLuminanceSource source = new RGBLuminanceSource(width, height, pixels);
         BinaryBitmap bitmap1 = new BinaryBitmap(new HybridBinarizer(source));
         QRCodeReader reader = new QRCodeReader();
         Result result;
 
         try {
-            result =  reader.decode(bitmap1, (Hashtable<DecodeHintType, Object>) hints);
+            result = reader.decode(bitmap1, (Hashtable<DecodeHintType, Object>) hints);
             return result;
         } catch (NotFoundException e) {
-            Toast.makeText(CaptureActivity.this, getString(R.string.scan_fail),
-                    Toast.LENGTH_LONG).show();
+            Toast.makeText(CaptureActivity.this, getString(R.string.scan_fail), Toast.LENGTH_LONG).show();
             e.printStackTrace();
         } catch (ChecksumException e) {
-            Toast.makeText(CaptureActivity.this, getString(R.string.scan_fail),
-                    Toast.LENGTH_LONG).show();
+            Toast.makeText(CaptureActivity.this, getString(R.string.scan_fail), Toast.LENGTH_LONG).show();
             e.printStackTrace();
         } catch (FormatException e) {
-            Toast.makeText(CaptureActivity.this, getString(R.string.scan_fail),
-                    Toast.LENGTH_LONG).show();
+            Toast.makeText(CaptureActivity.this, getString(R.string.scan_fail), Toast.LENGTH_LONG).show();
             e.printStackTrace();
         }
         return null;

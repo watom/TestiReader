@@ -39,28 +39,44 @@ public class BarCodeTestActivity extends AppCompatActivity implements View.OnCli
         findViews();
         getCameraPermission();
         ZXingLibrary.initDisplayOpinion(this); //ZXingLibrary初始化
-
     }
 
     /**
      * 获取摄像头权限
      */
     private void getCameraPermission() {
-        if (Build.VERSION.SDK_INT>22){
-            if (ContextCompat.checkSelfPermission(BarCodeTestActivity.this,
-                    android.Manifest.permission.CAMERA)!= PackageManager.PERMISSION_GRANTED){
+        if (Build.VERSION.SDK_INT > 22) {
+            if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
                 //先判断有没有权限 ，没有就在这里进行权限的申请
-                ActivityCompat.requestPermissions(BarCodeTestActivity.this,
-                        new String[]{android.Manifest.permission.CAMERA},2);
-            }else {
+                ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.CAMERA}, 0);
+                Toast.makeText(BarCodeTestActivity.this,"请手动打开相机权限-0",Toast.LENGTH_SHORT).show();
+            } else {
                 //说明已经获取到摄像头权限了，想干嘛干嘛
+                ZXingLibrary.initDisplayOpinion(this); //ZXingLibrary初始化
             }
-        }else {
+        } else {
             //这个说明系统版本在6.0之下，不需要动态获取权限。
-
+            ZXingLibrary.initDisplayOpinion(this); //ZXingLibrary初始化
         }
     }
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode,String[] permissions,int[] grantResults) {
+        switch (requestCode){
+            case 0:
+                if (grantResults.length>0&&grantResults[0]==PackageManager.PERMISSION_GRANTED){
+                    //这里已经获取到了摄像头的权限，想干嘛干嘛了可以
+                    Toast.makeText(BarCodeTestActivity.this,"请手动打开相机权限-1",Toast.LENGTH_SHORT).show();
+                }else {
+                    //这里是拒绝给APP摄像头权限，给个提示什么的说明一下都可以。
+                    Toast.makeText(BarCodeTestActivity.this,"请手动打开相机权限-2",Toast.LENGTH_SHORT).show();
+                }
+                break;
+            default:
+                break;
+        }
+
+    }
 
     private void findViews() {
         btnBarcodeScan = (Button)findViewById( R.id.btn_barcode_scan );
