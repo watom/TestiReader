@@ -38,8 +38,16 @@ import com.haitao.www.myformer.function.kernel_module.barcode.activity.BarCodeMa
 import com.haitao.www.myformer.function.kernel_module.barcode.activity.CaptureActivity;
 import com.haitao.www.myformer.structure_design.StructureDesignActivity;
 import com.haitao.www.myformer.ui.ui_common.ModuleTest.ratingbarview.RatingBarActivity;
+import com.haitao.www.myformer.utils.CMDExecUtils;
 import com.haitao.www.myformer.utils.Lout;
+import com.haitao.www.myformer.utils.ToastUtils;
 import com.haitao.www.myformer.utils.WebViewTool;
+
+import java.io.BufferedReader;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, RadioGroup.OnCheckedChangeListener {
     private Context context;
@@ -160,7 +168,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivityForResult(openCameraIntent, 0);
                 break;
             case R.id.action_search:
-
+//                Intent intent = new Intent(Intent.ACTION_PICK);
+                Intent intent = new Intent(
+                        "android.media.action.IMAGE_CAPTURE");
+//                intent.setType("image/*");// 相片类型
+                this.startActivityForResult(intent, 222);
                 break;
             case R.id.action_settings:
 
@@ -168,6 +180,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         return false;
     }
+
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override

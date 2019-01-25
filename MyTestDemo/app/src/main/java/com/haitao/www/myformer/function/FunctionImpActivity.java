@@ -41,7 +41,7 @@ public class FunctionImpActivity extends AppCompatActivity implements AdapterVie
             case "二维码":
                 startActivity(new Intent(this, BarCodeMainActivity.class));
                 break;
-            case "地图":
+            case "地  图":
                 startActivity(new Intent(this, MapTestActivity.class));
                 break;
             case "相机相册":

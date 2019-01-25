@@ -8,7 +8,6 @@ import android.util.AttributeSet;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 
 import com.haitao.www.myformer.R;
 
@@ -20,7 +19,6 @@ public class RatingBarView2 extends LinearLayout implements CompoundButton.OnChe
     private int starCount;
     private Drawable starEmptyDrawable;
     private Drawable starFillDrawable;
-    private int mStarCount;
     private int mSelectedPosition;
 
     public RatingBarView2(Context context, @Nullable AttributeSet attrs) {
@@ -51,12 +49,11 @@ public class RatingBarView2 extends LinearLayout implements CompoundButton.OnChe
 
     private CheckBox getStarView(Context context) {
         CheckBox checkBox = new CheckBox(context);
-        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(Math.round(starImageSize), Math.round(starImageSize));
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(Math.round(starImageSize), Math.round(starImageSize));
         params.setMargins(starSpace/2,0,starSpace/2,0);
         checkBox.setLayoutParams(params);
         checkBox.setButtonDrawable(null);
         checkBox.setBackground(starEmptyDrawable);
-        checkBox.setCompoundDrawablePadding(5);
         return checkBox;
     }
 
