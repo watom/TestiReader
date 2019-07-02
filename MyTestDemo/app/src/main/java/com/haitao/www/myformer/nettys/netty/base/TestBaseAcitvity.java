@@ -1,4 +1,4 @@
-package com.haitao.www.myformer.ui.base;
+package com.haitao.www.myformer.nettys.netty.base;
 
 import android.os.Bundle;
 import android.os.Message;

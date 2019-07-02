@@ -1,4 +1,4 @@
-package com.haitao.www.myformer.ui.base;
+package com.haitao.www.myformer.nettys.netty.base;
 
 import java.io.File;
 import java.util.ArrayList;

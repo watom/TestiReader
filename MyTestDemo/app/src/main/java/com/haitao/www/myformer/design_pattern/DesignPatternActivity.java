@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Message;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.method.LinkMovementMethod;
@@ -14,10 +13,8 @@ import android.widget.ExpandableListView;
 import android.widget.TextView;
 
 import com.haitao.www.myformer.R;
-import com.haitao.www.myformer.ui.base.BaseActivity;
-import com.haitao.www.myformer.ui.ui_common.component.textview.SpannableStringActivity;
+import com.haitao.www.myformer.nettys.netty.base.BaseActivity;
 import com.haitao.www.myformer.utils.Lout;
-import com.haitao.www.myformer.utils.ToastUtils;
 
 public class DesignPatternActivity extends BaseActivity {
     private ExpandableListView expandableListView;

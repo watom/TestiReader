@@ -6,7 +6,7 @@ import android.support.annotation.Nullable;
 import android.webkit.WebView;
 
 import com.haitao.www.myformer.R;
-import com.haitao.www.myformer.ui.base.BaseActivity;
+import com.haitao.www.myformer.nettys.netty.base.BaseActivity;
 import com.haitao.www.myformer.utils.WebViewTool;
 
 public class PatternContentShow extends BaseActivity {

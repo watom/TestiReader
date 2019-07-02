@@ -10,7 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.haitao.www.myformer.R;
-import com.haitao.www.myformer.ui.base.TestBaseAcitvity;
+import com.haitao.www.myformer.nettys.netty.base.TestBaseAcitvity;
 import com.haitao.www.myformer.ui.ui_common.ModuleTest.UIModuleTestActivity;
 import com.haitao.www.myformer.ui.ui_common.ModuleTest.measureScreen.MeasureScreenActivity;
 import com.haitao.www.myformer.ui.ui_common.animation.AnimationActivity;

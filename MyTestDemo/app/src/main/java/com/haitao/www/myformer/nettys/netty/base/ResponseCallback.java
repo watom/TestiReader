@@ -1,4 +1,4 @@
-package com.haitao.www.myformer.ui.base;
+package com.haitao.www.myformer.nettys.netty.base;
 
 /**
  * Created by quliang on 18-10-13.

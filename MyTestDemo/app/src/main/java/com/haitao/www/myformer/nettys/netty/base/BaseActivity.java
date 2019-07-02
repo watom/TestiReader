@@ -1,4 +1,4 @@
-package com.haitao.www.myformer.ui.base;
+package com.haitao.www.myformer.nettys.netty.base;
 
 import android.content.Context;
 import android.content.Intent;

@@ -1,16 +1,9 @@
-package com.haitao.www.myformer.ui.base;
+package com.haitao.www.myformer.nettys.netty.base;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.os.Message;
-import android.support.annotation.NonNull;
-import android.widget.Toast;
-
-import com.haitao.www.myformer.utils.Util;
-
-import java.util.List;
 
 /**
  * 动态注册广播接收者

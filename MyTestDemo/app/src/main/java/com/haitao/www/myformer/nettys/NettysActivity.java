@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.haitao.www.myformer.R;
+import com.haitao.www.myformer.nettys.baseNetInfo.BaseNetInfoActivity;
 import com.haitao.www.myformer.nettys.comnettys.HttpURLConnectionActivity;
 import com.haitao.www.myformer.nettys.netprogramme.NetProgrammeActivity;
 import com.haitao.www.myformer.nettys.netty.MyNettyActivity;
@@ -31,7 +32,7 @@ public class NettysActivity extends AppCompatActivity implements AdapterView.OnI
     }
 
     private void initData(ListView view) {
-        content = new String[]{"网络编程","HttpURLConnection","OKhttp","封装网络框架"};
+        content = new String[]{"网络编程","HttpURLConnection","OKhttp","封装网络框架","本机网络基本信息"};
         ArrayAdapter stringArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, content);
         view.setAdapter(stringArrayAdapter);
         view.setOnItemClickListener(this);
@@ -52,6 +53,9 @@ public class NettysActivity extends AppCompatActivity implements AdapterView.OnI
                 break;
             case "封装网络框架":
                 startActivity(new Intent(this, MyNettyActivity.class));
+                break;
+            case "本机网络基本信息":
+                startActivity(new Intent(this, BaseNetInfoActivity.class));
                 break;
         }
     }

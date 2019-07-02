@@ -37,6 +37,10 @@
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--获取手机本机信息-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -44,8 +48,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name="projects.main.weclome.WelcomeActivity">
+        <activity android:name="projects.main.weclome.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -216,9 +219,12 @@
         <activity android:name=".CourseActivity" />
         <activity android:name="projects.main.activity.ShareAppActivity" />
         <activity android:name=".ui.ui_common.listview.scrollviewlist.ScrollViewTestActivity" />
-        <activity android:name=".ui.base.TestBaseAcitvity" />
+        <activity android:name=".nettys.netty.base.TestBaseAcitvity" />
         <activity android:name=".design_pattern.DesignPatternActivity" />
         <activity android:name=".design_pattern.PatternContentShow" />
         <activity android:name=".ui.ui_common.ModuleTest.ratingbarview.RatingBarActivity" />
+        <activity android:name=".nettys.baseNetInfo.BaseNetInfoActivity" />
+        <activity android:name="projects.main.ZhenZhuMeiXueInput" />
+        <activity android:name="projects.main.ZhenZhuMeiXueLog" />
     </application>
 </manifest>
