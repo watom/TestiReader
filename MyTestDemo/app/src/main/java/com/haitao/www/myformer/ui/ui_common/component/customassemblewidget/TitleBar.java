@@ -7,6 +7,7 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -182,6 +183,25 @@ public class TitleBar extends RelativeLayout {
 	public void setTitle(String title) {
 		mTitleTextView.setText(title);
 	}
+
+	/**
+	 * 设置标题字体大小
+	 *
+	 * @param size
+	 */
+	public void setTitleSize(float size) {
+		mTitleTextView.setTextSize(size);
+	}
+
+	/**
+	 * 设置标题字体风格：粗细
+	 *
+	 * @param Typeface.BOLD; Typeface.BOLD_ITALIC; Typeface.ITALIC;Typeface.NORMAL
+	 */
+	public void setTitleTypeface(Typeface typeface) {
+		mTitleTextView.setTypeface(typeface);
+	}
+
 
 	/**
 	 * 设置标题

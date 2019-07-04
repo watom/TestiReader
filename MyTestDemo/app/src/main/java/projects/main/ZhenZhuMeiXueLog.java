@@ -87,6 +87,7 @@ public class ZhenZhuMeiXueLog extends Activity {
         titlebar.setTitle("交易记录");
         titlebar.setBackTextVisible(false);
         titlebar.setShowLine(false);
+        titlebar.setTitleSize(17);
         tradeJine.setText(bunde.getString("tradeJine"));
         tradeType.setText(bunde.getString("tradeType"));
         tradeTime.setText(bunde.getString("tradeTime"));

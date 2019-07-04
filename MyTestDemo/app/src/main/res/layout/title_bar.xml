@@ -48,11 +48,11 @@
 
         <ImageView
             android:id="@+id/iv_back"
-            android:layout_width="48dp"
-            android:layout_height="20dp"
+            android:layout_width="40dp"
+            android:layout_height="17dp"
             android:layout_marginRight="10dp"
             android:gravity="left"
-            android:src="@drawable/arrow_left01" />
+            android:src="@drawable/arrow_left02" />
 
         <TextView
             android:id="@+id/tv_left"
