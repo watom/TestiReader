@@ -22,6 +22,9 @@ import com.haitao.www.myformer.utils.Util;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 课程教程导航
+ */
 public class CourseActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     private List<String> bookmarkList;
     private List<String> markUrlList;

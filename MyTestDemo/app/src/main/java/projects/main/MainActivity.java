@@ -9,11 +9,13 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -22,6 +24,7 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.haitao.www.myformer.CourseActivity;
 import com.haitao.www.myformer.R;
@@ -34,20 +37,11 @@ import projects.main.main_fragement.NewsFragment;
 import projects.main.main_fragement.TalkFragment;
 import projects.main.main_fragement.WodeFragment;
 
-import com.haitao.www.myformer.function.kernel_module.barcode.activity.BarCodeMainActivity;
 import com.haitao.www.myformer.function.kernel_module.barcode.activity.CaptureActivity;
 import com.haitao.www.myformer.structure_design.StructureDesignActivity;
-import com.haitao.www.myformer.ui.ui_common.ModuleTest.ratingbarview.RatingBarActivity;
-import com.haitao.www.myformer.utils.CMDExecUtils;
 import com.haitao.www.myformer.utils.Lout;
-import com.haitao.www.myformer.utils.ToastUtils;
 import com.haitao.www.myformer.utils.WebViewTool;
 
-import java.io.BufferedReader;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, RadioGroup.OnCheckedChangeListener {
     private Context context;
@@ -56,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private RadioGroup radiogroupBottomMenu;
     private RadioButton radiobutton01, radiobutton02, radiobutton03, radiobutton04, radiobutton05;
     private Fragment currentFragment, newsFragment, lookFragment, talkFragment, discoveryFragment, wodeFragment;
+    private FragmentTransaction addFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -139,16 +134,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
     }
 
-    @Override
-    public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            //System.exit(0);              //退出比较突兀，不推荐使用
-            moveTaskToBack(false);//退出界面比较柔和
-        }
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -246,11 +231,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             //判断切换的Fragment是否已经添加过。
             if (!fragment.isAdded()) {
                 //如果没有添加，则先把当前的Fragment隐藏，把切换的Fragment添加上。
-                getSupportFragmentManager().beginTransaction().hide(currentFragment).add(R.id.frame_layout, fragment).commit();
+                addFragment = getSupportFragmentManager().beginTransaction().hide(currentFragment).add(R.id.frame_layout, fragment);
             } else {
                 //如果已经添加过，则先把当前的Fragment隐藏，把切换的Fragment显示出来。
-                getSupportFragmentManager().beginTransaction().hide(currentFragment).show(fragment).commit();
+                addFragment=getSupportFragmentManager().beginTransaction().hide(currentFragment).show(fragment);
             }
+            addFragment.commitAllowingStateLoss();
             currentFragment = fragment;
         }
     }
@@ -266,22 +252,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //        return false;
 //    }
 //
-//    /**
-//     * 目标做成点击一下：弹出对话框，连续点击两下：退出APP
-//     * @param keyCode
-//     * @param event
-//     * @return
-//     */
-//    @Override
-//    public boolean onKeyDown(int keyCode, KeyEvent event) {
-//        // 不拦截，如果这里拦截了，也不会走到onBackPressed方法了
-//        if (keyCode == KeyEvent.KEYCODE_BACK) {
-//            Lout.e("onKeyDown","111");
-//            return super.onKeyDown(keyCode, event);
-//        }
-//        Lout.e("onKeyDown","222");
-//        return false;
-//    }
 
 
     @Override
@@ -293,4 +263,59 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             new WebViewTool(this, framelayoutWebview, url);
         }
     }
+
+    /**
+     * 目标做成点击一下：弹出对话框，连续点击两下：退出APP
+     *
+     * @param keyCode
+     * @param event
+     * @return
+     */
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        // 不拦截，如果这里拦截了，也不会走到onBackPressed方法了
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            Lout.e("onKeyDown", "111");
+            return super.onKeyDown(keyCode, event);
+        }
+        Lout.e("onKeyDown", "222");
+        return false;
+    }
+
+
+    @Override
+    public void onBackPressed() {
+        long mExitTime = System.currentTimeMillis();
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);//如果抽屉打开，先关闭抽屉
+            return;
+        } else {
+            //1.点击的时间差如果大于2000，则提示用户点击两次退出
+            if (System.currentTimeMillis() - mExitTime > 2000) {
+                //2.保存当前时间
+                mExitTime = System.currentTimeMillis();
+                //3.提示
+                Toast.makeText(this, "连续点击两次退出APP", Toast.LENGTH_SHORT).show();
+            } else {
+                //4.点击的时间差小于2000，调用父类onBackPressed方法执行退出。
+                super.onBackPressed();
+                //moveTaskToBack(false);//退出界面比较柔和
+                //System.exit(0);              //退出比较突兀，不推荐使用，推荐使用上面的方法。
+            }
+        }
+    }
+
+    @Override
+    public boolean dispatchKeyEvent(KeyEvent event) {
+        //点击返回键并且是长按，则退出
+        if (event.getKeyCode() == KeyEvent.KEYCODE_BACK && event.isLongPress()) {
+            Toast.makeText(this, "长按退出", Toast.LENGTH_SHORT).show();
+            moveTaskToBack(false);//退出界面比较柔和
+            //System.exit(0);              //退出比较突兀，不推荐使用
+            return true;
+        }
+        return false;
+    }
+
 }

@@ -163,6 +163,15 @@ public class TitleBar extends RelativeLayout {
 	}
 
 	/**
+	 * 设置左侧文字颜色，默认白色
+	 *
+	 * @param text
+	 */
+	public void setBackBtnTextColor(int intValue) {
+		mBackTextView.setTextColor(intValue);
+	}
+
+	/**
 	 * 是否显示左侧文字后的小图标,默认为下箭头"∨"（可通过{@link #getLeftIconView()} 来修改图标），不显示
 	 *
 	 * @param visible
