@@ -107,6 +107,7 @@
         <activity android:name=".ui.ui_common.animation.ADPageActivity" />
         <activity android:name=".ui.ui_common.component.imageview.ImageViewCategory" />
         <activity android:name=".ui.ui_common.component.imageview.circle_imageview.CircleImageViewActivity" />
+        <activity android:name=".ui.ui_common.dialog.progressBar.CircleProgressActivity" />
         <activity android:name=".ui.ui_common.dialog.progressBar.ProgressBarActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -226,5 +227,6 @@
         <activity android:name=".nettys.baseNetInfo.BaseNetInfoActivity" />
         <activity android:name="projects.main.ZhenZhuMeiXueInput" />
         <activity android:name="projects.main.ZhenZhuMeiXueLog" />
+
     </application>
 </manifest>
