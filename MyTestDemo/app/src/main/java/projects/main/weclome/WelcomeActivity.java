@@ -2,6 +2,7 @@ package projects.main.weclome;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -56,7 +57,7 @@ public class WelcomeActivity extends AppCompatActivity {
      * 设置倒计时功能
      */
     private void initData() {
-        mCountDownTimerUtils = new CountDownTimerUtils(tvSkip, 2000, 1000);
+        mCountDownTimerUtils = new CountDownTimerUtils(tvSkip, 5000, 1000);
         mCountDownTimerUtils.start();
         mCountDownTimerUtils.setCountDownListener(new CountDownTimerUtils.OnCountDownListener() {
             @Override

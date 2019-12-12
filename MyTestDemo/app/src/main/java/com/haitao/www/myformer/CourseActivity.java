@@ -51,11 +51,13 @@ public class CourseActivity extends AppCompatActivity implements AdapterView.OnI
         bookmarkList.add("W3school");
         bookmarkList.add("慕课网");
         bookmarkList.add("网易云课堂");
+        bookmarkList.add("可可英语");
         markUrlList = new ArrayList<>();
         markUrlList.add("http://www.runoob.com/");
         markUrlList.add("http://www.w3school.com.cn/");
         markUrlList.add("https://study.163.com/category/400000001316004");
         markUrlList.add("https://www.imooc.com/");
+        markUrlList.add("http://m.kekenet.com/");
 
         ArrayAdapter stringArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, bookmarkList);
         listview.setAdapter(stringArrayAdapter);

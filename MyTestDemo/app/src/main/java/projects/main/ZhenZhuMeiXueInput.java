@@ -36,6 +36,7 @@ public class ZhenZhuMeiXueInput extends Activity implements View.OnClickListener
         titlebar = (TitleBar) this.findViewById(R.id.titlebar);
         titlebar.setTitle("交易记录");
         titlebar.setRightText("生成");
+        titlebar.setRightTextColor(R.color.orchid);
         tradeJine = (EditText) this.findViewById(R.id.trade_jine);
         tradeType = (EditText) this.findViewById(R.id.trade_type);
         tradeTime = (EditText) this.findViewById(R.id.trade_time);
@@ -43,8 +44,6 @@ public class ZhenZhuMeiXueInput extends Activity implements View.OnClickListener
         tradeNo = (EditText) this.findViewById(R.id.trade_no);
         orderId = (EditText) this.findViewById(R.id.order_id);
         remark = (EditText) this.findViewById(R.id.remark);
-        button1 = (Button) this.findViewById(R.id.button1);
-
         titlebar.setRightTextClickListener(this);
     }
 

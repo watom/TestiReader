@@ -1,5 +1,6 @@
 package com.haitao.www.myformer.ui.ui_common.dialog.progressBar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -22,7 +23,7 @@ public class ProgressBarActivity extends AppCompatActivity implements AdapterVie
     }
 
     private void initData(ListView view) {
-        content = new String[]{"转圈进度条"};
+        content = new String[]{"转圈进度条","圆圈内数字进度条"};
         ArrayAdapter stringArrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, content);
         view.setAdapter(stringArrayAdapter);
         view.setOnItemClickListener(this);
@@ -34,6 +35,9 @@ public class ProgressBarActivity extends AppCompatActivity implements AdapterVie
         switch (s) {
             case "转圈进度条":
                 new LoadingDialog(this).show();
+                break;
+            case "圆圈内数字进度条":
+                startActivity(new Intent(this, CircleProgressActivity.class));
                 break;
         }
     }

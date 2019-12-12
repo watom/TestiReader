@@ -2,6 +2,7 @@ package projects.main;
 
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -13,6 +14,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
@@ -39,7 +41,9 @@ import projects.main.main_fragement.WodeFragment;
 
 import com.haitao.www.myformer.function.kernel_module.barcode.activity.CaptureActivity;
 import com.haitao.www.myformer.structure_design.StructureDesignActivity;
+import com.haitao.www.myformer.ui.ui_common.dialog.alert_dialog.AlertDialogDemo;
 import com.haitao.www.myformer.utils.Lout;
+import com.haitao.www.myformer.utils.ToastUtils;
 import com.haitao.www.myformer.utils.WebViewTool;
 
 
@@ -127,7 +131,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         geekName.setTypeface(Typeface.createFromAsset(this.getAssets(), "fonts/创艺简魏碑.TTF"));
         geekName.setText("王海涛");
         geekMotto.setTypeface(Typeface.createFromAsset(this.getAssets(), "fonts/华文行楷.ttf"));
-        geekMotto.setText("灵感会稍纵即逝，机会也会相伴而来，请抓住它！");
+        geekMotto.setText("灵感总会稍纵即逝，机会也会相伴而来，请抓住它！");
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
@@ -241,19 +245,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
-//    @Override
-//    public boolean onKeyUp(int keyCode, KeyEvent event) {
-//        // return false 或者return true 都不会走onBackPressed了
-//        if (keyCode == KeyEvent.KEYCODE_BACK) {
-//            Lout.e("onKeyUp","111");
-//            return false;
-//        }
-//        Lout.e("onKeyUp","222");
-//        return false;
-//    }
-//
-
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -309,13 +300,34 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean dispatchKeyEvent(KeyEvent event) {
         //点击返回键并且是长按，则退出
-        if (event.getKeyCode() == KeyEvent.KEYCODE_BACK && event.isLongPress()) {
-            Toast.makeText(this, "长按退出", Toast.LENGTH_SHORT).show();
-            moveTaskToBack(false);//退出界面比较柔和
-            //System.exit(0);              //退出比较突兀，不推荐使用
-            return true;
+        if (event.getKeyCode() == KeyEvent.KEYCODE_BACK || event.isLongPress()) {
+            return isQuitDialog();
+        }else {
+            return false;
         }
-        return false;
+    }
+    private AlertDialog.Builder dialog;
+    private boolean isQuitDialog() {
+        dialog = new AlertDialog.Builder(this);
+        dialog.setIcon(R.mipmap.ic_launcher);
+        dialog.setTitle("退出吗？");
+        dialog.setMessage("如果您需要退出，请选择“确认”；仍然留在该应用中，请选择“否”。");
+        dialog.setPositiveButton("确认", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                moveTaskToBack(false);//退出界面比较柔和
+                MainActivity.this.finish();
+                //System.exit(0);              //退出比较突兀，不推荐使用，推荐使用上面的方法。
+            }
+        });
+        dialog.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                ToastUtils.showToast(context, "感谢您的支持，我们将更加努力~");
+            }
+        });
+        dialog.show();
+        return true;
     }
 
 }

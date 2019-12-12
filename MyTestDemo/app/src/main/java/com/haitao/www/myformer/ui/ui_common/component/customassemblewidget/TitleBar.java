@@ -165,10 +165,10 @@ public class TitleBar extends RelativeLayout {
 	/**
 	 * 设置左侧文字颜色，默认白色
 	 *
-	 * @param text
+	 * @param resId
 	 */
-	public void setBackBtnTextColor(int intValue) {
-		mBackTextView.setTextColor(intValue);
+	public void setBackBtnTextColor(int resId) {
+		mBackTextView.setTextColor(getResources().getColor(resId));
 	}
 
 	/**
@@ -205,7 +205,7 @@ public class TitleBar extends RelativeLayout {
 	/**
 	 * 设置标题字体风格：粗细
 	 *
-	 * @param Typeface.BOLD; Typeface.BOLD_ITALIC; Typeface.ITALIC;Typeface.NORMAL
+	 * @param typeface Typeface.BOLD; Typeface.BOLD_ITALIC; Typeface.ITALIC;Typeface.NORMAL
 	 */
 	public void setTitleTypeface(Typeface typeface) {
 		mTitleTextView.setTypeface(typeface);
@@ -299,6 +299,17 @@ public class TitleBar extends RelativeLayout {
 		mRightTextView.setText(text);
 		mRightTextView.setVisibility(View.VISIBLE);
 	}
+
+	/**
+	 * 设置标题栏右侧文字颜色
+	 *
+	 * @param resId
+	 */
+	public void setRightTextColor(int resId) {
+		mRightTextView.setTextColor(getResources().getColor(resId));
+		mRightTextView.setVisibility(View.VISIBLE);
+	}
+
 
 	/**
 	 * 设置右侧2按钮的图标

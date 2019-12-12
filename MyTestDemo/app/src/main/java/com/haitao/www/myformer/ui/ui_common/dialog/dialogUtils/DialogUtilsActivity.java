@@ -23,14 +23,12 @@ public class DialogUtilsActivity extends AppCompatActivity implements View.OnCli
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_common_button_layout);
         initView();
-
+        initView02();
     }
 
     private void initView() {
         Button btn_common_01 = findViewById(R.id.btn_common_01);
         Button btn_common_02 = findViewById(R.id.btn_common_02);
-        
-        initView02();
     }
 
     private void initView02() {
