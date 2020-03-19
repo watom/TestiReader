@@ -227,6 +227,7 @@
         <activity android:name=".nettys.baseNetInfo.BaseNetInfoActivity" />
         <activity android:name="projects.main.ZhenZhuMeiXueInput" />
         <activity android:name="projects.main.ZhenZhuMeiXueLog" />
+        <activity android:name=".ui.ui_common.dialog.progressBar.PrimevalProgressActivity" />
 
     </application>
 </manifest>

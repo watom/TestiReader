@@ -23,7 +23,7 @@ public class ProgressBarActivity extends AppCompatActivity implements AdapterVie
     }
 
     private void initData(ListView view) {
-        content = new String[]{"转圈进度条","圆圈内数字进度条"};
+        content = new String[]{"转圈进度条","圆圈内数字进度条","原生圆圈进度条"};
         ArrayAdapter stringArrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, content);
         view.setAdapter(stringArrayAdapter);
         view.setOnItemClickListener(this);
@@ -39,8 +39,9 @@ public class ProgressBarActivity extends AppCompatActivity implements AdapterVie
             case "圆圈内数字进度条":
                 startActivity(new Intent(this, CircleProgressActivity.class));
                 break;
+            case "原生圆圈进度条":
+                startActivity(new Intent(this, PrimevalProgressActivity.class));
+                break;
         }
     }
-
-
 }
