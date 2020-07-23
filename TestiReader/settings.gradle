@@ -1,0 +1,4 @@
+rootProject.name='TestiReader'
+include ':app'
+include ':ireader'
+include ':pdflibrary'

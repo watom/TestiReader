@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0e94e1df-138e-468f-946e-eb01e680bc4a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../MyTestDemo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyTestDemo/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyTestDemo/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyTestDemo/MyTestDemo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../okhttputils-master/OkHttpManager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../okhttputils-master/okhttp-utils.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../okhttputils-master/okhttputils/okhttputils.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../okhttputils-master/sample-okhttp/sample-okhttp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../watom/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../watom/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyTestDemo/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyTestDemo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyTestDemo/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/assets/ShareSDK.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/MobCommons-2018.1011.1129.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/MobTools-2018.1009.1056.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/SDKWrapper-2018.0801.1824.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/SMSSDK-3.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-Alipay-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-Alipay-Core-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-Alipay-Moments-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-Core-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-Dingding-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-Douban-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-Email-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-KaiXin-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-Linkedin-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-Meipai-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-QQ-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-QZone-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-Renren-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-ShortMessage-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-SinaWeibo-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-TencentWeibo-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-Wechat-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-Wechat-Core-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-Wechat-Favorite-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-Wechat-Moments-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-Yixin-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-Yixin-Core-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-Yixin-Moments-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/ShareSDK-YouDao-3.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/agora-rtc-sdk.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/arm64-v8a/libagora-crypto.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/arm64-v8a/libagora-rtc-sdk-jni.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/armeabi-v7a/libagora-crypto.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/armeabi-v7a/libagora-rtc-sdk-jni.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/gson-2.2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/include/AgoraBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/include/IAgoraMediaEngine.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/include/IAgoraRtcEngine.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/include/IAgoraService.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/nineoldandroids.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/x86/libagora-crypto.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/x86/libagora-rtc-sdk-jni.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/libs/xstream-1.4.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/assets/AndroidEmoji.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/assets/Emoji.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/assets/fonts/创艺简魏碑.TTF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/assets/fonts/华文行楷.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/assets/html/activityList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/assets/html/design_discipline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/assets/html/test01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/assets/html/test02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/assets/image/meihua_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/assets/image/papa_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/assets/js/activity.Class.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/assets/js/test01.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/assets/js01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/SampleActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/data/DataBaseActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/data/adapter/AdapterListView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/data/adapter/IBaseAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/data/database/DBOpenHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/data/database/DataBaseHelp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/data/database/MySQLiteHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/data/model/bean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/data/sdcard/SDCardActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/design_pattern/AdapterDesignPattern.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/design_pattern/DesignPatternActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/design_pattern/PatternContentShow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/FunctionImpActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/barcode/BarCodeTestActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/barcode/activity/BarCodeMainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/barcode/activity/CaptureActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/barcode/camera/AutoFocusManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/barcode/camera/CameraConfigurationManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/barcode/camera/CameraManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/barcode/camera/PreviewCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/barcode/decode/CaptureActivityHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/barcode/decode/DecodeFormatManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/barcode/decode/DecodeHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/barcode/decode/DecodeThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/barcode/encode/EncodingUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/barcode/utils/AmbientLightManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/barcode/utils/BeepManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/barcode/utils/InactivityTimer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/im/IMTestActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/im/socket/SocketActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/im/xmpp/XMPPActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/map/MapTestActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/msgcode/MsgCodeActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/apshare/ShareEntryActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/ddshare/DDShareActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/CustomerLogo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/OnekeyShare.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/OnekeySharePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/OnekeyShareTheme.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/OnekeyShareThemeImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/ShareContentCustomizeCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/themes/classic/ClassicTheme.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/themes/classic/EditPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/themes/classic/FriendAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/themes/classic/FriendListItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/themes/classic/FriendListPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/themes/classic/IndicatorView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/themes/classic/PRTHeader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/themes/classic/PicViewerPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/themes/classic/PlatformPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/themes/classic/PlatformPageAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/themes/classic/RotateImageView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/themes/classic/XView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/themes/classic/land/EditPageLand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/themes/classic/land/FriendListPageLand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/themes/classic/land/PlatformPageAdapterLand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/themes/classic/land/PlatformPageLand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/themes/classic/port/EditPagePort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/themes/classic/port/FriendListPagePort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/themes/classic/port/PlatformPageAdapterPort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/onekeyshare/themes/classic/port/PlatformPagePort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/wxapi/WXEntryActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/share/yxapi/YXEntryActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/speech_recognition/SpeechRecognitionActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/function/kernel_module/speechvideo/SpeechVideoActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/h5/H5HomeActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/h5/h5_dome/H5Demo01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/logic/LogicTest/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/logic/LogicTest/CountDownTimerActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/logic/LogicTest/DateTestActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/logic/LogicTest/GsonApplyActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/logic/LogicTest/GsonBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/logic/LogicTest/PhotoAlbumActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/logic/LogicTest/TimerTestActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/logic/ModuleTestActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/logic/config/LocalPropertiesActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/menu/MenuDefine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/menu/MenuImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/NettysActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/baseNetInfo/BaseNetInfoActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/comnettys/HttpURLConnectionActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/netprogramme/NetBaseActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/netprogramme/NetProgrammeActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/netty/FileDownloadObj.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/netty/MyNettyActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/netty/base/BaseActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/netty/base/BaseBusiness.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/netty/base/BaseDataResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/netty/base/BaseHttp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/netty/base/MyBroadCast.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/netty/base/ResponseCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/netty/base/TestBaseAcitvity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/network/AbstractFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/network/FactoryProducer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/network/OkHttpRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/network/RequestMode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/network/RequestModeFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/network/XUtilsRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/network/response/BaseResponseData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/okhttp/OKhttpActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/nettys/okhttp/OkHttpTestActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/structure_design/StructureDesignActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/structure_design/mvp/mvp01/TestContract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/structure_design/mvp/mvp01/TestModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/structure_design/mvp/mvp01/TestPresenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/structure_design/mvp/mvp01/TestView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/ModuleTest/UIModuleTestActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/ModuleTest/excellayout/ExcelTablayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/ModuleTest/excellayout/ExcelTablayoutAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/ModuleTest/measureScreen/MeasureScreenActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/ModuleTest/ratingbarview/RatingBarActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/ModuleTest/ratingbarview/RatingBarView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/ModuleTest/ratingbarview/RatingBarView2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/ModuleTest/timeLine/TimeLineActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/ModuleTest/timeLine/TimeLineAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/ModuleTest/timeLine/TraceData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/UIActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/animation/ADPageActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/animation/AnimationActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/animation/MaterialThemeActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/animation/WindViewActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/bitmap/BitmapActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/component/ComponentActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/component/customassemblewidget/CustomAssembleWidgetActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/component/customassemblewidget/CustomDescribeTitle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/component/customassemblewidget/CustomTitleBar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/component/imageview/ImageViewCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/component/imageview/circle_imageview/CircleImageView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/component/imageview/circle_imageview/CircleImageViewActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/component/textview/SpannableStringActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/component/textview/TextWatcherActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/component/timepicker/DatePickerActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/component/timepicker/TimePickerActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/dialog/DialogActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/dialog/alert_dialog/AlertDialogDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/dialog/bottomsheet_dialog/BottomSheetDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/dialog/dialogUtils/DialogUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/dialog/dialogfragment/FragmentDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/dialog/popupwindow_dialog/BottomSheetTestActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/dialog/popupwindow_dialog/GridViewEmojiAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/dialog/popupwindow_dialog/KeyboardFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/dialog/popupwindow_dialog/KeyboardFragmentAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/dialog/popupwindow_dialog/PopupWindowDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/dialog/progressBar/LoadingDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/fourcomponents/fourComponentsCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/fourcomponents/service/serviceActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/fragment/FragmentCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/fragment/InitialFragment/ContainerFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/fragment/InitialFragment/LifeCycleFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/listview/ListViewCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/listview/XListView/ListViewActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/listview/XListView/XFooterView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/listview/XListView/XHeaderView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/listview/XListView/XListView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/listview/XListView/XListViewActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/listview/XListView/XScrollView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/listview/XListView/XScrollViewActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/listview/expandablelistView/MyExpandableListAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/listview/expandablelistView/MyExpandableListView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/listview/listview/CommonListViewActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/listview/recyclerview/RecyclerViewAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/listview/recyclerview/RecyclerViewTestActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/listview/scrollviewlist/ScrollViewTestActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/tabActivity/MyTabActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/tabActivity/activityGroupGridView/ActivityGroupGridView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/tabActivity/tabActivityTabHost/TabActivityTabHost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/tabActivity/tabFragmentActivity/TabFragmentActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/tabActivity/tablayout/MyFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/tabActivity/tablayout/MyFragmentAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/tabActivity/tablayout/TabLayoutActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/tabActivity/viewpage/MyViewPagerActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/viewpager/ViewPagerActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/viewpager/adsalternate/AdsAlternateActivity01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/viewpager/adsalternate/AdsAlternateActivity02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/viewpager/adsalternate/LoopPagerAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/viewpager/baseviewpager/BaseViewPagerActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/viewpager/baseviewpager/ViewPagerTitleStripActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/widget/AcharItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/ui/ui_common/widget/ColorPicker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/AlipayUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/CMDExecUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/CharItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/CheckInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/CodeUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/CopyFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/CountDownTimerUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/DateFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/EmailMatcherUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/EmotionUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/FileUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/HttpRequestTool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/ImageUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/KeyboardHelpUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/Logout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/Lout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/MathsUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/MyPhoneInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/NetUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/PrefUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/SDCardUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/SystemBarTintManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/TimerUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/ToastUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/UITools.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/nettools/OkHttp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/com/haitao/www/myformer/utils/nettools/StreamTools.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/projects/MyProJectMainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/projects/main/SettingActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/projects/main/ZhenZhuMeiXueLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/projects/main/activity/ShareAppActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/projects/main/important_data/RequestConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/projects/main/main_fragement/DiscoveryFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/projects/main/main_fragement/LookFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/projects/main/main_fragement/NewsFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/projects/main/main_fragement/TalkFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/java/projects/main/main_fragement/WodeFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/jniLibs/arm64-v8a/libagora-rtc-sdk-jni.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/jniLibs/armeabi-v7a/libagora-rtc-sdk-jni.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/jniLibs/x86/libagora-rtc-sdk-jni.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/ai.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/aini.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/baibai.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/baiyan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/bishi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/bizui.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/buxie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/buyaokan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/caimi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/danxin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/dashiwang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/fashao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/ganmao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/gaoxiao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/gundan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/haha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/haipa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/haixiu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/haochi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/haokaixin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/haose.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/hehe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/jingsong.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/jingxia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/jiyan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/kanwode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/landelini.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/lianhong.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/liulei.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/nanguo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/nanshou.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/nihuai.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/niuqi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/nizhidaode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/nu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/numa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/qieyi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/qinqin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/shengqi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/shiwang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/shuijiao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/tushe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/tushegaoxiao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/weixiao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/wulian.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/wuyu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/xiaoku.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/xindong.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/xixi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/ye.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/yiqiwan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/zhashi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/zhengjing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/zhiyi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res-emotion/mipmap/zouzheqiao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/anim/push_left_in.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/anim/push_left_out.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/anim/push_right_in.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/anim/push_right_out.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/anim/window_back.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/anim/window_out.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/color/selector_textcolor_01.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/color/selector_textcolor_02.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-hdpi/papa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-hdpi/ssdk_oks_ptr_ptr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-v21/ic_menu_camera.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-v21/ic_menu_gallery.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-v21/ic_menu_manage.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-v21/ic_menu_send.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-v21/ic_menu_share.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-v21/ic_menu_slideshow.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/back_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/barcode_launcher_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_auth_title_back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_back_arr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_country_cl_divider.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_country_clear_search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_country_search_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_country_sharesdk_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_input_bg_focus.9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_alipay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_alipaymoments.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_bluetooth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_check_checked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_check_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_dingding.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_douban.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_dropbox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_email.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_evernote.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_facebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_facebookmessenger.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_flickr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_foursquare.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_googleplus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_instagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_instapaper.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_kaixin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_kakaostory.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_kakaotalk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_laiwang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_laiwangmoments.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_linkedin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_meipai.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_mingdao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_pinterest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_pocket.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_qq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_qzone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_renren.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_shortmessage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_sinaweibo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_telegram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_tencentweibo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_tumblr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_twitter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_vkontakte.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_wechat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_wechatfavorite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_wechatmoments.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_whatsapp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_yixin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_yixinmoments.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_youdao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_oks_classic_youtube.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_title_div.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_weibo_common_shadow_top.9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xhdpi/ssdk_weibo_empty_failed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable-xxhdpi/barcode_launcher_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/app_back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/app_back_press.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/arrow_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/arrow_down_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/arrow_error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/arrow_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/arrow_left01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/arrow_left02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/arrow_left03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/arrow_ok.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/arrow_right.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/arrow_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/arrow_up_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/barcode_launcher_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/bdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/blinding_logo_01.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/blue_sky.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/btn_end_call.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/btn_mute.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/btn_scan_flashlight_closed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/btn_scan_flashlight_open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/btn_speaker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/buttom_tab_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/car.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/cell_round_dot.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/chat_emoji_selector_btn.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/chat_left_indicator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/chat_press_speak_btn.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/chat_right_indicator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/chat_send_bg_normal01.9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/chat_send_btn_selector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/chat_setmode_keyboard_btn.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/chat_setmode_keyboard_btn_normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/chat_setmode_keyboard_btn_press.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/chat_setmode_voice_btn.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/chat_setmode_voice_btn_normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/chat_setmode_voice_btn_pressed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/chat_type_select_btn.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/chat_type_select_btn_nor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/chat_type_select_btn_pressed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/common_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/common_icon_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/corners_bg_01.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/corners_bg_02.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/dotted_line.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_27.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_ai.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_album.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_anger.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_browse.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_browse_press.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_chat.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_chat_press.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_collect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_cpu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_delete.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_delete_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_delete_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_discovery.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_discovery_press.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_increase_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_increase_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_keyboard.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_keyboard_press.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_menu_book.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_menu_earth.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_menu_favorite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_menu_game.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_menu_interest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_menu_security.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_menu_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_menu_sourcecode.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_menu_star.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_menu_steamship.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_menu_upload.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_menu_video.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_mine.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_mine_press.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_momo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_momo_press.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_plus.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_plus2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_plus_press.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_rating_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_rating_nu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_rating_sad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_rating_small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_reduce.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_sad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_scan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_setting.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_shortcut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_skip.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_small_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_small_default2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_small_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_small_selected2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_smile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_smile_press.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_sousuo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_speech.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_speech_press.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ic_wurenji.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/img_norecord.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/layer_list_ratingbar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/line_arrow_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/loading_pic01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/loading_pic02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/lunbotu_00.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/lunbotu_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/lunbotu_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/lunbotu_03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/lunbotu_04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/lunbotu_round_point_false.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/lunbotu_round_point_selector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/lunbotu_round_point_true.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/meimei01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/null_pic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/progressbar_center_pic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/progressbar_rotate.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/redbag_dialog.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/selector_button_press.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/selector_ispress_common.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/selector_ispress_left.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/selector_ispress_right.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/selector_ispress_state.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/selector_round_corner_button.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/selector_round_corner_button02.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/selector_scan_flashlight.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/selector_tabmenu_browse.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/selector_tabmenu_chat.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/selector_tabmenu_discovery.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/selector_tabmenu_mine.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/selector_tabmenu_momo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/selector_text_color.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/shadow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/shape_dialog.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/shape_line.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/shape_progress_dialog.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/shape_round_corner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/shape_round_corner02.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/shape_round_corner03.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/shape_round_corner_button.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/side_nav_bar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ssdk_oks_classic_platform_cell_back.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/ssdk_oks_classic_progressbar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/titlebar_arrow_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/titlebar_arrow_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/vector_drawable_wurenji.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/zxing_code_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/drawable/zxing_line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/act_list_view.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/act_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/act_scroll_view.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_barcode.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_barcode_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_base_viewpager.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_bitmap.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_bottom_sheet_keyboard.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_bottom_sheet_wind_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_capture.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_circle_imageview.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_common_button_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_congfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_countdowntimer.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_custom_view.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_datepicker.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_expandablelistview.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_gson_apply.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_hide_page.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_listview.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_listview_floatbtn.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_main_discovery.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_main_look.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_main_news.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_main_talk.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_main_wode.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_meter_screen.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_msgcode.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_myviewpager.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_net_base.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_netinfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_netty.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_nettys_httpurlconnection.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_okhttp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_progressbar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_ratingbar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_recyclerview.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_redbag_log.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_ripple.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_scrollview.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_sdcard.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_setting.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_span.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_speech_video.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_tab_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_timepicker.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_trace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_trade_log.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activity_viewpager_title.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/activitygroup_gridview_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/alert_dialog_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/alert_dialog_common.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/alert_dialog_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/alert_dialog_title.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/app_bar_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/container_fragment_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/content_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/date_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/fragment_lifecycle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/gridview_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/gridview_item_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/h5_layout_webview.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/item_gridview_imageview.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/item_gridview_textview.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/item_online_children.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/item_online_grounp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/item_recyclerview.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/item_redbag_log.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/item_trace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/layout_bottom_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/layout_bottom_sheet_keyboard_edit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/layout_bottom_sheet_keyboard_pages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/layout_bottom_sheet_wind_content.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/layout_char_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/layout_color_pick.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/layout_custom_assemble_widget.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/layout_floatingaction_button.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/layout_gridview_emoji.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/layout_input_bookmark.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/layout_keyboard_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/layout_menu_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/layout_paragraph_title.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/layout_share_barcode.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/layout_text.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/layout_toolbar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/layout_wind_view.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/layput_fragment_tab.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/loading_dialog.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/main_menu_tab.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/nav_header_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/onedp_split_line.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/popupwindow_dialog_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/popupwindow_dialog_drawer_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/popupwindow_dialog_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/popwindow_card_remind.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/progress_dialog_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/tab_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/tab_cut_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/tab_cut_view.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/tab_indicator_view.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/tab_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/title_bar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/vw_footer.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/vw_header.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/vw_list_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/vw_scroll_view_content.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/vw_xscrollview_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/xa_dialog_custom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/xa_dialog_custom_02.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/xa_dialog_custom_03.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/layout/xa_dialog_custom_04.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/menu/activity_main_drawer.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/menu/main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/menu/menu_custom_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/menu/menus.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/menu/popupmenu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-hdpi/ic_launcher_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-mdpi/ic_launcher_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-mdpi/launcher_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xhdpi/add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xhdpi/bg_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xhdpi/bg_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xhdpi/bg_03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xhdpi/bg_04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xhdpi/bg_05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xhdpi/ic_launcher_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xhdpi/login.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/friend_quan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/fx_hove2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/fx_none2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_browse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_browse_press.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_chat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_chat_press.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_discovery.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_discovery_press.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_friend_quan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_game.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_launcher_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_mine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_mine_press.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_momo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_momo_press.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_nearby.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_scan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_see.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_shake.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_shopping.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/ic_small_world.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/kf_have2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/kf_none2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/study_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/sy_have2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/sy_none2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/wd_have2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/wd_none2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/yd_hove2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxhdpi/yd_none2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxxhdpi/fix_sccess.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxxhdpi/ic_launcher_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/raw/beep.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/values-en/ssdk_country_arrays.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/values-en/ssdk_oks_strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/values-en/ssdk_strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/values/drawables.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/values/ids.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/values/ssdk_country_arrays.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/values/ssdk_instapaper_strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/values/ssdk_oks_color_drawables.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/values/ssdk_oks_strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/values/ssdk_strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../MyTestDemo/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../MyTestDemo/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../MyTestDemo/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../MyTestDemo/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyTestDemo/settings.gradle" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_28" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="valueResourceFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1cvk1rSvbSJNAkOOiUgoqVze9Jo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="JPFGY19906000037" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-06-13T15:55:44.851Z" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.proportion" value="0.15" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ireader/src/main/res" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\android_project\now_developing\TestStudio\Studio\iReader\ireader\src\main\res" />
+      <recent name="E:\android_project\now_developing\TestStudio\Studio\iReader\ireader\src\main\res\values" />
+      <recent name="E:\android_project\now_developing\TestStudio\Studio\iReader\ireader\src\main\java\com\watom\ireader\utils" />
+      <recent name="E:\android_project\now_developing\TestStudio\Studio\iReader\app\src\main\assets" />
+      <recent name="E:\android_project\now_developing\TestStudio\Studio\iReader\app\src\main\res\drawable" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.watom.ireader.main" />
+      <recent name="com.watom.ireader.widget" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\android_project\now_developing\TestStudio\Studio\iReader\app\src\main\res\mipmap-hdpi" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0e94e1df-138e-468f-946e-eb01e680bc4a" name="Default Changelist" comment="" />
+      <created>1591416242641</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591416242641</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/watom/mIreader/widget/ReaderView.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/watom/mIreader/widget/ReaderView.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/watom/mIreader/widget/ReaderView.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
